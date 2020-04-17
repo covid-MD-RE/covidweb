@@ -1,0 +1,1621 @@
+<html>
+
+    <head>
+        <link rel='stylesheet' href='https://unpkg.com/leaflet@1.4.0/dist/leaflet.css'/>
+        <script src='https://unpkg.com/leaflet@1.4.0/dist/leaflet.js'></script>
+        <link rel="stylesheet" href="mystyles1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body onload="drawRecoveries1()">
+
+        <div style="padding:30px;margin-top:0px;"></div>
+        <h1>COVID-19 World Cases (March 23, 2020)</h1>
+        
+            <div class="flip-card" style='float: left; width:50%; height:250px; margin-right: 20px;'>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Total Number of COVID-19 Infection Cases:</h2>
+                    <br>
+                    <b>
+                    <p>Huge Number</p>
+                    </b>
+                </div>
+                <div class="flip-card-back">
+                  <b>
+                  <h3>Mild and Moderate</h3>
+                  <p style="color: #f5d142">Big Number</p>
+                  <br>
+                  <h3>Severe</h3>
+                  <p style="color: #b30505">Smaller Number</p>
+                  </b>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card1" style='float: right;width:45%; height:250px; margin-right: 20px;'>
+              <div class="flip-card-inner1">
+                <div class="flip-card-front1">
+                    <h2>Total Number of COVID-19 Resolved Cases:</h2>
+                    <br>
+                    <b>
+                    <p>Number</p>
+                    </b>
+                </div>
+                <div class="flip-card-back1">
+                  <b>
+                  <h3>Recovered</h3>
+                  <p style="color: #6eeef0">Number</p>
+                  <br>
+                  <h3>Dead</h3>
+                  <p style="color: #444a4a">Number</p>
+                  </b>
+                </div>
+              </div>
+            </div>
+        
+        
+        <h3 style="margin-top: 350px;">Graphs of COVID-19 Cases Worldwide(March 23, 2020)</h3>
+        <div id='map' style='float: left; width:50%; height:500px; margin-right: 10px;'></div>
+     
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0w0Iv6CejhiCwgwOrTkBYThY8Wl7Kkr2DhMwIjAmeWCI1l9Mv1dyH34v5AJmA8ZK3O1gTylJI3eLn/pubhtml?gid=1206950813&amp;single=true&amp;widget=true&amp;headers=false"style="float: left;width: 45%; height: 500px;"></iframe>
+        
+   
+            
+
+       
+        
+
+    </body>
+    
+    <script>
+        var mapnums = 0
+        
+    
+        function drawRecoveries1() {
+            // Set up the world map
+            map1 = new L.Map('map');
+            var cartocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+            cartoAttrib = 'Carto geodatabase is good for this application';
+            carto = new L.TileLayer(cartocdn);
+            map1.setView([51.5, 0.12],2); // centered on London lat, long
+            map1.addLayer(carto);
+           
+                    
+L.circle([30.9756,112.2707
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2971650}).addTo(map1).bindPopup('Hubei,China : 59433')
+L.circle([41.8719,12.5674
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:351200}).addTo(map1).bindPopup('Italy : 7024')
+L.circle([40.4637,-3.7492
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:128750}).addTo(map1).bindPopup('Spain : 2575')
+L.circle([51.1657,10.4515
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:13300}).addTo(map1).bindPopup('Germany : 266')
+L.circle([32.4279,53.6880
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:396550}).addTo(map1).bindPopup('Iran : 7931')
+L.circle([46.2276,2.2137
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:110000}).addTo(map1).bindPopup('France,France : 2200')
+L.circle([35.9078,127.7669
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:145450}).addTo(map1).bindPopup('"South Korea" : 2909')
+L.circle([46.8182,8.2275
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6550}).addTo(map1).bindPopup('Switzerland : 131')
+L.circle([55.3781,-3.4360
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3250}).addTo(map1).bindPopup('United Kingdom,United Kingdom : 65')
+L.circle([52.1326,5.2913
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Netherlands,Netherlands : 2')
+L.circle([50.5039,4.4699
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:13150}).addTo(map1).bindPopup('Belgium : 263')
+L.circle([47.5162,14.5501
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Austria : 9')
+L.circle([60.4720,8.4689
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Norway : 1')
+L.circle([60.1282,18.6435
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Sweden : 16')
+L.circle([39.3999,-8.2245
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Portugal : 5')
+L.circle([-14.2350,-51.9253
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Brazil : 2')
+L.circle([23.3417,113.4244
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:66450}).addTo(map1).bindPopup('Guangdong,China : 1329')
+L.circle([56.2639,9.5018
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Denmark,Denmark : 1')
+L.circle([4.2105,101.9758
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6950}).addTo(map1).bindPopup('Malaysia : 139')
+L.circle([33.8820,113.6140
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:62500}).addTo(map1).bindPopup('Henan,China : 1250')
+L.circle([29.1832,120.0934
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60950}).addTo(map1).bindPopup('Zhejiang,China : 1219')
+L.circle([49.8175,15.4730
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Czechia : 6')
+L.circle([36.2048,138.2529
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:11750}).addTo(map1).bindPopup('Japan : 235')
+L.circle([31.0461,34.8516
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1850}).addTo(map1).bindPopup('Israel : 37')
+L.circle([27.6104,111.7088
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50700}).addTo(map1).bindPopup('Hunan,China : 1014')
+L.circle([31.8257,117.2264
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:49200}).addTo(map1).bindPopup('Anhui,China : 984')
+L.circle([27.6140,115.7221
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:46700}).addTo(map1).bindPopup('Jiangxi,China : 934')
+L.circle([53.1424,-7.6921
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Ireland : 5')
+L.circle([49.8153,6.1296
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Luxembourg : 6')
+L.circle([-1.8312,-78.1834
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Ecuador : 3')
+L.circle([30.3753,69.3451
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Pakistan : 5')
+L.circle([36.3427,118.1498
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:37500}).addTo(map1).bindPopup('Shandong,China : 750')
+L.circle([35.4498,139.6649
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:16250}).addTo(map1).bindPopup('Diamond Princess,Cruise Ship : 325')
+L.circle([51.9194,19.1451
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Poland : 1')
+L.circle([32.9711,119.4550
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:31550}).addTo(map1).bindPopup('Jiangsu,China : 631')
+L.circle([-35.6751,-71.5430
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Chile : 8')
+L.circle([61.9241,25.7482
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Finland : 10')
+L.circle([39.0742,21.8243
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:950}).addTo(map1).bindPopup('Greece : 19')
+L.circle([15.8700,100.9925
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2200}).addTo(map1).bindPopup('Thailand : 44')
+L.circle([30.0572,107.8740
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:28500}).addTo(map1).bindPopup('Chongqing,China : 570')
+L.circle([64.9631,-19.0208
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1800}).addTo(map1).bindPopup('Iceland : 36')
+L.circle([30.6171,102.7103
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:26800}).addTo(map1).bindPopup('Sichuan,China : 536')
+L.circle([-33.8688,151.2093
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('New South Wales,Australia : 4')
+L.circle([40.1824,116.4142
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:20000}).addTo(map1).bindPopup('Beijing,China : 400')
+L.circle([-0.7893,113.9213
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1450}).addTo(map1).bindPopup('Indonesia : 29')
+L.circle([23.8859,45.0792
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Saudi Arabia : 16')
+L.circle([25.3548,51.1839
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1650}).addTo(map1).bindPopup('Qatar : 33')
+L.circle([47.8620,127.7615
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:23300}).addTo(map1).bindPopup('Heilongjiang,China : 466')
+L.circle([1.3521,103.8198
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7200}).addTo(map1).bindPopup('Singapore : 144')
+L.circle([45.9432,24.9668
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3200}).addTo(map1).bindPopup('Romania : 64')
+L.circle([51.2538,-85.3232
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Ontario,Canada : 6')
+L.circle([53.7267,-127.6476
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('British Columbia,Canada : 4')
+L.circle([20.5937,78.9629
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1350}).addTo(map1).bindPopup('India : 27')
+L.circle([31.2020,121.4491
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:16400}).addTo(map1).bindPopup('Shanghai,China : 328')
+L.circle([12.8797,121.7740
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:850}).addTo(map1).bindPopup('Philippines : 17')
+L.circle([61.5240,105.3188
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Russia : 16')
+L.circle([-9.1900,-75.0152
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Peru : 1')
+L.circle([26.0667,50.5577
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7450}).addTo(map1).bindPopup('Bahrain : 149')
+L.circle([26.8206,30.8025
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2800}).addTo(map1).bindPopup('Egypt : 56')
+L.circle([58.5953,25.0136
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Estonia : 2')
+L.circle([38.0428,114.5149
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:15500}).addTo(map1).bindPopup('Hebei,China : 310')
+L.circle([22.3000,114.2000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5000}).addTo(map1).bindPopup('Hong Kong,China : 100')
+L.circle([26.0789,117.9874
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:14750}).addTo(map1).bindPopup('Fujian,China : 295')
+L.circle([-37.8136,144.9631
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3500}).addTo(map1).bindPopup('Victoria,Australia : 70')
+L.circle([23.8298,108.7881
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:12500}).addTo(map1).bindPopup('Guangxi,China : 250')
+L.circle([45.1000,15.2000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Croatia : 5')
+L.circle([23.6345,-102.5528
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Mexico : 4')
+L.circle([35.1917,108.8701
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:11950}).addTo(map1).bindPopup('Shaanxi,China : 239')
+L.circle([33.8547,35.8623
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Lebanon : 8')
+L.circle([33.2232,43.6793
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2850}).addTo(map1).bindPopup('Iraq : 57')
+L.circle([4.5709,-74.2973
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Colombia : 3')
+L.circle([-38.4161,-63.6167
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Argentina : 3')
+L.circle([44.0165,21.0059
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Serbia : 1')
+L.circle([-28.0167,153.4000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Queensland,Australia : 8')
+L.circle([28.0339,1.6596
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3250}).addTo(map1).bindPopup('Algeria : 65')
+L.circle([40.0691,45.0382
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Armenia : 2')
+L.circle([29.3117,47.4818
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1350}).addTo(map1).bindPopup('Kuwait : 27')
+L.circle([42.7339,25.4858
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Bulgaria : 3')
+L.circle([48.6690,19.6990
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Slovakia : 7')
+L.circle([24.9740,101.4870
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:8600}).addTo(map1).bindPopup('Yunnan,China : 172')
+L.circle([23.7000,121.0000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1400}).addTo(map1).bindPopup('Taiwan* : 28')
+L.circle([19.1959,109.7453
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:8050}).addTo(map1).bindPopup('Hainan,China : 161')
+L.circle([43.9424,12.4578
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('San Marino : 4')
+L.circle([23.4241,53.8478
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1900}).addTo(map1).bindPopup('United Arab Emirates : 38')
+L.circle([26.8154,106.8748
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7200}).addTo(map1).bindPopup('Guizhou,China : 144')
+L.circle([56.8796,24.6032
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Latvia : 1')
+L.circle([39.3054,117.3230
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6650}).addTo(map1).bindPopup('Tianjin,China : 133')
+L.circle([36.0611,103.8343
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5700}).addTo(map1).bindPopup('Gansu,China : 114')
+L.circle([9.7489,-83.7534
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Costa Rica : 2')
+L.circle([37.5777,112.2922
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6650}).addTo(map1).bindPopup('Shanxi,China : 133')
+L.circle([47.1625,19.5033
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Hungary : 16')
+L.circle([55.1694,23.8813
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Lithuania : 1')
+L.circle([43.9159,17.6791
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Bosnia and Herzegovina : 2')
+L.circle([41.2956,122.6085
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6200}).addTo(map1).bindPopup('Liaoning,China : 124')
+L.circle([31.7917,-7.0926
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Morocco : 3')
+L.circle([41.6086,21.7453
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('North Macedonia : 1')
+L.circle([42.5063,1.5218
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Andorra : 1')
+L.circle([14.0583,108.2772
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:850}).addTo(map1).bindPopup('Vietnam : 17')
+L.circle([30.5852,36.2384
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Jordan : 1')
+L.circle([-34.9285,138.6007
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('South Australia,Australia : 3')
+L.circle([35.1264,33.4299
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Cyprus : 3')
+L.circle([47.4116,28.3699
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Moldova : 1')
+L.circle([43.6661,126.1923
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4600}).addTo(map1).bindPopup('Jilin,China : 92')
+L.circle([35.9375,14.3754
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Malta : 2')
+L.circle([41.1533,20.1683
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Albania : 2')
+L.circle([4.5353,114.7277
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Brunei : 2')
+L.circle([12.5657,104.9910
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Cambodia : 1')
+L.circle([7.8731,80.7718
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Sri Lanka : 3')
+L.circle([53.7098,27.9534
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:750}).addTo(map1).bindPopup('Belarus : 15')
+L.circle([41.1129,85.2401
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3650}).addTo(map1).bindPopup('Xinjiang,China : 73')
+L.circle([12.2383,-1.5616
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Burkina Faso : 5')
+L.circle([44.0935,113.9448
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3700}).addTo(map1).bindPopup('Inner Mongolia,China : 74')
+L.circle([37.2692,106.1655
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3750}).addTo(map1).bindPopup('Ningxia,China : 75')
+L.circle([33.8869,9.5375
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Tunisia : 1')
+L.circle([48.3794,31.1656
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ukraine : 1')
+L.circle([6.4238,-66.5897
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:750}).addTo(map1).bindPopup('Venezuela : 15')
+L.circle([14.4974,-14.4524
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Senegal : 5')
+L.circle([40.1431,47.5769
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Azerbaijan : 10')
+L.circle([21.4735,55.9754
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:850}).addTo(map1).bindPopup('Oman : 17')
+L.circle([42.3154,43.3569
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Georgia : 3')
+L.circle([10.6918,-61.2225
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Trinidad and Tobago : 1')
+L.circle([33.9391,67.7100
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Afghanistan : 1')
+L.circle([9.0820,8.6753
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Nigeria : 2')
+L.circle([23.6850,90.3563
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Bangladesh : 3')
+L.circle([43.7384,7.4246
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Monaco : 1')
+L.circle([-41.4545,145.9707
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Tasmania,Australia : 3')
+L.circle([22.1667,113.5500
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Macau,China : 10')
+L.circle([35.7452,95.9956
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:900}).addTo(map1).bindPopup('Qinghai,China : 18')
+L.circle([3.9339,-53.1258
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('French Guiana : 6')
+L.circle([18.1096,-77.2975
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Jamaica : 2')
+L.circle([8.6195,0.8248
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Togo : 1')
+L.circle([36.1408,-5.3536
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Gibraltar,United Kingdom : 2')
+L.circle([7.5400,-5.5471
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Cote dIvoire : 1')
+L.circle([9.1450,40.4897
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Ethiopia : 4')
+L.circle([28.3949,84.1240
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Nepal : 1')
+L.circle([31.6927,88.0924
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Tibet,China : 1')
+L.circle([37.0902,-95.7129
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:8900}).addTo(map1).bindPopup('US,US : 178')
+
+        }
+        
+        function drawRecoveries() {
+            // Set up the world map
+            map1.remove();
+            map1 = new L.Map('map');
+            var cartocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+            cartoAttrib = 'Carto geodatabase is good for this application';
+            carto = new L.TileLayer(cartocdn);
+            map1.setView([51.5, 0.12],2); // centered on London lat, long
+            map1.addLayer(carto);
+           
+                    
+L.circle([30.9756,112.2707
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2971650}).addTo(map1).bindPopup('Hubei,China : 59433')
+L.circle([41.8719,12.5674
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:351200}).addTo(map1).bindPopup('Italy : 7024')
+L.circle([40.4637,-3.7492
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:128750}).addTo(map1).bindPopup('Spain : 2575')
+L.circle([51.1657,10.4515
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:13300}).addTo(map1).bindPopup('Germany : 266')
+L.circle([32.4279,53.6880
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:396550}).addTo(map1).bindPopup('Iran : 7931')
+L.circle([46.2276,2.2137
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:110000}).addTo(map1).bindPopup('France,France : 2200')
+L.circle([35.9078,127.7669
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:145450}).addTo(map1).bindPopup('"South Korea" : 2909')
+L.circle([46.8182,8.2275
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6550}).addTo(map1).bindPopup('Switzerland : 131')
+L.circle([55.3781,-3.4360
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3250}).addTo(map1).bindPopup('United Kingdom,United Kingdom : 65')
+L.circle([52.1326,5.2913
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Netherlands,Netherlands : 2')
+L.circle([50.5039,4.4699
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:13150}).addTo(map1).bindPopup('Belgium : 263')
+L.circle([47.5162,14.5501
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Austria : 9')
+L.circle([60.4720,8.4689
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Norway : 1')
+L.circle([60.1282,18.6435
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Sweden : 16')
+L.circle([39.3999,-8.2245
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Portugal : 5')
+L.circle([-14.2350,-51.9253
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Brazil : 2')
+L.circle([23.3417,113.4244
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:66450}).addTo(map1).bindPopup('Guangdong,China : 1329')
+L.circle([56.2639,9.5018
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Denmark,Denmark : 1')
+L.circle([4.2105,101.9758
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6950}).addTo(map1).bindPopup('Malaysia : 139')
+L.circle([33.8820,113.6140
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:62500}).addTo(map1).bindPopup('Henan,China : 1250')
+L.circle([29.1832,120.0934
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60950}).addTo(map1).bindPopup('Zhejiang,China : 1219')
+L.circle([49.8175,15.4730
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Czechia : 6')
+L.circle([36.2048,138.2529
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:11750}).addTo(map1).bindPopup('Japan : 235')
+L.circle([31.0461,34.8516
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1850}).addTo(map1).bindPopup('Israel : 37')
+L.circle([27.6104,111.7088
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50700}).addTo(map1).bindPopup('Hunan,China : 1014')
+L.circle([31.8257,117.2264
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:49200}).addTo(map1).bindPopup('Anhui,China : 984')
+L.circle([27.6140,115.7221
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:46700}).addTo(map1).bindPopup('Jiangxi,China : 934')
+L.circle([53.1424,-7.6921
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Ireland : 5')
+L.circle([49.8153,6.1296
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Luxembourg : 6')
+L.circle([-1.8312,-78.1834
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Ecuador : 3')
+L.circle([30.3753,69.3451
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Pakistan : 5')
+L.circle([36.3427,118.1498
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:37500}).addTo(map1).bindPopup('Shandong,China : 750')
+L.circle([35.4498,139.6649
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:16250}).addTo(map1).bindPopup('Diamond Princess,Cruise Ship : 325')
+L.circle([51.9194,19.1451
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Poland : 1')
+L.circle([32.9711,119.4550
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:31550}).addTo(map1).bindPopup('Jiangsu,China : 631')
+L.circle([-35.6751,-71.5430
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Chile : 8')
+L.circle([61.9241,25.7482
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Finland : 10')
+L.circle([39.0742,21.8243
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:950}).addTo(map1).bindPopup('Greece : 19')
+L.circle([15.8700,100.9925
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2200}).addTo(map1).bindPopup('Thailand : 44')
+L.circle([30.0572,107.8740
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:28500}).addTo(map1).bindPopup('Chongqing,China : 570')
+L.circle([64.9631,-19.0208
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1800}).addTo(map1).bindPopup('Iceland : 36')
+L.circle([30.6171,102.7103
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:26800}).addTo(map1).bindPopup('Sichuan,China : 536')
+L.circle([-33.8688,151.2093
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('New South Wales,Australia : 4')
+L.circle([40.1824,116.4142
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:20000}).addTo(map1).bindPopup('Beijing,China : 400')
+L.circle([-0.7893,113.9213
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1450}).addTo(map1).bindPopup('Indonesia : 29')
+L.circle([23.8859,45.0792
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Saudi Arabia : 16')
+L.circle([25.3548,51.1839
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1650}).addTo(map1).bindPopup('Qatar : 33')
+L.circle([47.8620,127.7615
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:23300}).addTo(map1).bindPopup('Heilongjiang,China : 466')
+L.circle([1.3521,103.8198
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7200}).addTo(map1).bindPopup('Singapore : 144')
+L.circle([45.9432,24.9668
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3200}).addTo(map1).bindPopup('Romania : 64')
+L.circle([51.2538,-85.3232
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Ontario,Canada : 6')
+L.circle([53.7267,-127.6476
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('British Columbia,Canada : 4')
+L.circle([20.5937,78.9629
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1350}).addTo(map1).bindPopup('India : 27')
+L.circle([31.2020,121.4491
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:16400}).addTo(map1).bindPopup('Shanghai,China : 328')
+L.circle([12.8797,121.7740
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:850}).addTo(map1).bindPopup('Philippines : 17')
+L.circle([61.5240,105.3188
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Russia : 16')
+L.circle([-9.1900,-75.0152
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Peru : 1')
+L.circle([26.0667,50.5577
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7450}).addTo(map1).bindPopup('Bahrain : 149')
+L.circle([26.8206,30.8025
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2800}).addTo(map1).bindPopup('Egypt : 56')
+L.circle([58.5953,25.0136
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Estonia : 2')
+L.circle([38.0428,114.5149
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:15500}).addTo(map1).bindPopup('Hebei,China : 310')
+L.circle([22.3000,114.2000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5000}).addTo(map1).bindPopup('Hong Kong,China : 100')
+L.circle([26.0789,117.9874
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:14750}).addTo(map1).bindPopup('Fujian,China : 295')
+L.circle([-37.8136,144.9631
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3500}).addTo(map1).bindPopup('Victoria,Australia : 70')
+L.circle([23.8298,108.7881
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:12500}).addTo(map1).bindPopup('Guangxi,China : 250')
+L.circle([45.1000,15.2000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Croatia : 5')
+L.circle([23.6345,-102.5528
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Mexico : 4')
+L.circle([35.1917,108.8701
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:11950}).addTo(map1).bindPopup('Shaanxi,China : 239')
+L.circle([33.8547,35.8623
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Lebanon : 8')
+L.circle([33.2232,43.6793
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2850}).addTo(map1).bindPopup('Iraq : 57')
+L.circle([4.5709,-74.2973
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Colombia : 3')
+L.circle([-38.4161,-63.6167
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Argentina : 3')
+L.circle([44.0165,21.0059
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Serbia : 1')
+L.circle([-28.0167,153.4000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Queensland,Australia : 8')
+L.circle([28.0339,1.6596
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3250}).addTo(map1).bindPopup('Algeria : 65')
+L.circle([40.0691,45.0382
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Armenia : 2')
+L.circle([29.3117,47.4818
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1350}).addTo(map1).bindPopup('Kuwait : 27')
+L.circle([42.7339,25.4858
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Bulgaria : 3')
+L.circle([48.6690,19.6990
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Slovakia : 7')
+L.circle([24.9740,101.4870
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:8600}).addTo(map1).bindPopup('Yunnan,China : 172')
+L.circle([23.7000,121.0000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1400}).addTo(map1).bindPopup('Taiwan* : 28')
+L.circle([19.1959,109.7453
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:8050}).addTo(map1).bindPopup('Hainan,China : 161')
+L.circle([43.9424,12.4578
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('San Marino : 4')
+L.circle([23.4241,53.8478
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1900}).addTo(map1).bindPopup('United Arab Emirates : 38')
+L.circle([26.8154,106.8748
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7200}).addTo(map1).bindPopup('Guizhou,China : 144')
+L.circle([56.8796,24.6032
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Latvia : 1')
+L.circle([39.3054,117.3230
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6650}).addTo(map1).bindPopup('Tianjin,China : 133')
+L.circle([36.0611,103.8343
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5700}).addTo(map1).bindPopup('Gansu,China : 114')
+L.circle([9.7489,-83.7534
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Costa Rica : 2')
+L.circle([37.5777,112.2922
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6650}).addTo(map1).bindPopup('Shanxi,China : 133')
+L.circle([47.1625,19.5033
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Hungary : 16')
+L.circle([55.1694,23.8813
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Lithuania : 1')
+L.circle([43.9159,17.6791
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Bosnia and Herzegovina : 2')
+L.circle([41.2956,122.6085
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6200}).addTo(map1).bindPopup('Liaoning,China : 124')
+L.circle([31.7917,-7.0926
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Morocco : 3')
+L.circle([41.6086,21.7453
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('North Macedonia : 1')
+L.circle([42.5063,1.5218
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Andorra : 1')
+L.circle([14.0583,108.2772
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:850}).addTo(map1).bindPopup('Vietnam : 17')
+L.circle([30.5852,36.2384
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Jordan : 1')
+L.circle([-34.9285,138.6007
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('South Australia,Australia : 3')
+L.circle([35.1264,33.4299
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Cyprus : 3')
+L.circle([47.4116,28.3699
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Moldova : 1')
+L.circle([43.6661,126.1923
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4600}).addTo(map1).bindPopup('Jilin,China : 92')
+L.circle([35.9375,14.3754
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Malta : 2')
+L.circle([41.1533,20.1683
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Albania : 2')
+L.circle([4.5353,114.7277
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Brunei : 2')
+L.circle([12.5657,104.9910
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Cambodia : 1')
+L.circle([7.8731,80.7718
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Sri Lanka : 3')
+L.circle([53.7098,27.9534
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:750}).addTo(map1).bindPopup('Belarus : 15')
+L.circle([41.1129,85.2401
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3650}).addTo(map1).bindPopup('Xinjiang,China : 73')
+L.circle([12.2383,-1.5616
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Burkina Faso : 5')
+L.circle([44.0935,113.9448
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3700}).addTo(map1).bindPopup('Inner Mongolia,China : 74')
+L.circle([37.2692,106.1655
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3750}).addTo(map1).bindPopup('Ningxia,China : 75')
+L.circle([33.8869,9.5375
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Tunisia : 1')
+L.circle([48.3794,31.1656
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ukraine : 1')
+L.circle([6.4238,-66.5897
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:750}).addTo(map1).bindPopup('Venezuela : 15')
+L.circle([14.4974,-14.4524
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Senegal : 5')
+L.circle([40.1431,47.5769
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Azerbaijan : 10')
+L.circle([21.4735,55.9754
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:850}).addTo(map1).bindPopup('Oman : 17')
+L.circle([42.3154,43.3569
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Georgia : 3')
+L.circle([10.6918,-61.2225
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Trinidad and Tobago : 1')
+L.circle([33.9391,67.7100
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Afghanistan : 1')
+L.circle([9.0820,8.6753
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Nigeria : 2')
+L.circle([23.6850,90.3563
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Bangladesh : 3')
+L.circle([43.7384,7.4246
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Monaco : 1')
+L.circle([-41.4545,145.9707
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Tasmania,Australia : 3')
+L.circle([22.1667,113.5500
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Macau,China : 10')
+L.circle([35.7452,95.9956
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:900}).addTo(map1).bindPopup('Qinghai,China : 18')
+L.circle([3.9339,-53.1258
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('French Guiana : 6')
+L.circle([18.1096,-77.2975
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Jamaica : 2')
+L.circle([8.6195,0.8248
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Togo : 1')
+L.circle([36.1408,-5.3536
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Gibraltar,United Kingdom : 2')
+L.circle([7.5400,-5.5471
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Cote dIvoire : 1')
+L.circle([9.1450,40.4897
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Ethiopia : 4')
+L.circle([28.3949,84.1240
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Nepal : 1')
+L.circle([31.6927,88.0924
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Tibet,China : 1')
+L.circle([37.0902,-95.7129
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:8900}).addTo(map1).bindPopup('US,US : 178')
+
+        }
+        function drawInfections() {
+            map1.remove();
+            map1 = new L.Map('map');
+            var cartocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+            cartoAttrib = 'Carto geodatabase is good for this application';
+            carto = new L.TileLayer(cartocdn);
+            map1.setView([51.5, 0.12],2); // centered on London lat, long
+            map1.addLayer(carto);
+            
+            
+            
+            
+            
+            
+            
+L.circle([30.9756,112.2707
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2034000}).addTo(map1).bindPopup('Hubei,China : 67800')
+L.circle([41.8719,12.5674
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1774140}).addTo(map1).bindPopup('Italy : 59138')
+L.circle([40.4637,-3.7492
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:863040}).addTo(map1).bindPopup('Spain : 28768')
+L.circle([51.1657,10.4515
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:746190}).addTo(map1).bindPopup('Germany : 24873')
+L.circle([32.4279,53.6880
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:649140}).addTo(map1).bindPopup('Iran : 21638')
+L.circle([46.2276,2.2137
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:480540}).addTo(map1).bindPopup('France,France : 16018')
+L.circle([42.1657,-74.9481
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:473790}).addTo(map1).bindPopup('New York,US : 15793')
+L.circle([35.9078,127.7669
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:266910}).addTo(map1).bindPopup('"South Korea" : 8897')
+L.circle([46.8182,8.2275
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:217350}).addTo(map1).bindPopup('Switzerland : 7245')
+L.circle([55.3781,-3.4360
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:170490}).addTo(map1).bindPopup('United Kingdom,United Kingdom : 5683')
+L.circle([52.1326,5.2913
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:126120}).addTo(map1).bindPopup('Netherlands,Netherlands : 4204')
+L.circle([50.5039,4.4699
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:102030}).addTo(map1).bindPopup('Belgium : 3401')
+L.circle([47.5162,14.5501
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:97320}).addTo(map1).bindPopup('Austria : 3244')
+L.circle([60.4720,8.4689
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:71490}).addTo(map1).bindPopup('Norway : 2383')
+L.circle([47.4009,-121.4905
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:59880}).addTo(map1).bindPopup('Washington,US : 1996')
+L.circle([60.1282,18.6435
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:58020}).addTo(map1).bindPopup('Sweden : 1934')
+L.circle([40.2989,-74.5210
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:57420}).addTo(map1).bindPopup('New Jersey,US : 1914')
+L.circle([36.1162,-119.6816
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:49260}).addTo(map1).bindPopup('California,US : 1642')
+L.circle([39.3999,-8.2245
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:48000}).addTo(map1).bindPopup('Portugal : 1600')
+L.circle([-14.2350,-51.9253
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:47790}).addTo(map1).bindPopup('Brazil : 1593')
+L.circle([23.3417,113.4244
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:42210}).addTo(map1).bindPopup('Guangdong,China : 1407')
+L.circle([56.2639,9.5018
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:41850}).addTo(map1).bindPopup('Denmark,Denmark : 1395')
+L.circle([4.2105,101.9758
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:39180}).addTo(map1).bindPopup('Malaysia : 1306')
+L.circle([33.8820,113.6140
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:38190}).addTo(map1).bindPopup('Henan,China : 1273')
+L.circle([29.1832,120.0934
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:37110}).addTo(map1).bindPopup('Zhejiang,China : 1237')
+L.circle([38.9637,35.2433
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:37080}).addTo(map1).bindPopup('Turkey : 1236')
+L.circle([49.8175,15.4730
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:33600}).addTo(map1).bindPopup('Czechia : 1120')
+L.circle([36.2048,138.2529
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:32580}).addTo(map1).bindPopup('Japan : 1086')
+L.circle([31.0461,34.8516
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:32130}).addTo(map1).bindPopup('Israel : 1071')
+L.circle([40.3495,-88.9861
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:31470}).addTo(map1).bindPopup('Illinois,US : 1049')
+L.circle([43.3266,-84.5361
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:31110}).addTo(map1).bindPopup('Michigan,US : 1037')
+L.circle([27.6104,111.7088
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30540}).addTo(map1).bindPopup('Hunan,China : 1018')
+L.circle([31.8257,117.2264
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:29700}).addTo(map1).bindPopup('Anhui,China : 990')
+L.circle([27.6140,115.7221
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:28080}).addTo(map1).bindPopup('Jiangxi,China : 936')
+L.circle([53.1424,-7.6921
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:27180}).addTo(map1).bindPopup('Ireland : 906')
+L.circle([31.1695,-91.8678
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:25110}).addTo(map1).bindPopup('Louisiana,US : 837')
+L.circle([27.7663,-81.6868
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:24900}).addTo(map1).bindPopup('Florida,US : 830')
+L.circle([49.8153,6.1296
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:23940}).addTo(map1).bindPopup('Luxembourg : 798')
+L.circle([-1.8312,-78.1834
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:23670}).addTo(map1).bindPopup('Ecuador : 789')
+L.circle([30.3753,69.3451
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:23280}).addTo(map1).bindPopup('Pakistan : 776')
+L.circle([36.3427,118.1498
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:22980}).addTo(map1).bindPopup('Shandong,China : 766')
+L.circle([35.4498,139.6649
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:21360}).addTo(map1).bindPopup('Diamond Princess,Cruise Ship : 712')
+L.circle([42.2302,-71.5301
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:19380}).addTo(map1).bindPopup('Massachusetts,US : 646')
+L.circle([51.9194,19.1451
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:19020}).addTo(map1).bindPopup('Poland : 634')
+L.circle([32.9711,119.4550
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:18990}).addTo(map1).bindPopup('Jiangsu,China : 633')
+L.circle([-35.6751,-71.5430
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:18960}).addTo(map1).bindPopup('Chile : 632')
+L.circle([31.0545,-97.5635
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:18810}).addTo(map1).bindPopup('Texas,US : 627')
+L.circle([61.9241,25.7482
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:18780}).addTo(map1).bindPopup('Finland : 626')
+L.circle([39.0742,21.8243
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:18720}).addTo(map1).bindPopup('Greece : 624')
+L.circle([33.0406,-83.6431
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:18000}).addTo(map1).bindPopup('Georgia,US : 600')
+L.circle([15.8700,100.9925
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:17970}).addTo(map1).bindPopup('Thailand : 599')
+L.circle([30.0572,107.8740
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:17310}).addTo(map1).bindPopup('Chongqing,China : 577')
+L.circle([64.9631,-19.0208
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:17040}).addTo(map1).bindPopup('Iceland : 568')
+L.circle([30.6171,102.7103
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:16290}).addTo(map1).bindPopup('Sichuan,China : 543')
+L.circle([-33.8688,151.2093
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:15990}).addTo(map1).bindPopup('New South Wales,Australia : 533')
+L.circle([40.1824,116.4142
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:15420}).addTo(map1).bindPopup('Beijing,China : 514')
+L.circle([-0.7893,113.9213
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:15420}).addTo(map1).bindPopup('Indonesia : 514')
+L.circle([23.8859,45.0792
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:15330}).addTo(map1).bindPopup('Saudi Arabia : 511')
+L.circle([40.5908,-77.2098
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:15270}).addTo(map1).bindPopup('Pennsylvania,US : 509')
+L.circle([35.7478,-86.6923
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:15150}).addTo(map1).bindPopup('Tennessee,US : 505')
+L.circle([25.3548,51.1839
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:14820}).addTo(map1).bindPopup('Qatar : 494')
+L.circle([47.8620,127.7615
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:14520}).addTo(map1).bindPopup('Heilongjiang,China : 484')
+L.circle([39.0598,-105.3111
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:14280}).addTo(map1).bindPopup('Colorado,US : 476')
+L.circle([1.3521,103.8198
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:13650}).addTo(map1).bindPopup('Singapore : 455')
+L.circle([45.9432,24.9668
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:12990}).addTo(map1).bindPopup('Romania : 433')
+L.circle([51.2538,-85.3232
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:12750}).addTo(map1).bindPopup('Ontario,Canada : 425')
+L.circle([53.7267,-127.6476
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:12720}).addTo(map1).bindPopup('British Columbia,Canada : 424')
+L.circle([46.1512,14.9955
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:12420}).addTo(map1).bindPopup('Slovenia : 414')
+L.circle([20.5937,78.9629
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:11880}).addTo(map1).bindPopup('India : 396')
+L.circle([31.2020,121.4491
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:11820}).addTo(map1).bindPopup('Shanghai,China : 394')
+L.circle([44.2685,-89.6165
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:11430}).addTo(map1).bindPopup('Wisconsin,US : 381')
+L.circle([12.8797,121.7740
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:11400}).addTo(map1).bindPopup('Philippines : 380')
+L.circle([61.5240,105.3188
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:11010}).addTo(map1).bindPopup('Russia : 367')
+L.circle([-9.1900,-75.0152
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:10890}).addTo(map1).bindPopup('Peru : 363')
+L.circle([40.3888,-82.7649
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:10650}).addTo(map1).bindPopup('Ohio,US : 355')
+L.circle([26.0667,50.5577
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:9960}).addTo(map1).bindPopup('Bahrain : 332')
+L.circle([26.8206,30.8025
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:9810}).addTo(map1).bindPopup('Egypt : 327')
+L.circle([58.5953,25.0136
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:9780}).addTo(map1).bindPopup('Estonia : 326')
+L.circle([38.0428,114.5149
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:9570}).addTo(map1).bindPopup('Hebei,China : 319')
+L.circle([22.3000,114.2000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:9510}).addTo(map1).bindPopup('Hong Kong,China : 317')
+L.circle([26.0789,117.9874
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:9210}).addTo(map1).bindPopup('Fujian,China : 307')
+L.circle([35.6301,-79.8064
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:9060}).addTo(map1).bindPopup('North Carolina,US : 302')
+L.circle([-37.8136,144.9631
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:8880}).addTo(map1).bindPopup('Victoria,Australia : 296')
+L.circle([-30.5595,22.9375
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:8220}).addTo(map1).bindPopup('South Africa : 274')
+L.circle([53.9333,-116.5765
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7770}).addTo(map1).bindPopup('Alberta,Canada : 259')
+L.circle([23.8298,108.7881
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7620}).addTo(map1).bindPopup('Guangxi,China : 254')
+L.circle([45.1000,15.2000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7620}).addTo(map1).bindPopup('Croatia : 254')
+L.circle([23.6345,-102.5528
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7530}).addTo(map1).bindPopup('Mexico : 251')
+L.circle([35.1917,108.8701
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7440}).addTo(map1).bindPopup('Shaanxi,China : 248')
+L.circle([33.8547,35.8623
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7440}).addTo(map1).bindPopup('Lebanon : 248')
+L.circle([8.5380,-80.7821
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7350}).addTo(map1).bindPopup('Panama : 245')
+L.circle([39.0639,-76.8021
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7320}).addTo(map1).bindPopup('Maryland,US : 244')
+L.circle([33.2232,43.6793
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6990}).addTo(map1).bindPopup('Iraq : 233')
+L.circle([4.5709,-74.2973
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6930}).addTo(map1).bindPopup('Colombia : 231')
+L.circle([-38.4161,-63.6167
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6750}).addTo(map1).bindPopup('Argentina : 225')
+L.circle([41.5978,-72.7554
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6690}).addTo(map1).bindPopup('Connecticut,US : 223')
+L.circle([44.0165,21.0059
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6660}).addTo(map1).bindPopup('Serbia : 222')
+L.circle([-28.0167,153.4000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6630}).addTo(map1).bindPopup('Queensland,Australia : 221')
+L.circle([37.7693,-78.1700
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6630}).addTo(map1).bindPopup('Virginia,US : 221')
+L.circle([52.9399,-73.5491
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6570}).addTo(map1).bindPopup('Quebec,Canada : 219')
+L.circle([32.7416,-89.6787
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6210}).addTo(map1).bindPopup('Mississippi,US : 207')
+L.circle([18.7357,-70.1627
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6060}).addTo(map1).bindPopup('Dominican Republic : 202')
+L.circle([28.0339,1.6596
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6030}).addTo(map1).bindPopup('Algeria : 201')
+L.circle([39.8494,-86.2583
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6030}).addTo(map1).bindPopup('Indiana,US : 201')
+L.circle([33.8569,-80.9450
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5880}).addTo(map1).bindPopup('South Carolina,US : 196')
+L.circle([40.0691,45.0382
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5820}).addTo(map1).bindPopup('Armenia : 194')
+L.circle([38.3135,-117.0554
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5700}).addTo(map1).bindPopup('Nevada,US : 190')
+L.circle([29.3117,47.4818
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5640}).addTo(map1).bindPopup('Kuwait : 188')
+L.circle([42.7339,25.4858
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5610}).addTo(map1).bindPopup('Bulgaria : 187')
+L.circle([48.6690,19.6990
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5550}).addTo(map1).bindPopup('Slovakia : 185')
+L.circle([40.1500,-111.8624
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5430}).addTo(map1).bindPopup('Utah,US : 181')
+L.circle([24.9740,101.4870
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5280}).addTo(map1).bindPopup('Yunnan,China : 176')
+L.circle([23.7000,121.0000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5070}).addTo(map1).bindPopup('Taiwan* : 169')
+L.circle([45.6945,-93.9002
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5070}).addTo(map1).bindPopup('Minnesota,US : 169')
+L.circle([19.1959,109.7453
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5040}).addTo(map1).bindPopup('Hainan,China : 168')
+L.circle([34.9697,-92.3731
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4950}).addTo(map1).bindPopup('Arkansas,US : 165')
+L.circle([44.5720,-122.0709
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4830}).addTo(map1).bindPopup('Oregon,US : 161')
+L.circle([43.9424,12.4578
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4800}).addTo(map1).bindPopup('San Marino : 160')
+L.circle([23.4241,53.8478
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4590}).addTo(map1).bindPopup('United Arab Emirates : 153')
+L.circle([33.7298,-111.4312
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4560}).addTo(map1).bindPopup('Arizona,US : 152')
+L.circle([26.8154,106.8748
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4380}).addTo(map1).bindPopup('Guizhou,China : 146')
+L.circle([56.8796,24.6032
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4170}).addTo(map1).bindPopup('Latvia : 139')
+L.circle([32.3182,-86.9023
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4140}).addTo(map1).bindPopup('Alabama,US : 138')
+L.circle([39.3054,117.3230
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4110}).addTo(map1).bindPopup('Tianjin,China : 137')
+L.circle([36.0611,103.8343
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4080}).addTo(map1).bindPopup('Gansu,China : 136')
+L.circle([-32.5228,-55.7658
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4050}).addTo(map1).bindPopup('Uruguay : 135')
+L.circle([9.7489,-83.7534
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4020}).addTo(map1).bindPopup('Costa Rica : 134')
+L.circle([37.5777,112.2922
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3990}).addTo(map1).bindPopup('Shanxi,China : 133')
+L.circle([47.1625,19.5033
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3930}).addTo(map1).bindPopup('Hungary : 131')
+L.circle([55.1694,23.8813
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3930}).addTo(map1).bindPopup('Lithuania : 131')
+L.circle([43.9159,17.6791
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3780}).addTo(map1).bindPopup('Bosnia and Herzegovina : 126')
+L.circle([41.2956,122.6085
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3780}).addTo(map1).bindPopup('Liaoning,China : 126')
+L.circle([-31.9505,115.8605
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3600}).addTo(map1).bindPopup('Western Australia,Australia : 120')
+L.circle([61.8926,-6.9118
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3450}).addTo(map1).bindPopup('Faroe Islands,Denmark : 115')
+L.circle([31.7917,-7.0926
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3450}).addTo(map1).bindPopup('Morocco : 115')
+L.circle([41.6086,21.7453
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3420}).addTo(map1).bindPopup('North Macedonia : 114')
+L.circle([42.5063,1.5218
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3390}).addTo(map1).bindPopup('Andorra : 113')
+L.circle([14.0583,108.2772
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3390}).addTo(map1).bindPopup('Vietnam : 113')
+L.circle([30.5852,36.2384
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3360}).addTo(map1).bindPopup('Jordan : 112')
+L.circle([38.8974,-77.0268
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3060}).addTo(map1).bindPopup('District of Columbia,US : 102')
+L.circle([-34.9285,138.6007
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3000}).addTo(map1).bindPopup('South Australia,Australia : 100')
+L.circle([38.4561,-92.2884
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3000}).addTo(map1).bindPopup('Missouri,US : 100')
+L.circle([37.6681,-84.6701
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2970}).addTo(map1).bindPopup('Kentucky,US : 99')
+L.circle([35.1264,33.4299
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2850}).addTo(map1).bindPopup('Cyprus : 95')
+L.circle([47.4116,28.3699
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2820}).addTo(map1).bindPopup('Moldova : 94')
+L.circle([43.6661,126.1923
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2790}).addTo(map1).bindPopup('Jilin,China : 93')
+L.circle([35.9375,14.3754
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2700}).addTo(map1).bindPopup('Malta : 90')
+L.circle([42.0115,-93.2105
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2700}).addTo(map1).bindPopup('Iowa,US : 90')
+L.circle([41.1533,20.1683
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2670}).addTo(map1).bindPopup('Albania : 89')
+L.circle([44.6939,-69.3819
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2670}).addTo(map1).bindPopup('Maine,US : 89')
+L.circle([4.5353,114.7277
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2640}).addTo(map1).bindPopup('Brunei : 88')
+L.circle([12.5657,104.9910
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2520}).addTo(map1).bindPopup('Cambodia : 84')
+L.circle([41.6809,-71.5118
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2490}).addTo(map1).bindPopup('Rhode Island,US : 83')
+L.circle([7.8731,80.7718
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2460}).addTo(map1).bindPopup('Sri Lanka : 82')
+L.circle([53.7098,27.9534
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2280}).addTo(map1).bindPopup('Belarus : 76')
+L.circle([41.1129,85.2401
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2280}).addTo(map1).bindPopup('Xinjiang,China : 76')
+L.circle([12.2383,-1.5616
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2250}).addTo(map1).bindPopup('Burkina Faso : 75')
+L.circle([44.0935,113.9448
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2250}).addTo(map1).bindPopup('Inner Mongolia,China : 75')
+L.circle([37.2692,106.1655
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2250}).addTo(map1).bindPopup('Ningxia,China : 75')
+L.circle([33.8869,9.5375
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2250}).addTo(map1).bindPopup('Tunisia : 75')
+L.circle([48.3794,31.1656
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2190}).addTo(map1).bindPopup('Ukraine : 73')
+L.circle([6.4238,-66.5897
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2100}).addTo(map1).bindPopup('Venezuela : 70')
+L.circle([14.4974,-14.4524
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2010}).addTo(map1).bindPopup('Senegal : 67')
+L.circle([35.5653,-96.9289
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2010}).addTo(map1).bindPopup('Oklahoma,US : 67')
+L.circle([-40.9006,174.8860
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1980}).addTo(map1).bindPopup('New Zealand : 66')
+L.circle([40.1431,47.5769
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1950}).addTo(map1).bindPopup('Azerbaijan : 65')
+L.circle([43.4525,-71.5639
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1950}).addTo(map1).bindPopup('New Hampshire,US : 65')
+L.circle([38.5266,-96.7265
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1920}).addTo(map1).bindPopup('Kansas,US : 64')
+L.circle([48.0196,66.9237
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1800}).addTo(map1).bindPopup('Kazakhstan : 60')
+L.circle([34.8405,-106.2485
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1710}).addTo(map1).bindPopup('New Mexico,US : 57')
+L.circle([16.2650,-61.5510
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1680}).addTo(map1).bindPopup('Guadeloupe : 56')
+L.circle([21.4735,55.9754
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1650}).addTo(map1).bindPopup('Oman : 55')
+L.circle([42.3154,43.3569
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1620}).addTo(map1).bindPopup('Georgia : 54')
+L.circle([52.9399,-106.4509
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1560}).addTo(map1).bindPopup('Saskatchewan,Canada : 52')
+L.circle([44.0459,-72.7107
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1560}).addTo(map1).bindPopup('Vermont,US : 52')
+L.circle([41.1254,-98.2681
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1530}).addTo(map1).bindPopup('Nebraska,US : 51')
+L.circle([10.6918,-61.2225
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1500}).addTo(map1).bindPopup('Trinidad and Tobago : 50')
+L.circle([35.4437,139.6380
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1470}).addTo(map1).bindPopup('Diamond Princess,US : 49')
+L.circle([21.0943,-157.4983
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1440}).addTo(map1).bindPopup('Hawaii,US : 48')
+L.circle([-21.1151,55.5364
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1410}).addTo(map1).bindPopup('Reunion : 47')
+L.circle([39.3185,-75.5071
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1410}).addTo(map1).bindPopup('Delaware,US : 47')
+L.circle([41.3775,64.5853
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1290}).addTo(map1).bindPopup('Uzbekistan : 43')
+L.circle([44.2405,-114.4788
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1260}).addTo(map1).bindPopup('Idaho,US : 42')
+L.circle([33.9391,67.7100
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1200}).addTo(map1).bindPopup('Afghanistan : 40')
+L.circle([3.8480,11.5021
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1200}).addTo(map1).bindPopup('Cameroon : 40')
+L.circle([47.1660,9.5554
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1110}).addTo(map1).bindPopup('Liechtenstein : 37')
+L.circle([14.6415,-61.0242
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1110}).addTo(map1).bindPopup('Martinique : 37')
+L.circle([21.5218,-77.7812
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1050}).addTo(map1).bindPopup('Cuba : 35')
+L.circle([49.3723,-2.3644
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:960}).addTo(map1).bindPopup('Channel Islands,United Kingdom : 32')
+L.circle([46.9219,-110.4544
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:930}).addTo(map1).bindPopup('Montana,US : 31')
+L.circle([-4.0383,21.7587
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:900}).addTo(map1).bindPopup('Congo (Kinshasa) : 30')
+L.circle([9.0820,8.6753
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:900}).addTo(map1).bindPopup('Nigeria : 30')
+L.circle([37.6489,-122.6655
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:900}).addTo(map1).bindPopup('Grand Princess,US : 30')
+L.circle([44.6820,-63.7443
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:840}).addTo(map1).bindPopup('Nova Scotia,Canada : 28')
+L.circle([47.5289,-99.7840
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:840}).addTo(map1).bindPopup('North Dakota,US : 28')
+L.circle([23.6850,90.3563
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:810}).addTo(map1).bindPopup('Bangladesh : 27')
+L.circle([13.4443,144.7937
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:810}).addTo(map1).bindPopup('Guam,US : 27')
+L.circle([15.2000,-86.2419
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:780}).addTo(map1).bindPopup('Honduras : 26')
+L.circle([-16.2902,-63.5887
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:720}).addTo(map1).bindPopup('Bolivia : 24')
+L.circle([7.9465,-1.0232
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:720}).addTo(map1).bindPopup('Ghana : 24')
+L.circle([42.7560,-107.3025
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:720}).addTo(map1).bindPopup('Wyoming,US : 24')
+L.circle([43.7384,7.4246
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:690}).addTo(map1).bindPopup('Monaco : 23')
+L.circle([18.2208,-66.5901
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:690}).addTo(map1).bindPopup('Puerto Rico,US : 23')
+L.circle([-41.4545,145.9707
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:660}).addTo(map1).bindPopup('Tasmania,Australia : 22')
+L.circle([-23.4425,-58.4438
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:660}).addTo(map1).bindPopup('Paraguay : 22')
+L.circle([42.7087,19.3744
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:630}).addTo(map1).bindPopup('Montenegro : 21')
+L.circle([61.3707,-152.4044
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:630}).addTo(map1).bindPopup('Alaska,US : 21')
+L.circle([44.2998,-99.4388
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:630}).addTo(map1).bindPopup('South Dakota,US : 21')
+L.circle([22.1667,113.5500
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:600}).addTo(map1).bindPopup('Macau,China : 20')
+L.circle([-35.4735,149.0124
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:570}).addTo(map1).bindPopup('Australian Capital Territory,Australia : 19')
+L.circle([53.7609,-98.8139
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:570}).addTo(map1).bindPopup('Manitoba,Canada : 19')
+L.circle([15.7835,-90.2308
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:570}).addTo(map1).bindPopup('Guatemala : 19')
+L.circle([-1.9403,29.8739
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:570}).addTo(map1).bindPopup('Rwanda : 19')
+L.circle([35.7452,95.9956
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:540}).addTo(map1).bindPopup('Qinghai,China : 18')
+L.circle([3.9339,-53.1258
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:540}).addTo(map1).bindPopup('French Guiana : 18')
+L.circle([-20.3484,57.5522
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:540}).addTo(map1).bindPopup('Mauritius : 18')
+L.circle([46.5653,-66.4619
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:510}).addTo(map1).bindPopup('New Brunswick,Canada : 17')
+L.circle([18.1096,-77.2975
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:480}).addTo(map1).bindPopup('Jamaica : 16')
+L.circle([8.6195,0.8248
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:480}).addTo(map1).bindPopup('Togo : 16')
+L.circle([-17.6797,-149.4068
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('French Polynesia,France : 15')
+L.circle([-0.0236,37.9062
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Kenya : 15')
+L.circle([36.1408,-5.3536
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Gibraltar,United Kingdom : 15')
+L.circle([13.1939,-59.5432
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:420}).addTo(map1).bindPopup('Barbados : 14')
+L.circle([7.5400,-5.5471
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:420}).addTo(map1).bindPopup('Cote dIvoire : 14')
+L.circle([41.2044,74.7661
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:420}).addTo(map1).bindPopup('Kyrgyzstan : 14')
+L.circle([37.6489,-122.6655
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:390}).addTo(map1).bindPopup('Grand Princess,Canada : 13')
+L.circle([3.2028,73.2207
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:390}).addTo(map1).bindPopup('Maldives : 13')
+L.circle([-6.3690,34.8888
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:360}).addTo(map1).bindPopup('Tanzania : 12')
+L.circle([38.4912,-80.9545
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:360}).addTo(map1).bindPopup('West Virginia,US : 12')
+L.circle([9.1450,40.4897
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:330}).addTo(map1).bindPopup('Ethiopia : 11')
+L.circle([-12.8275,45.1662
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:330}).addTo(map1).bindPopup('Mayotte : 11')
+L.circle([46.8625,103.8467
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Mongolia : 10')
+L.circle([12.5211,-69.9683
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:240}).addTo(map1).bindPopup('Aruba,Netherlands : 8')
+L.circle([4.8604,-58.9302
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:210}).addTo(map1).bindPopup('Guyana : 7')
+L.circle([-4.6796,55.4920
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:210}).addTo(map1).bindPopup('Seychelles : 7')
+L.circle([53.1355,-57.6604
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:180}).addTo(map1).bindPopup('Newfoundland and Labrador,Canada : 6')
+L.circle([1.6508,10.2679
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:180}).addTo(map1).bindPopup('Equatorial Guinea : 6')
+L.circle([18.3358,-64.8963
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:180}).addTo(map1).bindPopup('United States Virgin Islands,US : 6')
+L.circle([-0.8037,11.6094
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Gabon : 5')
+L.circle([3.9193,-56.0278
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Suriname : 5')
+L.circle([54.2361,-4.5481
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Isle of Man,United Kingdom : 5')
+L.circle([25.0343,-77.3963
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:120}).addTo(map1).bindPopup('"Bahamas" : 4')
+L.circle([71.7069,-42.6043
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:120}).addTo(map1).bindPopup('Greenland,Denmark : 4')
+L.circle([-26.5225,31.4659
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:120}).addTo(map1).bindPopup('Eswatini : 4')
+L.circle([-20.9043,165.6180
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:120}).addTo(map1).bindPopup('New Caledonia,France : 4')
+L.circle([18.0708,-63.0501
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:120}).addTo(map1).bindPopup('St Martin,France : 4')
+L.circle([-12.4634,130.8456
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Northern Territory,Australia : 3')
+L.circle([16.5388,-23.0418
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Cabo Verde : 3')
+L.circle([6.6111,20.9394
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Central African Republic : 3')
+L.circle([-0.2280,15.8277
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Congo (Brazzaville) : 3')
+L.circle([13.7942,-88.8965
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('El Salvador : 3')
+L.circle([17.9000,-62.8333
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Saint Barthelemy,France : 3')
+L.circle([6.4281,-9.4295
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Liberia : 3')
+L.circle([-18.7669,46.8691
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Madagascar : 3')
+L.circle([-22.9576,18.4904
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Namibia : 3')
+L.circle([12.1696,-68.9900
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Curacao,Netherlands : 3')
+L.circle([19.3133,-81.2546
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Cayman Islands,United Kingdom : 3')
+L.circle([-13.1339,27.8493
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Zambia : 3')
+L.circle([-19.0154,29.1549
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:90}).addTo(map1).bindPopup('Zimbabwe : 3')
+L.circle([-11.2027,17.8739
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Angola : 2')
+L.circle([9.3077,2.3158
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Benin : 2')
+L.circle([27.5142,90.4336
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Bhutan : 2')
+L.circle([46.5107,-63.4168
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Prince Edward Island,Canada : 2')
+L.circle([-17.7134,178.0650
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Fiji : 2')
+L.circle([9.9456,-9.6966
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Guinea : 2')
+L.circle([18.9712,-72.2852
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Haiti : 2')
+L.circle([42.6026,20.9030
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Kosovo : 2')
+L.circle([21.0079,-10.9408
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Mauritania : 2')
+L.circle([28.3949,84.1240
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Nepal : 2')
+L.circle([12.8654,-85.2072
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Nicaragua : 2')
+L.circle([17.6078,8.0817
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Niger : 2')
+L.circle([13.9094,-60.9789
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Saint Lucia : 2')
+L.circle([12.8628,30.2176
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Sudan : 2')
+L.circle([32.3078,-64.7505
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map1).bindPopup('Bermuda,United Kingdom : 2')
+L.circle([17.0608,-61.7964
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Antigua and Barbuda : 1')
+L.circle([64.8255,-124.8457
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Northwest Territories,Canada : 1')
+L.circle([15.4542,18.7322
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Chad : 1')
+L.circle([31.6927,88.0924
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Tibet,China : 1')
+L.circle([11.8251,42.5903
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Djibouti : 1')
+L.circle([15.4150,-61.3710
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Dominica : 1')
+L.circle([15.1794,39.7823
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Eritrea : 1')
+L.circle([13.4432,-15.3101
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('"Gambia" : 1')
+L.circle([12.1165,-61.6790
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Grenada : 1')
+L.circle([41.9029,12.4534
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Holy See : 1')
+L.circle([-18.6657,35.5296
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Mozambique : 1')
+L.circle([18.0425,-63.0548
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Sint Maarten,Netherlands : 1')
+L.circle([-6.3150,143.9555
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Papua New Guinea : 1')
+L.circle([12.9843,-61.2872
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Saint Vincent and the Grenadines : 1')
+L.circle([5.1521,46.1996
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Somalia : 1')
+L.circle([34.8021,38.9968
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Syria : 1')
+L.circle([-8.8742,125.7275
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Timor-Leste : 1')
+L.circle([37.0902,-95.7129
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('US,US : 1')
+L.circle([1.3733,32.2903
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Uganda : 1')
+L.circle([16.7425,-62.1874
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Montserrat,United Kingdom : 1')
+
+
+
+
+            }
+        function drawDeaths() {
+            map1.remove();
+            map1 = new L.Map('map');
+            var cartocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+            cartoAttrib = 'Carto geodatabase is good for this application';
+            carto = new L.TileLayer(cartocdn);
+            map1.setView([51.5, 0.12],2); // centered on London lat, long
+            map1.addLayer(carto);
+                
+
+
+            
+            L.circle([30.9756,112.2707
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:157200}).addTo(map1).bindPopup('Hubei,China : 3144')
+L.circle([41.8719,12.5674
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:273800}).addTo(map1).bindPopup('Italy : 5476')
+L.circle([40.4637,-3.7492
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:88600}).addTo(map1).bindPopup('Spain : 1772')
+L.circle([51.1657,10.4515
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4700}).addTo(map1).bindPopup('Germany : 94')
+L.circle([32.4279,53.6880
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:84250}).addTo(map1).bindPopup('Iran : 1685')
+L.circle([46.2276,2.2137
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:33700}).addTo(map1).bindPopup('France,France : 674')
+L.circle([42.1657,-74.9481
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5850}).addTo(map1).bindPopup('New York,US : 117')
+L.circle([35.9078,127.7669
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5200}).addTo(map1).bindPopup('"South Korea" : 104')
+L.circle([46.8182,8.2275
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4900}).addTo(map1).bindPopup('Switzerland : 98')
+L.circle([55.3781,-3.4360
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:14050}).addTo(map1).bindPopup('United Kingdom,United Kingdom : 281')
+L.circle([52.1326,5.2913
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:8950}).addTo(map1).bindPopup('Netherlands,Netherlands : 179')
+L.circle([50.5039,4.4699
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3750}).addTo(map1).bindPopup('Belgium : 75')
+L.circle([47.5162,14.5501
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Austria : 16')
+L.circle([60.4720,8.4689
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Norway : 7')
+L.circle([47.4009,-121.4905
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:4750}).addTo(map1).bindPopup('Washington,US : 95')
+L.circle([60.1282,18.6435
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1050}).addTo(map1).bindPopup('Sweden : 21')
+L.circle([40.2989,-74.5210
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1000}).addTo(map1).bindPopup('New Jersey,US : 20')
+L.circle([36.1162,-119.6816
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1500}).addTo(map1).bindPopup('California,US : 30')
+L.circle([39.3999,-8.2245
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:700}).addTo(map1).bindPopup('Portugal : 14')
+L.circle([-14.2350,-51.9253
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1250}).addTo(map1).bindPopup('Brazil : 25')
+L.circle([23.3417,113.4244
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Guangdong,China : 8')
+L.circle([56.2639,9.5018
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Denmark,Denmark : 13')
+L.circle([4.2105,101.9758
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Malaysia : 10')
+L.circle([33.8820,113.6140
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1100}).addTo(map1).bindPopup('Henan,China : 22')
+L.circle([29.1832,120.0934
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Zhejiang,China : 1')
+L.circle([38.9637,35.2433
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1500}).addTo(map1).bindPopup('Turkey : 30')
+L.circle([49.8175,15.4730
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Czechia : 1')
+L.circle([36.2048,138.2529
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2000}).addTo(map1).bindPopup('Japan : 40')
+L.circle([31.0461,34.8516
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Israel : 1')
+L.circle([40.3495,-88.9861
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Illinois,US : 9')
+L.circle([43.3266,-84.5361
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Michigan,US : 9')
+L.circle([27.6104,111.7088
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Hunan,China : 4')
+L.circle([31.8257,117.2264
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Anhui,China : 6')
+L.circle([27.6140,115.7221
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Jiangxi,China : 1')
+L.circle([53.1424,-7.6921
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Ireland : 4')
+L.circle([31.1695,-91.8678
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1000}).addTo(map1).bindPopup('Louisiana,US : 20')
+L.circle([27.7663,-81.6868
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Florida,US : 13')
+L.circle([49.8153,6.1296
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Luxembourg : 8')
+L.circle([-1.8312,-78.1834
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:700}).addTo(map1).bindPopup('Ecuador : 14')
+L.circle([30.3753,69.3451
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Pakistan : 5')
+L.circle([36.3427,118.1498
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Shandong,China : 7')
+L.circle([35.4498,139.6649
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Diamond Princess,Cruise Ship : 8')
+L.circle([42.2302,-71.5301
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Massachusetts,US : 5')
+L.circle([51.9194,19.1451
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Poland : 7')
+L.circle([-35.6751,-71.5430
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Chile : 1')
+L.circle([31.0545,-97.5635
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Texas,US : 6')
+L.circle([61.9241,25.7482
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Finland : 1')
+L.circle([39.0742,21.8243
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:750}).addTo(map1).bindPopup('Greece : 15')
+L.circle([33.0406,-83.6431
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1150}).addTo(map1).bindPopup('Georgia,US : 23')
+L.circle([15.8700,100.9925
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Thailand : 1')
+L.circle([30.0572,107.8740
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Chongqing,China : 6')
+L.circle([64.9631,-19.0208
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Iceland : 1')
+L.circle([30.6171,102.7103
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Sichuan,China : 3')
+L.circle([-33.8688,151.2093
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('New South Wales,Australia : 6')
+L.circle([40.1824,116.4142
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Beijing,China : 8')
+L.circle([-0.7893,113.9213
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2400}).addTo(map1).bindPopup('Indonesia : 48')
+L.circle([40.5908,-77.2098
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Pennsylvania,US : 3')
+L.circle([35.7478,-86.6923
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Tennessee,US : 2')
+L.circle([47.8620,127.7615
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Heilongjiang,China : 13')
+L.circle([39.0598,-105.3111
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Colorado,US : 6')
+L.circle([1.3521,103.8198
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Singapore : 2')
+L.circle([45.9432,24.9668
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Romania : 3')
+L.circle([51.2538,-85.3232
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Ontario,Canada : 5')
+L.circle([53.7267,-127.6476
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('British Columbia,Canada : 10')
+L.circle([46.1512,14.9955
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Slovenia : 2')
+L.circle([20.5937,78.9629
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('India : 7')
+L.circle([31.2020,121.4491
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Shanghai,China : 4')
+L.circle([44.2685,-89.6165
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Wisconsin,US : 4')
+L.circle([12.8797,121.7740
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1250}).addTo(map1).bindPopup('Philippines : 25')
+L.circle([-9.1900,-75.0152
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Peru : 5')
+L.circle([40.3888,-82.7649
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Ohio,US : 3')
+L.circle([26.0667,50.5577
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Bahrain : 2')
+L.circle([26.8206,30.8025
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:700}).addTo(map1).bindPopup('Egypt : 14')
+L.circle([38.0428,114.5149
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Hebei,China : 6')
+L.circle([22.3000,114.2000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Hong Kong,China : 4')
+L.circle([26.0789,117.9874
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Fujian,China : 1')
+L.circle([53.9333,-116.5765
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Alberta,Canada : 1')
+L.circle([23.8298,108.7881
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Guangxi,China : 2')
+L.circle([45.1000,15.2000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Croatia : 1')
+L.circle([23.6345,-102.5528
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Mexico : 2')
+L.circle([35.1917,108.8701
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Shaanxi,China : 3')
+L.circle([33.8547,35.8623
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Lebanon : 4')
+L.circle([8.5380,-80.7821
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Panama : 3')
+L.circle([39.0639,-76.8021
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Maryland,US : 3')
+L.circle([33.2232,43.6793
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1000}).addTo(map1).bindPopup('Iraq : 20')
+L.circle([4.5709,-74.2973
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Colombia : 2')
+L.circle([-38.4161,-63.6167
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Argentina : 4')
+L.circle([41.5978,-72.7554
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Connecticut,US : 5')
+L.circle([44.0165,21.0059
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Serbia : 2')
+L.circle([37.7693,-78.1700
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Virginia,US : 6')
+L.circle([52.9399,-73.5491
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Quebec,Canada : 5')
+L.circle([32.7416,-89.6787
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Mississippi,US : 1')
+L.circle([18.7357,-70.1627
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Dominican Republic : 3')
+L.circle([28.0339,1.6596
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:850}).addTo(map1).bindPopup('Algeria : 17')
+L.circle([39.8494,-86.2583
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Indiana,US : 6')
+L.circle([33.8569,-80.9450
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('South Carolina,US : 3')
+L.circle([38.3135,-117.0554
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Nevada,US : 2')
+L.circle([42.7339,25.4858
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Bulgaria : 3')
+L.circle([48.6690,19.6990
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Slovakia : 1')
+L.circle([40.1500,-111.8624
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Utah,US : 1')
+L.circle([24.9740,101.4870
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Yunnan,China : 2')
+L.circle([23.7000,121.0000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Taiwan* : 2')
+L.circle([45.6945,-93.9002
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Minnesota,US : 1')
+L.circle([19.1959,109.7453
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Hainan,China : 6')
+L.circle([44.5720,-122.0709
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Oregon,US : 4')
+L.circle([43.9424,12.4578
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1000}).addTo(map1).bindPopup('San Marino : 20')
+L.circle([23.4241,53.8478
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('United Arab Emirates : 2')
+L.circle([33.7298,-111.4312
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Arizona,US : 2')
+L.circle([26.8154,106.8748
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Guizhou,China : 2')
+L.circle([39.3054,117.3230
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Tianjin,China : 3')
+L.circle([36.0611,103.8343
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Gansu,China : 2')
+L.circle([9.7489,-83.7534
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Costa Rica : 2')
+L.circle([47.1625,19.5033
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Hungary : 6')
+L.circle([55.1694,23.8813
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Lithuania : 1')
+L.circle([43.9159,17.6791
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Bosnia and Herzegovina : 1')
+L.circle([41.2956,122.6085
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Liaoning,China : 2')
+L.circle([-31.9505,115.8605
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Western Australia,Australia : 1')
+L.circle([31.7917,-7.0926
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Morocco : 4')
+L.circle([41.6086,21.7453
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('North Macedonia : 1')
+L.circle([42.5063,1.5218
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Andorra : 1')
+L.circle([38.8974,-77.0268
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('District of Columbia,US : 2')
+L.circle([38.4561,-92.2884
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Missouri,US : 3')
+L.circle([37.6681,-84.6701
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Kentucky,US : 3')
+L.circle([35.1264,33.4299
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Cyprus : 1')
+L.circle([47.4116,28.3699
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Moldova : 1')
+L.circle([43.6661,126.1923
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Jilin,China : 1')
+L.circle([41.1533,20.1683
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Albania : 2')
+L.circle([41.1129,85.2401
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Xinjiang,China : 3')
+L.circle([12.2383,-1.5616
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Burkina Faso : 4')
+L.circle([44.0935,113.9448
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Inner Mongolia,China : 1')
+L.circle([33.8869,9.5375
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Tunisia : 3')
+L.circle([48.3794,31.1656
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Ukraine : 3')
+L.circle([35.5653,-96.9289
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Oklahoma,US : 2')
+L.circle([40.1431,47.5769
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Azerbaijan : 1')
+L.circle([38.5266,-96.7265
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Kansas,US : 2')
+L.circle([44.0459,-72.7107
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Vermont,US : 2')
+L.circle([33.9391,67.7100
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Afghanistan : 1')
+L.circle([14.6415,-61.0242
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Martinique : 1')
+L.circle([21.5218,-77.7812
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Cuba : 1')
+L.circle([-4.0383,21.7587
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Congo (Kinshasa) : 1')
+L.circle([37.6489,-122.6655
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Grand Princess,US : 1')
+L.circle([23.6850,90.3563
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Bangladesh : 2')
+L.circle([13.4443,144.7937
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Guam,US : 1')
+L.circle([7.9465,-1.0232
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ghana : 1')
+L.circle([18.2208,-66.5901
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Puerto Rico,US : 1')
+L.circle([-23.4425,-58.4438
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Paraguay : 1')
+L.circle([44.2998,-99.4388
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('South Dakota,US : 1')
+L.circle([15.7835,-90.2308
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Guatemala : 1')
+L.circle([-20.3484,57.5522
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Mauritius : 1')
+L.circle([18.1096,-77.2975
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Jamaica : 1')
+L.circle([4.8604,-58.9302
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Guyana : 1')
+L.circle([-0.8037,11.6094
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Gabon : 1')
+L.circle([12.1696,-68.9900
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Curacao,Netherlands : 1')
+L.circle([19.3133,-81.2546
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Cayman Islands,United Kingdom : 1')
+L.circle([12.8628,30.2176
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Sudan : 1')
+L.circle([13.4443,144.7937
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Guam : 1')
+L.circle([18.2000,-66.5000
+],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Puerto Rico : 1')
+
+
+        }
+
+    </script>   
+    
+    <nav id="nav1">
+	   <ul>
+	       <li><a class="active" href="index.html">Home</a></li>
+	       <li><a href="page1.html">Details</a></li>
+	       <li><a href="page2.html">World News</a></li>
+           <div class="searchContainer">
+               
+                <input type="text" placeholder="Search Country..." name="search">
+                <button type="submit"><i class="fa fa-search" ></i></button>
+               
+           </div>
+
+	   </ul>
+	</nav>
+
+        
+    
+
+    <button onclick="drawRecoveries()">Recoveries</button>
+    <button onclick="drawInfections()">Infections</button>
+    <button onclick="drawDeaths()">Deaths</button>
+   
+
+        
+        
+        
+    
+    
+
+    
+
+
+</html>
