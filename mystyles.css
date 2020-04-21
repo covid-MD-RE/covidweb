@@ -25,6 +25,29 @@ button {
    
 
     }
+.example {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.example td, #example th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.example tr:nth-child(even){background-color: #f2f2f2;}
+
+.example tr:hover {background-color: #ddd;}
+
+.example th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
 button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
