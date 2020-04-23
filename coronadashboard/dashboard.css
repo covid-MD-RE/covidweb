@@ -1,0 +1,75 @@
+h1 {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 30em;    
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 30px 1px;
+  text-decoration: none;
+  font-size: 29px;
+  left: 0px;
+  top: 10px;
+  width:100%;
+  background-color: whitesmoke
+}
+
+
+h2 {
+  font-family: Georgia, Times, serif;
+  color: black;
+  text-align: center;
+  padding: 30px 1px;
+  text-decoration: none;
+  font-size: 25px;
+  text-shadow: black;
+}
+
+
+h4 {
+  font-family: Georgia, Times, serif;
+  color: black;
+  text-align: center;
+  padding: 30px 1px;
+  text-decoration: none;
+  font-size: 20px; 
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.map{
+	margin: 3rem;
+	padding: 3px
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #4868f7;  
+    
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  top: 10rem;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: #ff2e1f;
+  color: black;
+}
+
+
