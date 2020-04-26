@@ -5,7 +5,7 @@
 # Korea, South - Bahamas, The - Gambia, The : Must be manually fixed in the data (South Korea, Bahamas, Gambia) 
 
 # Read file in
-fi = open("04-14-2020.csv","r")
+fi = open("04-21-2020.csv","r")
 fi.readline() # skip over first title line
 datarows = fi.readlines()
 fi.close()
@@ -20,11 +20,11 @@ for line in datarows:
 	templist = line.split(",")
 	prov = templist[2]
 	country = templist[3]
-	confirmed = templist[8]
-	deaths = templist[9]
-	recover = templist[10]
-	lat = templist[6]
-	lon = templist[7]
+	confirmed = templist[7]
+	deaths = templist[8]
+	recover = templist[9]
+	lat = templist[5]
+	lon = templist[6]
 
 	# make radius of circle bigger for cartographic appeal
 	deathradius = int(deaths) * 50
