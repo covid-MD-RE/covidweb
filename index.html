@@ -75,8 +75,8 @@
         <button onclick="drawRecoveries()">Recoveries</button>
         <button onclick="drawInfections()">Infections</button>
         <button onclick="drawDeaths()">Deaths</button>
-
-
+	<br>
+	<p>Please select some options to sort the table</p>
         <div class="searchContainer">
                
                 <input type="text" placeholder="Search Country..." name="search" title="Type in a name" id="searchCountryInput">
@@ -86,7 +86,6 @@
           <option value="-1">Descending</option>
           <option value="1">Ascending</option>
         </select>
-	<p>Please select some options to sort the table</p>
         <select id="sort"onchange= "showData()">
           <option value="Confirmed">Confirmed</option>
           <option value="Deaths">Deaths</option>
