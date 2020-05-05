@@ -31,9 +31,9 @@ for line in datarows:
 	
 	if (int(deaths) > 0):
 		if (prov != ""):
-			marker = "L.circle([" + lat + "," + lon + "],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:" + str(deathradius) + "}).addTo(map1).bindPopup('" + prov.replace("'", "") + "," + country.replace("'","") + " : " + deaths + "')"	
+			marker = "L.circle([" + lat + "," + lon + "],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:" + str(deathradius) + "}).addTo(map1).bindPopup('" + prov.replace("'", "") + "," + country.replace("'","") + " : " + deaths + "')"	
 		else:
-			marker = "L.circle([" + lat + "," + lon + "],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:" + str(deathradius) + "}).addTo(map1).bindPopup('" + country.replace("'", "") + " : " + deaths + "')"
+			marker = "L.circle([" + lat + "," + lon + "],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:" + str(deathradius) + "}).addTo(map1).bindPopup('" + country.replace("'", "") + " : " + deaths + "')"
 
 		fo.write(marker + "\n")
 		count = count + 1
