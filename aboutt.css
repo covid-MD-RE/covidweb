@@ -73,13 +73,7 @@ h2{
 
 
 }
-@media screen and (max-width: 800px) {
-  .column {
-    width: 100%;
-    display: block;
-	  margin-left: 75%;
-	  margin-right: 50%;
-  }
+
 	
 	
 .about-section {
