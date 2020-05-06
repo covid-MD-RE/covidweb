@@ -1,0 +1,225 @@
+<html>
+
+<head>	
+	<link href="dashboard.css" rel="stylesheet">
+	<link rel="stylesheet" href="website.css">
+	</head>
+
+	<body>
+ 
+	<h1>COVID-19 Recovered (March 23, 2020)</h1>
+		
+		
+		<div class="topnav">
+            <a class="active" href="index1.html">Home</a>
+            <a href="detail.html">Detail</a>
+            <a href="about.html">About</a>
+        </div>
+		<div class="post">
+			<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"></a>
+			<div class="post"> 				
+		<h2>How To Stop The Spread Of The Coronavirus</h2>
+		<img src="img/stopspread.png" alt="Stop the Spread" class="center" width="550" height="350">
+				<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">Stop the spread</a>
+				</div>
+			</div>
+		<h4>Stay at home unless you have to go to work.</h4>
+		<h4>Talk to your employer about working at home if possible.</h4>
+		<h4>Avoid all non-essential trips in your community.</h4>
+		<h4>Do not gather in groups.</h4>	
+		<h4>Limit contact with people at higher risk, such as older adults and those in poor health.</h4>
+		<h4>Go outside to exercise but stay close to home.</h4>
+		<h4>If you leave your home, always keep a distance of at least 2 arms lengths (approximately 2 metres) from others.</h4>
+		<h4>Household contacts (people you live with) do not need to distance from each other unless they are sick or have travelled in the last 14 days.</h4>
+		
+		<h2>
+		STAY HOME.SAVE LIVES.
+			</h2>
+		<img src="img/download.jpg" alt="Stop the Spread" class="center" width="650" height="450">
+		<h4>
+		<a href="https://www.cbc.ca/news/canada/british-columbia/b-c-coast-guard-covid-19-1.5545405">Additional Stay Home Info</a>
+			Help stop coronavirus</h4>
+
+		<h4>	STAYhome as much as you can </h4> 
+		<h4>KEEP a safe distance</h4>
+		<h4>WASHhands often </h4> 
+ <h4> COVER your cough</h4>
+<h4> SICK? Call ahead</h4>
+		
+		 <div id = "main">
+            
+         <!-- Second main division -->  
+        <div id = "content">
+            
+            <!-- Subtitle -->
+            <h2>Highest Number of Cases Globally vs In Canada</h2>
+            
+            <!-- Text that explains the button -->
+            <p>Click to view the percentages by year.</p>
+            
+            <!-- When you click on the button data is displayed -->
+           <button onclick="SubSaharanAfrica()">Canada</button><button onclick="World()">World</button>
+            
+            <!-- Sets the size of the canvas -->
+            <canvas id="myCanvas" width="800" height="600"></canvas>
+			
+			
+
+            <!--- Sets the context of the canvas--->
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                // Calling the function World
+                World();
+                
+                //Draws the graph with statistics of average rate of World poverty
+                //This is the blue graph
+                function World() { 
+                    
+                    //Clears the rectangle
+                    ctx.clearRect(0,0,800,800); 
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len1 = (800/100) * 105.5;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,0,len1,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("USA: 1.03M ",01,36); 
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len2 = (800/100) * 20.7;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,60,len2,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("Spain: 210,773",01,95); 
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len3 = (800/100) * 19.2;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,120,len3,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("Italy: 201,505",01,155);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len4 = (800/100) * 17.3;
+                    ctx.font = "12px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,180,len4,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("United Kingdom: 161,145",01,215);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len4 = (800/100) * 16.7;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,240,len4,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("Germany: 159,912",01,275);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len5 = (800/100) * 13.8;
+                    ctx.font = "15px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,300,len5,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("France: 129,859",01,335);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len6 = (800/100) * 11.2;
+                    ctx.font = "12px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,360,len6,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("Turkey: 114,653",01,395);
+                    
+                   
+
+                    document.getElementById("mydata").innerHTML = "<p>hard coded code</p>";
+                    
+                    
+                }
+                
+                //Draws the graph with statistics of average rate for Sub Sahara Africa poverty
+                //This is the red graph
+                function SubSaharanAfrica() { 
+                    
+                    ctx.clearRect(0,0,800,800); 
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len1 = (800/100) * 71.4;
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,0,len1,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("Quebec: 33,400",09,36); 
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len2 = (800/100) * 43.9;
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,60,len2,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("Ontario: 18,700",09,95); 
+                    
+                   //Sets the size and colour of the bar and text with data
+                    len3 = (800/100) * 27.3;
+                    ctx.font = "23px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,120,len3,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("Alberta: 5,900",09,155);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len4 = (800/100) * 22.8;
+                    ctx.font = "22px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,180,len4,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("BC: 2,200",09,215);
+                    
+                   //Sets the size and colour of the bar and text with data
+                    len5 = (800/100) * 16.3;
+                    ctx.font = "13px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,240,len5,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("Nova Scotia: 1,000",09,275);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len6 = (800/100) * 12.2;
+                    ctx.font = "10px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,300,len6,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("Saskatchewan: 487",09,335);
+                    
+                   //Sets the size and colour of the bar and text with data
+                    len7 = (800/100) * 8.8;
+                    ctx.font = "10px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,360,len7,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("Manitoba: 282",09,395);
+                    
+                   
+
+                     
+                    document.getElementById("mydata").innerHTML = "<p>hard coded code</p>";                  
+                     
+                }
+
+                //Reloads window after button is clicked
+                window.location.reload(false);
+                 
+            </script>
+			 </div>
+		</div>
+		
+		
+	</body>
+
+
+</html>
