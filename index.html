@@ -127,7 +127,7 @@
         if (searchCountryInput.value.trim().length > 0){
            //alert("searchCountryInput = " + searchCountryInput.value)
            filterData = data.filter(function(d) {
-               return d.Country_Region == searchCountryInput.value;
+               return d.Country_Region.toUpperCase() === searchCountryInput.value.toUpperCase();
            })
            return filterData;    
         } else {
