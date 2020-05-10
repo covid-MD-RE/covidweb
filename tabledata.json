@@ -1,5 +1,2272 @@
 {"data": [
- 
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Afghanistan",
+   "Confirmed": 1026,
+   "Deaths": 36,
+   "Recovered": 135,
+   "Active": 855
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Albania",
+   "Confirmed": 584,
+   "Deaths": 26,
+   "Recovered": 327,
+   "Active": 231
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Algeria",
+   "Confirmed": 2718,
+   "Deaths": 384,
+   "Recovered": 1099,
+   "Active": 1235
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Andorra",
+   "Confirmed": 717,
+   "Deaths": 37,
+   "Recovered": 248,
+   "Active": 432
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Angola",
+   "Confirmed": 24,
+   "Deaths": 2,
+   "Recovered": 6,
+   "Active": 16
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Antigua and Barbuda",
+   "Confirmed": 23,
+   "Deaths": 3,
+   "Recovered": 3,
+   "Active": 17
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Argentina",
+   "Confirmed": 2941,
+   "Deaths": 136,
+   "Recovered": 737,
+   "Active": 2068
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Armenia",
+   "Confirmed": 1339,
+   "Deaths": 22,
+   "Recovered": 580,
+   "Active": 737
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Australian Capital Territory",
+   "Country_Region": "Australia",
+   "Confirmed": 103,
+   "Deaths": 3,
+   "Recovered": 88,
+   "Active": 12
+ },
+ {
+   "Admin2": "",
+   "Province_State": "New South Wales",
+   "Country_Region": "Australia",
+   "Confirmed": 2926,
+   "Deaths": 26,
+   "Recovered": 1379,
+   "Active": 1521
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Northern Territory",
+   "Country_Region": "Australia",
+   "Confirmed": 28,
+   "Deaths": 0,
+   "Recovered": 9,
+   "Active": 19
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Queensland",
+   "Country_Region": "Australia",
+   "Confirmed": 1015,
+   "Deaths": 6,
+   "Recovered": 738,
+   "Active": 271
+ },
+ {
+   "Admin2": "",
+   "Province_State": "South Australia",
+   "Country_Region": "Australia",
+   "Confirmed": 435,
+   "Deaths": 4,
+   "Recovered": 331,
+   "Active": 100
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Tasmania",
+   "Country_Region": "Australia",
+   "Confirmed": 180,
+   "Deaths": 7,
+   "Recovered": 67,
+   "Active": 106
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Victoria",
+   "Country_Region": "Australia",
+   "Confirmed": 1319,
+   "Deaths": 14,
+   "Recovered": 1172,
+   "Active": 133
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Western Australia",
+   "Country_Region": "Australia",
+   "Confirmed": 541,
+   "Deaths": 7,
+   "Recovered": 340,
+   "Active": 194
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Austria",
+   "Confirmed": 14795,
+   "Deaths": 470,
+   "Recovered": 10631,
+   "Active": 3694
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Azerbaijan",
+   "Confirmed": 1436,
+   "Deaths": 19,
+   "Recovered": 791,
+   "Active": 626
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Bahamas",
+   "Confirmed": 60,
+   "Deaths": 9,
+   "Recovered": 11,
+   "Active": 40
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Bahrain",
+   "Confirmed": 1907,
+   "Deaths": 7,
+   "Recovered": 769,
+   "Active": 1131
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Bangladesh",
+   "Confirmed": 2948,
+   "Deaths": 101,
+   "Recovered": 85,
+   "Active": 2762
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Barbados",
+   "Confirmed": 75,
+   "Deaths": 5,
+   "Recovered": 19,
+   "Active": 51
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Belarus",
+   "Confirmed": 6264,
+   "Deaths": 51,
+   "Recovered": 514,
+   "Active": 5699
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Belgium",
+   "Confirmed": 39983,
+   "Deaths": 5828,
+   "Recovered": 8895,
+   "Active": 25260
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Belize",
+   "Confirmed": 18,
+   "Deaths": 2,
+   "Recovered": 2,
+   "Active": 14
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Benin",
+   "Confirmed": 54,
+   "Deaths": 1,
+   "Recovered": 27,
+   "Active": 26
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Bhutan",
+   "Confirmed": 5,
+   "Deaths": 0,
+   "Recovered": 2,
+   "Active": 3
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Bolivia",
+   "Confirmed": 564,
+   "Deaths": 33,
+   "Recovered": 31,
+   "Active": 500
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Bosnia and Herzegovina",
+   "Confirmed": 1309,
+   "Deaths": 49,
+   "Recovered": 381,
+   "Active": 879
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Botswana",
+   "Confirmed": 20,
+   "Deaths": 1,
+   "Recovered": 0,
+   "Active": 19
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Brazil",
+   "Confirmed": 40743,
+   "Deaths": 2587,
+   "Recovered": 22130,
+   "Active": 16026
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Brunei",
+   "Confirmed": 138,
+   "Deaths": 1,
+   "Recovered": 116,
+   "Active": 21
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Bulgaria",
+   "Confirmed": 929,
+   "Deaths": 43,
+   "Recovered": 167,
+   "Active": 719
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Burkina Faso",
+   "Confirmed": 581,
+   "Deaths": 38,
+   "Recovered": 357,
+   "Active": 186
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Burma",
+   "Confirmed": 119,
+   "Deaths": 5,
+   "Recovered": 7,
+   "Active": 107
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Burundi",
+   "Confirmed": 5,
+   "Deaths": 1,
+   "Recovered": 4,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Cabo Verde",
+   "Confirmed": 67,
+   "Deaths": 1,
+   "Recovered": 1,
+   "Active": 65
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Cambodia",
+   "Confirmed": 122,
+   "Deaths": 0,
+   "Recovered": 107,
+   "Active": 15
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Cameroon",
+   "Confirmed": 1163,
+   "Deaths": 42,
+   "Recovered": 305,
+   "Active": 816
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Alberta",
+   "Country_Region": "Canada",
+   "Confirmed": 2908,
+   "Deaths": 59,
+   "Recovered": 0,
+   "Active": 2849
+ },
+ {
+   "Admin2": "",
+   "Province_State": "British Columbia",
+   "Country_Region": "Canada",
+   "Confirmed": 1647,
+   "Deaths": 82,
+   "Recovered": 0,
+   "Active": 1565
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Manitoba",
+   "Country_Region": "Canada",
+   "Confirmed": 254,
+   "Deaths": 6,
+   "Recovered": 0,
+   "Active": 248
+ },
+ {
+   "Admin2": "",
+   "Province_State": "New Brunswick",
+   "Country_Region": "Canada",
+   "Confirmed": 118,
+   "Deaths": 0,
+   "Recovered": 0,
+   "Active": 118
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Newfoundland and Labrador",
+   "Country_Region": "Canada",
+   "Confirmed": 257,
+   "Deaths": 3,
+   "Recovered": 0,
+   "Active": 254
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Northwest Territories",
+   "Country_Region": "Canada",
+   "Confirmed": 5,
+   "Deaths": 0,
+   "Recovered": 0,
+   "Active": 5
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Nova Scotia",
+   "Country_Region": "Canada",
+   "Confirmed": 721,
+   "Deaths": 9,
+   "Recovered": 0,
+   "Active": 712
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Ontario",
+   "Country_Region": "Canada",
+   "Confirmed": 12063,
+   "Deaths": 624,
+   "Recovered": 0,
+   "Active": 11439
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Prince Edward Island",
+   "Country_Region": "Canada",
+   "Confirmed": 26,
+   "Deaths": 0,
+   "Recovered": 0,
+   "Active": 26
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Quebec",
+   "Country_Region": "Canada",
+   "Confirmed": 19319,
+   "Deaths": 939,
+   "Recovered": 0,
+   "Active": 18380
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Saskatchewan",
+   "Country_Region": "Canada",
+   "Confirmed": 316,
+   "Deaths": 4,
+   "Recovered": 0,
+   "Active": 312
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Yukon",
+   "Country_Region": "Canada",
+   "Confirmed": 11,
+   "Deaths": 0,
+   "Recovered": 0,
+   "Active": 11
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Canada",
+   "Confirmed": 37645,
+   "Deaths": 1726,
+   "Recovered": 0,
+   "Active": 35919
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Central African Republic",
+   "Confirmed": 12,
+   "Deaths": 0,
+   "Recovered": 4,
+   "Active": 8
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Chad",
+   "Confirmed": 33,
+   "Deaths": 0,
+   "Recovered": 8,
+   "Active": 25
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Chile",
+   "Confirmed": 10507,
+   "Deaths": 139,
+   "Recovered": 4676,
+   "Active": 5692
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Anhui",
+   "Country_Region": "China",
+   "Confirmed": 991,
+   "Deaths": 6,
+   "Recovered": 984,
+   "Active": 1
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Beijing",
+   "Country_Region": "China",
+   "Confirmed": 593,
+   "Deaths": 8,
+   "Recovered": 514,
+   "Active": 71
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Chongqing",
+   "Country_Region": "China",
+   "Confirmed": 579,
+   "Deaths": 6,
+   "Recovered": 570,
+   "Active": 3
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Fujian",
+   "Country_Region": "China",
+   "Confirmed": 355,
+   "Deaths": 1,
+   "Recovered": 339,
+   "Active": 15
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Gansu",
+   "Country_Region": "China",
+   "Confirmed": 139,
+   "Deaths": 2,
+   "Recovered": 137,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Guangdong",
+   "Country_Region": "China",
+   "Confirmed": 1581,
+   "Deaths": 8,
+   "Recovered": 1494,
+   "Active": 79
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Guangxi",
+   "Country_Region": "China",
+   "Confirmed": 254,
+   "Deaths": 2,
+   "Recovered": 252,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Guizhou",
+   "Country_Region": "China",
+   "Confirmed": 147,
+   "Deaths": 2,
+   "Recovered": 145,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Hainan",
+   "Country_Region": "China",
+   "Confirmed": 168,
+   "Deaths": 6,
+   "Recovered": 162,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Hebei",
+   "Country_Region": "China",
+   "Confirmed": 328,
+   "Deaths": 6,
+   "Recovered": 317,
+   "Active": 5
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Heilongjiang",
+   "Country_Region": "China",
+   "Confirmed": 905,
+   "Deaths": 13,
+   "Recovered": 472,
+   "Active": 420
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Henan",
+   "Country_Region": "China",
+   "Confirmed": 1276,
+   "Deaths": 22,
+   "Recovered": 1254,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Hong Kong",
+   "Country_Region": "China",
+   "Confirmed": 1025,
+   "Deaths": 4,
+   "Recovered": 630,
+   "Active": 391
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Hubei",
+   "Country_Region": "China",
+   "Confirmed": 68128,
+   "Deaths": 4512,
+   "Recovered": 63511,
+   "Active": 105
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Hunan",
+   "Country_Region": "China",
+   "Confirmed": 1019,
+   "Deaths": 4,
+   "Recovered": 1015,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Inner Mongolia",
+   "Country_Region": "China",
+   "Confirmed": 194,
+   "Deaths": 1,
+   "Recovered": 104,
+   "Active": 89
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Jiangsu",
+   "Country_Region": "China",
+   "Confirmed": 653,
+   "Deaths": 0,
+   "Recovered": 643,
+   "Active": 10
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Jiangxi",
+   "Country_Region": "China",
+   "Confirmed": 937,
+   "Deaths": 1,
+   "Recovered": 936,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Jilin",
+   "Country_Region": "China",
+   "Confirmed": 104,
+   "Deaths": 1,
+   "Recovered": 97,
+   "Active": 6
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Liaoning",
+   "Country_Region": "China",
+   "Confirmed": 146,
+   "Deaths": 2,
+   "Recovered": 143,
+   "Active": 1
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Macau",
+   "Country_Region": "China",
+   "Confirmed": 45,
+   "Deaths": 0,
+   "Recovered": 22,
+   "Active": 23
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Ningxia",
+   "Country_Region": "China",
+   "Confirmed": 75,
+   "Deaths": 0,
+   "Recovered": 75,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Qinghai",
+   "Country_Region": "China",
+   "Confirmed": 18,
+   "Deaths": 0,
+   "Recovered": 18,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Shaanxi",
+   "Country_Region": "China",
+   "Confirmed": 256,
+   "Deaths": 3,
+   "Recovered": 252,
+   "Active": 1
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Shandong",
+   "Country_Region": "China",
+   "Confirmed": 787,
+   "Deaths": 7,
+   "Recovered": 765,
+   "Active": 15
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Shanghai",
+   "Country_Region": "China",
+   "Confirmed": 638,
+   "Deaths": 7,
+   "Recovered": 530,
+   "Active": 101
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Shanxi",
+   "Country_Region": "China",
+   "Confirmed": 197,
+   "Deaths": 0,
+   "Recovered": 135,
+   "Active": 62
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Sichuan",
+   "Country_Region": "China",
+   "Confirmed": 561,
+   "Deaths": 3,
+   "Recovered": 554,
+   "Active": 4
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Tianjin",
+   "Country_Region": "China",
+   "Confirmed": 189,
+   "Deaths": 3,
+   "Recovered": 174,
+   "Active": 12
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Tibet",
+   "Country_Region": "China",
+   "Confirmed": 1,
+   "Deaths": 0,
+   "Recovered": 1,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Xinjiang",
+   "Country_Region": "China",
+   "Confirmed": 76,
+   "Deaths": 3,
+   "Recovered": 73,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Yunnan",
+   "Country_Region": "China",
+   "Confirmed": 184,
+   "Deaths": 2,
+   "Recovered": 178,
+   "Active": 4
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Zhejiang",
+   "Country_Region": "China",
+   "Confirmed": 1268,
+   "Deaths": 1,
+   "Recovered": 1249,
+   "Active": 18
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "China",
+   "Confirmed": 83817,
+   "Deaths": 4636,
+   "Recovered": 77745,
+   "Active": 1436
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Colombia",
+   "Confirmed": 3977,
+   "Deaths": 189,
+   "Recovered": 804,
+   "Active": 2984
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Congo (Brazzaville)",
+   "Confirmed": 160,
+   "Deaths": 6,
+   "Recovered": 16,
+   "Active": 138
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Congo (Kinshasa)",
+   "Confirmed": 332,
+   "Deaths": 25,
+   "Recovered": 27,
+   "Active": 280
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Costa Rica",
+   "Confirmed": 662,
+   "Deaths": 6,
+   "Recovered": 124,
+   "Active": 532
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Cote d'Ivoire",
+   "Confirmed": 847,
+   "Deaths": 9,
+   "Recovered": 260,
+   "Active": 578
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Croatia",
+   "Confirmed": 1881,
+   "Deaths": 47,
+   "Recovered": 771,
+   "Active": 1063
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Cuba",
+   "Confirmed": 1087,
+   "Deaths": 36,
+   "Recovered": 285,
+   "Active": 766
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Cyprus",
+   "Confirmed": 772,
+   "Deaths": 12,
+   "Recovered": 81,
+   "Active": 679
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Czechia",
+   "Confirmed": 6900,
+   "Deaths": 194,
+   "Recovered": 1559,
+   "Active": 5147
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Faroe Islands",
+   "Country_Region": "Denmark",
+   "Confirmed": 185,
+   "Deaths": 0,
+   "Recovered": 176,
+   "Active": 9
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Greenland",
+   "Country_Region": "Denmark",
+   "Confirmed": 11,
+   "Deaths": 0,
+   "Recovered": 11,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Denmark",
+   "Confirmed": 7515,
+   "Deaths": 364,
+   "Recovered": 4312,
+   "Active": 2839
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Djibouti",
+   "Confirmed": 846,
+   "Deaths": 2,
+   "Recovered": 102,
+   "Active": 742
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Dominica",
+   "Confirmed": 16,
+   "Deaths": 0,
+   "Recovered": 8,
+   "Active": 8
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Dominican Republic",
+   "Confirmed": 4964,
+   "Deaths": 235,
+   "Recovered": 416,
+   "Active": 4313
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Ecuador",
+   "Confirmed": 10128,
+   "Deaths": 507,
+   "Recovered": 1150,
+   "Active": 8471
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Egypt",
+   "Confirmed": 3333,
+   "Deaths": 250,
+   "Recovered": 821,
+   "Active": 2262
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "El Salvador",
+   "Confirmed": 218,
+   "Deaths": 7,
+   "Recovered": 46,
+   "Active": 165
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Equatorial Guinea",
+   "Confirmed": 79,
+   "Deaths": 0,
+   "Recovered": 7,
+   "Active": 72
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Eritrea",
+   "Confirmed": 39,
+   "Deaths": 0,
+   "Recovered": 3,
+   "Active": 36
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Estonia",
+   "Confirmed": 1535,
+   "Deaths": 40,
+   "Recovered": 165,
+   "Active": 1330
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Eswatini",
+   "Confirmed": 24,
+   "Deaths": 1,
+   "Recovered": 8,
+   "Active": 15
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Ethiopia",
+   "Confirmed": 111,
+   "Deaths": 3,
+   "Recovered": 16,
+   "Active": 92
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Fiji",
+   "Confirmed": 18,
+   "Deaths": 0,
+   "Recovered": 3,
+   "Active": 15
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Finland",
+   "Confirmed": 3868,
+   "Deaths": 98,
+   "Recovered": 2000,
+   "Active": 1770
+ },
+ {
+   "Admin2": "",
+   "Province_State": "French Guiana",
+   "Country_Region": "France",
+   "Confirmed": 97,
+   "Deaths": 1,
+   "Recovered": 69,
+   "Active": 27
+ },
+ {
+   "Admin2": "",
+   "Province_State": "French Polynesia",
+   "Country_Region": "France",
+   "Confirmed": 56,
+   "Deaths": 0,
+   "Recovered": 19,
+   "Active": 37
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Guadeloupe",
+   "Country_Region": "France",
+   "Confirmed": 148,
+   "Deaths": 8,
+   "Recovered": 73,
+   "Active": 67
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Martinique",
+   "Country_Region": "France",
+   "Confirmed": 163,
+   "Deaths": 12,
+   "Recovered": 73,
+   "Active": 78
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Mayotte",
+   "Country_Region": "France",
+   "Confirmed": 271,
+   "Deaths": 4,
+   "Recovered": 117,
+   "Active": 150
+ },
+ {
+   "Admin2": "",
+   "Province_State": "New Caledonia",
+   "Country_Region": "France",
+   "Confirmed": 18,
+   "Deaths": 0,
+   "Recovered": 15,
+   "Active": 3
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Reunion",
+   "Country_Region": "France",
+   "Confirmed": 408,
+   "Deaths": 0,
+   "Recovered": 237,
+   "Active": 171
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Saint Barthelemy",
+   "Country_Region": "France",
+   "Confirmed": 6,
+   "Deaths": 0,
+   "Recovered": 5,
+   "Active": 1
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Saint Pierre and Miquelon",
+   "Country_Region": "France",
+   "Confirmed": 1,
+   "Deaths": 0,
+   "Recovered": 0,
+   "Active": 1
+ },
+ {
+   "Admin2": "",
+   "Province_State": "St Martin",
+   "Country_Region": "France",
+   "Confirmed": 37,
+   "Deaths": 2,
+   "Recovered": 19,
+   "Active": 16
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "France",
+   "Confirmed": 155275,
+   "Deaths": 20265,
+   "Recovered": 37409,
+   "Active": 97601
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Gabon",
+   "Confirmed": 120,
+   "Deaths": 1,
+   "Recovered": 7,
+   "Active": 112
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Gambia",
+   "Confirmed": 10,
+   "Deaths": 1,
+   "Recovered": 2,
+   "Active": 7
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Georgia",
+   "Confirmed": 402,
+   "Deaths": 4,
+   "Recovered": 95,
+   "Active": 303
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Germany",
+   "Confirmed": 147065,
+   "Deaths": 4862,
+   "Recovered": 91500,
+   "Active": 50703
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Ghana",
+   "Confirmed": 1042,
+   "Deaths": 9,
+   "Recovered": 99,
+   "Active": 934
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Greece",
+   "Confirmed": 2245,
+   "Deaths": 116,
+   "Recovered": 269,
+   "Active": 1860
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Grenada",
+   "Confirmed": 14,
+   "Deaths": 0,
+   "Recovered": 6,
+   "Active": 8
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Guatemala",
+   "Confirmed": 289,
+   "Deaths": 7,
+   "Recovered": 21,
+   "Active": 261
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Guinea",
+   "Confirmed": 622,
+   "Deaths": 5,
+   "Recovered": 122,
+   "Active": 495
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Guinea-Bissau",
+   "Confirmed": 50,
+   "Deaths": 0,
+   "Recovered": 3,
+   "Active": 47
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Guyana",
+   "Confirmed": 65,
+   "Deaths": 7,
+   "Recovered": 9,
+   "Active": 49
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Haiti",
+   "Confirmed": 57,
+   "Deaths": 3,
+   "Recovered": 0,
+   "Active": 54
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Holy See",
+   "Confirmed": 9,
+   "Deaths": 0,
+   "Recovered": 2,
+   "Active": 7
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Honduras",
+   "Confirmed": 477,
+   "Deaths": 46,
+   "Recovered": 25,
+   "Active": 406
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Hungary",
+   "Confirmed": 1984,
+   "Deaths": 199,
+   "Recovered": 267,
+   "Active": 1518
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Iceland",
+   "Confirmed": 1773,
+   "Deaths": 10,
+   "Recovered": 1362,
+   "Active": 401
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "India",
+   "Confirmed": 18539,
+   "Deaths": 592,
+   "Recovered": 3273,
+   "Active": 14674
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Indonesia",
+   "Confirmed": 6760,
+   "Deaths": 590,
+   "Recovered": 747,
+   "Active": 5423
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Iran",
+   "Confirmed": 83505,
+   "Deaths": 5209,
+   "Recovered": 59273,
+   "Active": 19023
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Iraq",
+   "Confirmed": 1574,
+   "Deaths": 82,
+   "Recovered": 1043,
+   "Active": 449
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Ireland",
+   "Confirmed": 15652,
+   "Deaths": 687,
+   "Recovered": 77,
+   "Active": 14888
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Israel",
+   "Confirmed": 13713,
+   "Deaths": 177,
+   "Recovered": 4049,
+   "Active": 9487
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Italy",
+   "Confirmed": 181228,
+   "Deaths": 24114,
+   "Recovered": 48877,
+   "Active": 108237
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Jamaica",
+   "Confirmed": 223,
+   "Deaths": 5,
+   "Recovered": 27,
+   "Active": 191
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Japan",
+   "Confirmed": 10797,
+   "Deaths": 236,
+   "Recovered": 1159,
+   "Active": 9402
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Jordan",
+   "Confirmed": 425,
+   "Deaths": 7,
+   "Recovered": 282,
+   "Active": 136
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Kazakhstan",
+   "Confirmed": 1852,
+   "Deaths": 19,
+   "Recovered": 447,
+   "Active": 1386
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Kenya",
+   "Confirmed": 281,
+   "Deaths": 14,
+   "Recovered": 69,
+   "Active": 198
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Korea, South",
+   "Confirmed": 10674,
+   "Deaths": 236,
+   "Recovered": 8114,
+   "Active": 2324
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Kosovo",
+   "Confirmed": 510,
+   "Deaths": 12,
+   "Recovered": 93,
+   "Active": 405
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Kuwait",
+   "Confirmed": 1995,
+   "Deaths": 9,
+   "Recovered": 367,
+   "Active": 1619
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Kyrgyzstan",
+   "Confirmed": 568,
+   "Deaths": 7,
+   "Recovered": 201,
+   "Active": 360
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Laos",
+   "Confirmed": 19,
+   "Deaths": 0,
+   "Recovered": 2,
+   "Active": 17
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Latvia",
+   "Confirmed": 739,
+   "Deaths": 5,
+   "Recovered": 88,
+   "Active": 646
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Lebanon",
+   "Confirmed": 677,
+   "Deaths": 21,
+   "Recovered": 103,
+   "Active": 553
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Liberia",
+   "Confirmed": 99,
+   "Deaths": 8,
+   "Recovered": 7,
+   "Active": 84
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Libya",
+   "Confirmed": 51,
+   "Deaths": 1,
+   "Recovered": 15,
+   "Active": 35
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Liechtenstein",
+   "Confirmed": 81,
+   "Deaths": 1,
+   "Recovered": 55,
+   "Active": 25
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Lithuania",
+   "Confirmed": 1326,
+   "Deaths": 37,
+   "Recovered": 242,
+   "Active": 1047
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Luxembourg",
+   "Confirmed": 3558,
+   "Deaths": 75,
+   "Recovered": 637,
+   "Active": 2846
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Madagascar",
+   "Confirmed": 121,
+   "Deaths": 0,
+   "Recovered": 41,
+   "Active": 80
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Malawi",
+   "Confirmed": 17,
+   "Deaths": 2,
+   "Recovered": 3,
+   "Active": 12
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Malaysia",
+   "Confirmed": 5425,
+   "Deaths": 89,
+   "Recovered": 3295,
+   "Active": 2041
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Maldives",
+   "Confirmed": 69,
+   "Deaths": 0,
+   "Recovered": 16,
+   "Active": 53
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Mali",
+   "Confirmed": 246,
+   "Deaths": 14,
+   "Recovered": 56,
+   "Active": 176
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Malta",
+   "Confirmed": 431,
+   "Deaths": 3,
+   "Recovered": 126,
+   "Active": 302
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Mauritania",
+   "Confirmed": 7,
+   "Deaths": 1,
+   "Recovered": 6,
+   "Active": 0
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Mauritius",
+   "Confirmed": 328,
+   "Deaths": 9,
+   "Recovered": 224,
+   "Active": 95
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Mexico",
+   "Confirmed": 8261,
+   "Deaths": 686,
+   "Recovered": 2627,
+   "Active": 4948
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Moldova",
+   "Confirmed": 2548,
+   "Deaths": 70,
+   "Recovered": 457,
+   "Active": 2021
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Monaco",
+   "Confirmed": 94,
+   "Deaths": 3,
+   "Recovered": 23,
+   "Active": 68
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Mongolia",
+   "Confirmed": 33,
+   "Deaths": 0,
+   "Recovered": 7,
+   "Active": 26
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Montenegro",
+   "Confirmed": 312,
+   "Deaths": 5,
+   "Recovered": 88,
+   "Active": 219
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Morocco",
+   "Confirmed": 3046,
+   "Deaths": 143,
+   "Recovered": 350,
+   "Active": 2553
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Mozambique",
+   "Confirmed": 39,
+   "Deaths": 0,
+   "Recovered": 8,
+   "Active": 31
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Namibia",
+   "Confirmed": 16,
+   "Deaths": 0,
+   "Recovered": 6,
+   "Active": 10
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Nepal",
+   "Confirmed": 31,
+   "Deaths": 0,
+   "Recovered": 4,
+   "Active": 27
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Aruba",
+   "Country_Region": "Netherlands",
+   "Confirmed": 97,
+   "Deaths": 2,
+   "Recovered": 49,
+   "Active": 46
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Bonaire, Sint Eustatius and Saba",
+   "Country_Region": "Netherlands",
+   "Confirmed": 5,
+   "Deaths": 0,
+   "Recovered": 0,
+   "Active": 5
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Curacao",
+   "Country_Region": "Netherlands",
+   "Confirmed": 14,
+   "Deaths": 1,
+   "Recovered": 11,
+   "Active": 2
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Sint Maarten",
+   "Country_Region": "Netherlands",
+   "Confirmed": 67,
+   "Deaths": 10,
+   "Recovered": 12,
+   "Active": 45
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Netherlands",
+   "Confirmed": 33405,
+   "Deaths": 3751,
+   "Recovered": 250,
+   "Active": 29404
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "New Zealand",
+   "Confirmed": 1440,
+   "Deaths": 12,
+   "Recovered": 974,
+   "Active": 454
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Nicaragua",
+   "Confirmed": 10,
+   "Deaths": 2,
+   "Recovered": 6,
+   "Active": 2
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Niger",
+   "Confirmed": 648,
+   "Deaths": 20,
+   "Recovered": 117,
+   "Active": 511
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Nigeria",
+   "Confirmed": 665,
+   "Deaths": 22,
+   "Recovered": 188,
+   "Active": 455
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "North Macedonia",
+   "Confirmed": 1225,
+   "Deaths": 54,
+   "Recovered": 200,
+   "Active": 971
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Norway",
+   "Confirmed": 7156,
+   "Deaths": 181,
+   "Recovered": 32,
+   "Active": 6943
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Oman",
+   "Confirmed": 1410,
+   "Deaths": 7,
+   "Recovered": 238,
+   "Active": 1165
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Pakistan",
+   "Confirmed": 8418,
+   "Deaths": 176,
+   "Recovered": 1970,
+   "Active": 6272
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Panama",
+   "Confirmed": 4467,
+   "Deaths": 126,
+   "Recovered": 165,
+   "Active": 4176
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Papua New Guinea",
+   "Confirmed": 7,
+   "Deaths": 0,
+   "Recovered": 0,
+   "Active": 7
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Paraguay",
+   "Confirmed": 208,
+   "Deaths": 8,
+   "Recovered": 46,
+   "Active": 154
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Peru",
+   "Confirmed": 16325,
+   "Deaths": 445,
+   "Recovered": 6968,
+   "Active": 8912
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Philippines",
+   "Confirmed": 6459,
+   "Deaths": 428,
+   "Recovered": 613,
+   "Active": 5418
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Poland",
+   "Confirmed": 9593,
+   "Deaths": 380,
+   "Recovered": 1133,
+   "Active": 8080
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Portugal",
+   "Confirmed": 20863,
+   "Deaths": 735,
+   "Recovered": 610,
+   "Active": 19518
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Qatar",
+   "Confirmed": 6015,
+   "Deaths": 9,
+   "Recovered": 555,
+   "Active": 5451
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Romania",
+   "Confirmed": 8936,
+   "Deaths": 478,
+   "Recovered": 2017,
+   "Active": 6441
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Russia",
+   "Confirmed": 47121,
+   "Deaths": 405,
+   "Recovered": 3446,
+   "Active": 43270
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Rwanda",
+   "Confirmed": 147,
+   "Deaths": 0,
+   "Recovered": 76,
+   "Active": 71
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Saint Kitts and Nevis",
+   "Confirmed": 15,
+   "Deaths": 0,
+   "Recovered": 0,
+   "Active": 15
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Saint Lucia",
+   "Confirmed": 15,
+   "Deaths": 0,
+   "Recovered": 13,
+   "Active": 2
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Saint Vincent and the Grenadines",
+   "Confirmed": 12,
+   "Deaths": 0,
+   "Recovered": 1,
+   "Active": 11
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "San Marino",
+   "Confirmed": 462,
+   "Deaths": 39,
+   "Recovered": 61,
+   "Active": 362
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Sao Tome and Principe",
+   "Confirmed": 4,
+   "Deaths": 0,
+   "Recovered": 0,
+   "Active": 4
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Saudi Arabia",
+   "Confirmed": 10484,
+   "Deaths": 103,
+   "Recovered": 1490,
+   "Active": 8891
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Senegal",
+   "Confirmed": 377,
+   "Deaths": 5,
+   "Recovered": 235,
+   "Active": 137
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Serbia",
+   "Confirmed": 6630,
+   "Deaths": 125,
+   "Recovered": 870,
+   "Active": 5635
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Seychelles",
+   "Confirmed": 11,
+   "Deaths": 0,
+   "Recovered": 5,
+   "Active": 6
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Sierra Leone",
+   "Confirmed": 43,
+   "Deaths": 0,
+   "Recovered": 6,
+   "Active": 37
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Singapore",
+   "Confirmed": 8014,
+   "Deaths": 11,
+   "Recovered": 801,
+   "Active": 7202
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Slovakia",
+   "Confirmed": 1173,
+   "Deaths": 13,
+   "Recovered": 251,
+   "Active": 909
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Slovenia",
+   "Confirmed": 1335,
+   "Deaths": 77,
+   "Recovered": 193,
+   "Active": 1065
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Somalia",
+   "Confirmed": 237,
+   "Deaths": 8,
+   "Recovered": 4,
+   "Active": 225
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "South Africa",
+   "Confirmed": 3300,
+   "Deaths": 58,
+   "Recovered": 1055,
+   "Active": 2187
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "South Sudan",
+   "Confirmed": 4,
+   "Deaths": 0,
+   "Recovered": 0,
+   "Active": 4
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Spain",
+   "Confirmed": 200210,
+   "Deaths": 20852,
+   "Recovered": 80587,
+   "Active": 98771
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Sri Lanka",
+   "Confirmed": 304,
+   "Deaths": 7,
+   "Recovered": 98,
+   "Active": 199
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Sudan",
+   "Confirmed": 107,
+   "Deaths": 12,
+   "Recovered": 8,
+   "Active": 87
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Suriname",
+   "Confirmed": 10,
+   "Deaths": 1,
+   "Recovered": 6,
+   "Active": 3
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Sweden",
+   "Confirmed": 14777,
+   "Deaths": 1580,
+   "Recovered": 550,
+   "Active": 12647
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Switzerland",
+   "Confirmed": 27944,
+   "Deaths": 1429,
+   "Recovered": 18600,
+   "Active": 7915
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Syria",
+   "Confirmed": 39,
+   "Deaths": 3,
+   "Recovered": 5,
+   "Active": 31
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Taiwan*",
+   "Confirmed": 422,
+   "Deaths": 6,
+   "Recovered": 203,
+   "Active": 213
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Tanzania",
+   "Confirmed": 254,
+   "Deaths": 10,
+   "Recovered": 11,
+   "Active": 233
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Thailand",
+   "Confirmed": 2792,
+   "Deaths": 47,
+   "Recovered": 1999,
+   "Active": 746
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Timor-Leste",
+   "Confirmed": 22,
+   "Deaths": 0,
+   "Recovered": 1,
+   "Active": 21
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Togo",
+   "Confirmed": 84,
+   "Deaths": 6,
+   "Recovered": 53,
+   "Active": 25
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Trinidad and Tobago",
+   "Confirmed": 114,
+   "Deaths": 8,
+   "Recovered": 22,
+   "Active": 84
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Tunisia",
+   "Confirmed": 884,
+   "Deaths": 38,
+   "Recovered": 148,
+   "Active": 698
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Turkey",
+   "Confirmed": 90980,
+   "Deaths": 2140,
+   "Recovered": 13430,
+   "Active": 75410
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Uganda",
+   "Confirmed": 56,
+   "Deaths": 0,
+   "Recovered": 38,
+   "Active": 18
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Ukraine",
+   "Confirmed": 5710,
+   "Deaths": 151,
+   "Recovered": 359,
+   "Active": 5200
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "United Arab Emirates",
+   "Confirmed": 7265,
+   "Deaths": 43,
+   "Recovered": 1360,
+   "Active": 5862
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Anguilla",
+   "Country_Region": "United Kingdom",
+   "Confirmed": 3,
+   "Deaths": 0,
+   "Recovered": 1,
+   "Active": 2
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Bermuda",
+   "Country_Region": "United Kingdom",
+   "Confirmed": 86,
+   "Deaths": 5,
+   "Recovered": 37,
+   "Active": 44
+ },
+ {
+   "Admin2": "",
+   "Province_State": "British Virgin Islands",
+   "Country_Region": "United Kingdom",
+   "Confirmed": 5,
+   "Deaths": 1,
+   "Recovered": 3,
+   "Active": 1
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Cayman Islands",
+   "Country_Region": "United Kingdom",
+   "Confirmed": 66,
+   "Deaths": 1,
+   "Recovered": 7,
+   "Active": 58
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Channel Islands",
+   "Country_Region": "United Kingdom",
+   "Confirmed": 488,
+   "Deaths": 24,
+   "Recovered": 73,
+   "Active": 391
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Falkland Islands (Malvinas)",
+   "Country_Region": "United Kingdom",
+   "Confirmed": 11,
+   "Deaths": 0,
+   "Recovered": 3,
+   "Active": 8
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Gibraltar",
+   "Country_Region": "United Kingdom",
+   "Confirmed": 132,
+   "Deaths": 0,
+   "Recovered": 120,
+   "Active": 12
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Isle of Man",
+   "Country_Region": "United Kingdom",
+   "Confirmed": 300,
+   "Deaths": 9,
+   "Recovered": 200,
+   "Active": 91
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Montserrat",
+   "Country_Region": "United Kingdom",
+   "Confirmed": 11,
+   "Deaths": 0,
+   "Recovered": 2,
+   "Active": 9
+ },
+ {
+   "Admin2": "",
+   "Province_State": "Turks and Caicos Islands",
+   "Country_Region": "United Kingdom",
+   "Confirmed": 11,
+   "Deaths": 1,
+   "Recovered": 0,
+   "Active": 10
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "United Kingdom",
+   "Confirmed": 124743,
+   "Deaths": 16509,
+   "Recovered": 0,
+   "Active": 108234
+ },
+ {
+   "Admin2": "",
+   "Province_State": "",
+   "Country_Region": "Uruguay",
+   "Confirmed": 535,
+   "Deaths": 10,
+   "Recovered": 313,
+   "Active": 212
+ },
  {
    "Admin2": "Autauga",
    "Province_State": "Alabama",
@@ -718,33 +2985,6 @@
    "Confirmed": 1,
    "Deaths": 0,
    "Recovered": 0,
-   "Active": 1
- },
- {
-   "Admin2": "",
-   "Province_State": "Alberta",
-   "Country_Region": "Canada",
-   "Confirmed": 2908,
-   "Deaths": 59,
-   "Recovered": 0,
-   "Active": 2849
- },
- {
-   "Admin2": "",
-   "Province_State": "Anguilla",
-   "Country_Region": "United Kingdom",
-   "Confirmed": 3,
-   "Deaths": 0,
-   "Recovered": 1,
-   "Active": 2
- },
- {
-   "Admin2": "",
-   "Province_State": "Anhui",
-   "Country_Region": "China",
-   "Confirmed": 991,
-   "Deaths": 6,
-   "Recovered": 984,
    "Active": 1
  },
  {
@@ -1522,69 +3762,6 @@
    "Active": 2
  },
  {
-   "Admin2": "",
-   "Province_State": "Aruba",
-   "Country_Region": "Netherlands",
-   "Confirmed": 97,
-   "Deaths": 2,
-   "Recovered": 49,
-   "Active": 46
- },
- {
-   "Admin2": "",
-   "Province_State": "Australian Capital Territory",
-   "Country_Region": "Australia",
-   "Confirmed": 103,
-   "Deaths": 3,
-   "Recovered": 88,
-   "Active": 12
- },
- {
-   "Admin2": "",
-   "Province_State": "Beijing",
-   "Country_Region": "China",
-   "Confirmed": 593,
-   "Deaths": 8,
-   "Recovered": 514,
-   "Active": 71
- },
- {
-   "Admin2": "",
-   "Province_State": "Bermuda",
-   "Country_Region": "United Kingdom",
-   "Confirmed": 86,
-   "Deaths": 5,
-   "Recovered": 37,
-   "Active": 44
- },
- {
-   "Admin2": "",
-   "Province_State": "Bonaire, Sint Eustatius and Saba",
-   "Country_Region": "Netherlands",
-   "Confirmed": 5,
-   "Deaths": 0,
-   "Recovered": 0,
-   "Active": 5
- },
- {
-   "Admin2": "",
-   "Province_State": "British Columbia",
-   "Country_Region": "Canada",
-   "Confirmed": 1647,
-   "Deaths": 82,
-   "Recovered": 0,
-   "Active": 1565
- },
- {
-   "Admin2": "",
-   "Province_State": "British Virgin Islands",
-   "Country_Region": "United Kingdom",
-   "Confirmed": 5,
-   "Deaths": 1,
-   "Recovered": 3,
-   "Active": 1
- },
- {
    "Admin2": "Alameda",
    "Province_State": "California",
    "Country_Region": "US",
@@ -2060,33 +4237,6 @@
    "Deaths": 1,
    "Recovered": 0,
    "Active": 15
- },
- {
-   "Admin2": "",
-   "Province_State": "Cayman Islands",
-   "Country_Region": "United Kingdom",
-   "Confirmed": 66,
-   "Deaths": 1,
-   "Recovered": 7,
-   "Active": 58
- },
- {
-   "Admin2": "",
-   "Province_State": "Channel Islands",
-   "Country_Region": "United Kingdom",
-   "Confirmed": 488,
-   "Deaths": 24,
-   "Recovered": 73,
-   "Active": 391
- },
- {
-   "Admin2": "",
-   "Province_State": "Chongqing",
-   "Country_Region": "China",
-   "Confirmed": 579,
-   "Deaths": 6,
-   "Recovered": 570,
-   "Active": 3
  },
  {
    "Admin2": "Adams",
@@ -2665,15 +4815,6 @@
    "Active": 106
  },
  {
-   "Admin2": "",
-   "Province_State": "Curacao",
-   "Country_Region": "Netherlands",
-   "Confirmed": 14,
-   "Deaths": 1,
-   "Recovered": 11,
-   "Active": 2
- },
- {
    "Admin2": "Kent",
    "Province_State": "Delaware",
    "Country_Region": "US",
@@ -2708,24 +4849,6 @@
    "Deaths": 105,
    "Recovered": 0,
    "Active": 2822
- },
- {
-   "Admin2": "",
-   "Province_State": "Falkland Islands (Malvinas)",
-   "Country_Region": "United Kingdom",
-   "Confirmed": 11,
-   "Deaths": 0,
-   "Recovered": 3,
-   "Active": 8
- },
- {
-   "Admin2": "",
-   "Province_State": "Faroe Islands",
-   "Country_Region": "Denmark",
-   "Confirmed": 185,
-   "Deaths": 0,
-   "Recovered": 176,
-   "Active": 9
  },
  {
    "Admin2": "Alachua",
@@ -3329,42 +5452,6 @@
    "Deaths": 0,
    "Recovered": 0,
    "Active": 6
- },
- {
-   "Admin2": "",
-   "Province_State": "French Guiana",
-   "Country_Region": "France",
-   "Confirmed": 97,
-   "Deaths": 1,
-   "Recovered": 69,
-   "Active": 27
- },
- {
-   "Admin2": "",
-   "Province_State": "French Polynesia",
-   "Country_Region": "France",
-   "Confirmed": 56,
-   "Deaths": 0,
-   "Recovered": 19,
-   "Active": 37
- },
- {
-   "Admin2": "",
-   "Province_State": "Fujian",
-   "Country_Region": "China",
-   "Confirmed": 355,
-   "Deaths": 1,
-   "Recovered": 339,
-   "Active": 15
- },
- {
-   "Admin2": "",
-   "Province_State": "Gansu",
-   "Country_Region": "China",
-   "Confirmed": 139,
-   "Deaths": 2,
-   "Recovered": 137,
-   "Active": 0
  },
  {
    "Admin2": "Appling",
@@ -4781,75 +6868,12 @@
  },
  {
    "Admin2": "",
-   "Province_State": "Gibraltar",
-   "Country_Region": "United Kingdom",
-   "Confirmed": 132,
-   "Deaths": 0,
-   "Recovered": 120,
-   "Active": 12
- },
- {
-   "Admin2": "",
-   "Province_State": "Greenland",
-   "Country_Region": "Denmark",
-   "Confirmed": 11,
-   "Deaths": 0,
-   "Recovered": 11,
-   "Active": 0
- },
- {
-   "Admin2": "",
-   "Province_State": "Guadeloupe",
-   "Country_Region": "France",
-   "Confirmed": 148,
-   "Deaths": 8,
-   "Recovered": 73,
-   "Active": 67
- },
- {
-   "Admin2": "",
    "Province_State": "Guam",
    "Country_Region": "US",
    "Confirmed": 136,
    "Deaths": 5,
    "Recovered": 0,
    "Active": 131
- },
- {
-   "Admin2": "",
-   "Province_State": "Guangdong",
-   "Country_Region": "China",
-   "Confirmed": 1581,
-   "Deaths": 8,
-   "Recovered": 1494,
-   "Active": 79
- },
- {
-   "Admin2": "",
-   "Province_State": "Guangxi",
-   "Country_Region": "China",
-   "Confirmed": 254,
-   "Deaths": 2,
-   "Recovered": 252,
-   "Active": 0
- },
- {
-   "Admin2": "",
-   "Province_State": "Guizhou",
-   "Country_Region": "China",
-   "Confirmed": 147,
-   "Deaths": 2,
-   "Recovered": 145,
-   "Active": 0
- },
- {
-   "Admin2": "",
-   "Province_State": "Hainan",
-   "Country_Region": "China",
-   "Confirmed": 168,
-   "Deaths": 6,
-   "Recovered": 162,
-   "Active": 0
  },
  {
    "Admin2": "Hawaii",
@@ -4886,60 +6910,6 @@
    "Deaths": 4,
    "Recovered": 0,
    "Active": 104
- },
- {
-   "Admin2": "",
-   "Province_State": "Hebei",
-   "Country_Region": "China",
-   "Confirmed": 328,
-   "Deaths": 6,
-   "Recovered": 317,
-   "Active": 5
- },
- {
-   "Admin2": "",
-   "Province_State": "Heilongjiang",
-   "Country_Region": "China",
-   "Confirmed": 905,
-   "Deaths": 13,
-   "Recovered": 472,
-   "Active": 420
- },
- {
-   "Admin2": "",
-   "Province_State": "Henan",
-   "Country_Region": "China",
-   "Confirmed": 1276,
-   "Deaths": 22,
-   "Recovered": 1254,
-   "Active": 0
- },
- {
-   "Admin2": "",
-   "Province_State": "Hong Kong",
-   "Country_Region": "China",
-   "Confirmed": 1025,
-   "Deaths": 4,
-   "Recovered": 630,
-   "Active": 391
- },
- {
-   "Admin2": "",
-   "Province_State": "Hubei",
-   "Country_Region": "China",
-   "Confirmed": 68128,
-   "Deaths": 4512,
-   "Recovered": 63511,
-   "Active": 105
- },
- {
-   "Admin2": "",
-   "Province_State": "Hunan",
-   "Country_Region": "China",
-   "Confirmed": 1019,
-   "Deaths": 4,
-   "Recovered": 1015,
-   "Active": 0
  },
  {
    "Admin2": "Ada",
@@ -6913,15 +8883,6 @@
    "Active": 15
  },
  {
-   "Admin2": "",
-   "Province_State": "Inner Mongolia",
-   "Country_Region": "China",
-   "Confirmed": 194,
-   "Deaths": 1,
-   "Recovered": 104,
-   "Active": 89
- },
- {
    "Admin2": "Adair",
    "Province_State": "Iowa",
    "Country_Region": "US",
@@ -7658,42 +9619,6 @@
    "Deaths": 0,
    "Recovered": 0,
    "Active": 1
- },
- {
-   "Admin2": "",
-   "Province_State": "Isle of Man",
-   "Country_Region": "United Kingdom",
-   "Confirmed": 300,
-   "Deaths": 9,
-   "Recovered": 200,
-   "Active": 91
- },
- {
-   "Admin2": "",
-   "Province_State": "Jiangsu",
-   "Country_Region": "China",
-   "Confirmed": 653,
-   "Deaths": 0,
-   "Recovered": 643,
-   "Active": 10
- },
- {
-   "Admin2": "",
-   "Province_State": "Jiangxi",
-   "Country_Region": "China",
-   "Confirmed": 937,
-   "Deaths": 1,
-   "Recovered": 936,
-   "Active": 0
- },
- {
-   "Admin2": "",
-   "Province_State": "Jilin",
-   "Country_Region": "China",
-   "Confirmed": 104,
-   "Deaths": 1,
-   "Recovered": 97,
-   "Active": 6
  },
  {
    "Admin2": "Anderson",
@@ -9316,15 +11241,6 @@
    "Active": 18
  },
  {
-   "Admin2": "",
-   "Province_State": "Liaoning",
-   "Country_Region": "China",
-   "Confirmed": 146,
-   "Deaths": 2,
-   "Recovered": 143,
-   "Active": 1
- },
- {
    "Admin2": "Acadia",
    "Province_State": "Louisiana",
    "Country_Region": "US",
@@ -9901,15 +11817,6 @@
    "Active": 17
  },
  {
-   "Admin2": "",
-   "Province_State": "Macau",
-   "Country_Region": "China",
-   "Confirmed": 45,
-   "Deaths": 0,
-   "Recovered": 22,
-   "Active": 23
- },
- {
    "Admin2": "Androscoggin",
    "Province_State": "Maine",
    "Country_Region": "US",
@@ -10052,24 +11959,6 @@
    "Deaths": 6,
    "Recovered": 0,
    "Active": 175
- },
- {
-   "Admin2": "",
-   "Province_State": "Manitoba",
-   "Country_Region": "Canada",
-   "Confirmed": 254,
-   "Deaths": 6,
-   "Recovered": 0,
-   "Active": 248
- },
- {
-   "Admin2": "",
-   "Province_State": "Martinique",
-   "Country_Region": "France",
-   "Confirmed": 163,
-   "Deaths": 12,
-   "Recovered": 73,
-   "Active": 78
  },
  {
    "Admin2": "Allegany",
@@ -10403,15 +12292,6 @@
    "Deaths": 114,
    "Recovered": 0,
    "Active": 2955
- },
- {
-   "Admin2": "",
-   "Province_State": "Mayotte",
-   "Country_Region": "France",
-   "Confirmed": 271,
-   "Deaths": 4,
-   "Recovered": 117,
-   "Active": 150
  },
  {
    "Admin2": "Alcona",
@@ -13663,15 +15543,6 @@
    "Active": 71
  },
  {
-   "Admin2": "",
-   "Province_State": "Montserrat",
-   "Country_Region": "United Kingdom",
-   "Confirmed": 11,
-   "Deaths": 0,
-   "Recovered": 2,
-   "Active": 9
- },
- {
    "Admin2": "Adams",
    "Province_State": "Nebraska",
    "Country_Region": "US",
@@ -14266,24 +16137,6 @@
    "Active": 3
  },
  {
-   "Admin2": "",
-   "Province_State": "New Brunswick",
-   "Country_Region": "Canada",
-   "Confirmed": 118,
-   "Deaths": 0,
-   "Recovered": 0,
-   "Active": 118
- },
- {
-   "Admin2": "",
-   "Province_State": "New Caledonia",
-   "Country_Region": "France",
-   "Confirmed": 18,
-   "Deaths": 0,
-   "Recovered": 15,
-   "Active": 3
- },
- {
    "Admin2": "Belknap",
    "Province_State": "New Hampshire",
    "Country_Region": "US",
@@ -14815,15 +16668,6 @@
    "Active": 33
  },
  {
-   "Admin2": "",
-   "Province_State": "New South Wales",
-   "Country_Region": "Australia",
-   "Confirmed": 2926,
-   "Deaths": 26,
-   "Recovered": 1379,
-   "Active": 1521
- },
- {
    "Admin2": "Albany",
    "Province_State": "New York",
    "Country_Region": "US",
@@ -15344,24 +17188,6 @@
    "Deaths": 0,
    "Recovered": 0,
    "Active": 10
- },
- {
-   "Admin2": "",
-   "Province_State": "Newfoundland and Labrador",
-   "Country_Region": "Canada",
-   "Confirmed": 257,
-   "Deaths": 3,
-   "Recovered": 0,
-   "Active": 254
- },
- {
-   "Admin2": "",
-   "Province_State": "Ningxia",
-   "Country_Region": "China",
-   "Confirmed": 75,
-   "Deaths": 0,
-   "Recovered": 75,
-   "Active": 0
  },
  {
    "Admin2": "Alamance",
@@ -16505,33 +18331,6 @@
    "Deaths": 2,
    "Recovered": 0,
    "Active": 12
- },
- {
-   "Admin2": "",
-   "Province_State": "Northern Territory",
-   "Country_Region": "Australia",
-   "Confirmed": 28,
-   "Deaths": 0,
-   "Recovered": 9,
-   "Active": 19
- },
- {
-   "Admin2": "",
-   "Province_State": "Northwest Territories",
-   "Country_Region": "Canada",
-   "Confirmed": 5,
-   "Deaths": 0,
-   "Recovered": 0,
-   "Active": 5
- },
- {
-   "Admin2": "",
-   "Province_State": "Nova Scotia",
-   "Country_Region": "Canada",
-   "Confirmed": 721,
-   "Deaths": 9,
-   "Recovered": 0,
-   "Active": 712
  },
  {
    "Admin2": "Adams",
@@ -17929,15 +19728,6 @@
    "Active": 1
  },
  {
-   "Admin2": "",
-   "Province_State": "Ontario",
-   "Country_Region": "Canada",
-   "Confirmed": 12063,
-   "Deaths": 624,
-   "Recovered": 0,
-   "Active": 11439
- },
- {
    "Admin2": "Benton",
    "Province_State": "Oregon",
    "Country_Region": "US",
@@ -18821,57 +20611,12 @@
  },
  {
    "Admin2": "",
-   "Province_State": "Prince Edward Island",
-   "Country_Region": "Canada",
-   "Confirmed": 26,
-   "Deaths": 0,
-   "Recovered": 0,
-   "Active": 26
- },
- {
-   "Admin2": "",
    "Province_State": "Puerto Rico",
    "Country_Region": "US",
    "Confirmed": 1252,
    "Deaths": 63,
    "Recovered": 0,
    "Active": 1189
- },
- {
-   "Admin2": "",
-   "Province_State": "Qinghai",
-   "Country_Region": "China",
-   "Confirmed": 18,
-   "Deaths": 0,
-   "Recovered": 18,
-   "Active": 0
- },
- {
-   "Admin2": "",
-   "Province_State": "Quebec",
-   "Country_Region": "Canada",
-   "Confirmed": 19319,
-   "Deaths": 939,
-   "Recovered": 0,
-   "Active": 18380
- },
- {
-   "Admin2": "",
-   "Province_State": "Queensland",
-   "Country_Region": "Australia",
-   "Confirmed": 1015,
-   "Deaths": 6,
-   "Recovered": 738,
-   "Active": 271
- },
- {
-   "Admin2": "",
-   "Province_State": "Reunion",
-   "Country_Region": "France",
-   "Confirmed": 408,
-   "Deaths": 0,
-   "Recovered": 237,
-   "Active": 171
  },
  {
    "Admin2": "Bristol",
@@ -18917,96 +20662,6 @@
    "Deaths": 0,
    "Recovered": 0,
    "Active": 198
- },
- {
-   "Admin2": "",
-   "Province_State": "Saint Barthelemy",
-   "Country_Region": "France",
-   "Confirmed": 6,
-   "Deaths": 0,
-   "Recovered": 5,
-   "Active": 1
- },
- {
-   "Admin2": "",
-   "Province_State": "Saint Pierre and Miquelon",
-   "Country_Region": "France",
-   "Confirmed": 1,
-   "Deaths": 0,
-   "Recovered": 0,
-   "Active": 1
- },
- {
-   "Admin2": "",
-   "Province_State": "Saskatchewan",
-   "Country_Region": "Canada",
-   "Confirmed": 316,
-   "Deaths": 4,
-   "Recovered": 0,
-   "Active": 312
- },
- {
-   "Admin2": "",
-   "Province_State": "Shaanxi",
-   "Country_Region": "China",
-   "Confirmed": 256,
-   "Deaths": 3,
-   "Recovered": 252,
-   "Active": 1
- },
- {
-   "Admin2": "",
-   "Province_State": "Shandong",
-   "Country_Region": "China",
-   "Confirmed": 787,
-   "Deaths": 7,
-   "Recovered": 765,
-   "Active": 15
- },
- {
-   "Admin2": "",
-   "Province_State": "Shanghai",
-   "Country_Region": "China",
-   "Confirmed": 638,
-   "Deaths": 7,
-   "Recovered": 530,
-   "Active": 101
- },
- {
-   "Admin2": "",
-   "Province_State": "Shanxi",
-   "Country_Region": "China",
-   "Confirmed": 197,
-   "Deaths": 0,
-   "Recovered": 135,
-   "Active": 62
- },
- {
-   "Admin2": "",
-   "Province_State": "Sichuan",
-   "Country_Region": "China",
-   "Confirmed": 561,
-   "Deaths": 3,
-   "Recovered": 554,
-   "Active": 4
- },
- {
-   "Admin2": "",
-   "Province_State": "Sint Maarten",
-   "Country_Region": "Netherlands",
-   "Confirmed": 67,
-   "Deaths": 10,
-   "Recovered": 12,
-   "Active": 45
- },
- {
-   "Admin2": "",
-   "Province_State": "South Australia",
-   "Country_Region": "Australia",
-   "Confirmed": 435,
-   "Deaths": 4,
-   "Recovered": 331,
-   "Active": 100
  },
  {
    "Admin2": "Abbeville",
@@ -19817,24 +21472,6 @@
    "Deaths": 0,
    "Recovered": 0,
    "Active": 23
- },
- {
-   "Admin2": "",
-   "Province_State": "St Martin",
-   "Country_Region": "France",
-   "Confirmed": 37,
-   "Deaths": 2,
-   "Recovered": 19,
-   "Active": 16
- },
- {
-   "Admin2": "",
-   "Province_State": "Tasmania",
-   "Country_Region": "Australia",
-   "Confirmed": 180,
-   "Deaths": 7,
-   "Recovered": 67,
-   "Active": 106
  },
  {
    "Admin2": "Anderson",
@@ -22474,33 +24111,6 @@
    "Active": 1
  },
  {
-   "Admin2": "",
-   "Province_State": "Tianjin",
-   "Country_Region": "China",
-   "Confirmed": 189,
-   "Deaths": 3,
-   "Recovered": 174,
-   "Active": 12
- },
- {
-   "Admin2": "",
-   "Province_State": "Tibet",
-   "Country_Region": "China",
-   "Confirmed": 1,
-   "Deaths": 0,
-   "Recovered": 1,
-   "Active": 0
- },
- {
-   "Admin2": "",
-   "Province_State": "Turks and Caicos Islands",
-   "Country_Region": "United Kingdom",
-   "Confirmed": 11,
-   "Deaths": 1,
-   "Recovered": 0,
-   "Active": 10
- },
- {
    "Admin2": "Bear River",
    "Province_State": "Utah",
    "Country_Region": "US",
@@ -22742,15 +24352,6 @@
    "Deaths": 2,
    "Recovered": 0,
    "Active": 35
- },
- {
-   "Admin2": "",
-   "Province_State": "Victoria",
-   "Country_Region": "Australia",
-   "Confirmed": 1319,
-   "Deaths": 14,
-   "Recovered": 1172,
-   "Active": 133
  },
  {
    "Admin2": "",
@@ -24733,15 +26334,6 @@
    "Active": 1
  },
  {
-   "Admin2": "",
-   "Province_State": "Western Australia",
-   "Country_Region": "Australia",
-   "Confirmed": 541,
-   "Deaths": 7,
-   "Recovered": 340,
-   "Active": 194
- },
- {
    "Admin2": "Adams",
    "Province_State": "Wisconsin",
    "Country_Region": "US",
@@ -25535,1578 +27127,12 @@
  },
  {
    "Admin2": "",
-   "Province_State": "Xinjiang",
-   "Country_Region": "China",
-   "Confirmed": 76,
-   "Deaths": 3,
-   "Recovered": 73,
-   "Active": 0
- },
- {
-   "Admin2": "",
-   "Province_State": "Yukon",
-   "Country_Region": "Canada",
-   "Confirmed": 11,
-   "Deaths": 0,
+   "Province_State": "",
+   "Country_Region": "US",
+   "Confirmed": 778394,
+   "Deaths": 41543,
    "Recovered": 0,
-   "Active": 11
- },
- {
-   "Admin2": "",
-   "Province_State": "Yunnan",
-   "Country_Region": "China",
-   "Confirmed": 184,
-   "Deaths": 2,
-   "Recovered": 178,
-   "Active": 4
- },
- {
-   "Admin2": "",
-   "Province_State": "Zhejiang",
-   "Country_Region": "China",
-   "Confirmed": 1268,
-   "Deaths": 1,
-   "Recovered": 1249,
-   "Active": 18
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Afghanistan",
-   "Confirmed": 1026,
-   "Deaths": 36,
-   "Recovered": 135,
-   "Active": 855
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Albania",
-   "Confirmed": 584,
-   "Deaths": 26,
-   "Recovered": 327,
-   "Active": 231
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Algeria",
-   "Confirmed": 2718,
-   "Deaths": 384,
-   "Recovered": 1099,
-   "Active": 1235
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Andorra",
-   "Confirmed": 717,
-   "Deaths": 37,
-   "Recovered": 248,
-   "Active": 432
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Angola",
-   "Confirmed": 24,
-   "Deaths": 2,
-   "Recovered": 6,
-   "Active": 16
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Antigua and Barbuda",
-   "Confirmed": 23,
-   "Deaths": 3,
-   "Recovered": 3,
-   "Active": 17
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Argentina",
-   "Confirmed": 2941,
-   "Deaths": 136,
-   "Recovered": 737,
-   "Active": 2068
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Armenia",
-   "Confirmed": 1339,
-   "Deaths": 22,
-   "Recovered": 580,
-   "Active": 737
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Austria",
-   "Confirmed": 14795,
-   "Deaths": 470,
-   "Recovered": 10631,
-   "Active": 3694
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Azerbaijan",
-   "Confirmed": 1436,
-   "Deaths": 19,
-   "Recovered": 791,
-   "Active": 626
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Bahamas",
-   "Confirmed": 60,
-   "Deaths": 9,
-   "Recovered": 11,
-   "Active": 40
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Bahrain",
-   "Confirmed": 1907,
-   "Deaths": 7,
-   "Recovered": 769,
-   "Active": 1131
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Bangladesh",
-   "Confirmed": 2948,
-   "Deaths": 101,
-   "Recovered": 85,
-   "Active": 2762
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Barbados",
-   "Confirmed": 75,
-   "Deaths": 5,
-   "Recovered": 19,
-   "Active": 51
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Belarus",
-   "Confirmed": 6264,
-   "Deaths": 51,
-   "Recovered": 514,
-   "Active": 5699
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Belgium",
-   "Confirmed": 39983,
-   "Deaths": 5828,
-   "Recovered": 8895,
-   "Active": 25260
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Belize",
-   "Confirmed": 18,
-   "Deaths": 2,
-   "Recovered": 2,
-   "Active": 14
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Benin",
-   "Confirmed": 54,
-   "Deaths": 1,
-   "Recovered": 27,
-   "Active": 26
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Bhutan",
-   "Confirmed": 5,
-   "Deaths": 0,
-   "Recovered": 2,
-   "Active": 3
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Bolivia",
-   "Confirmed": 564,
-   "Deaths": 33,
-   "Recovered": 31,
-   "Active": 500
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Bosnia and Herzegovina",
-   "Confirmed": 1309,
-   "Deaths": 49,
-   "Recovered": 381,
-   "Active": 879
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Botswana",
-   "Confirmed": 20,
-   "Deaths": 1,
-   "Recovered": 0,
-   "Active": 19
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Brazil",
-   "Confirmed": 40743,
-   "Deaths": 2587,
-   "Recovered": 22130,
-   "Active": 16026
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Brunei",
-   "Confirmed": 138,
-   "Deaths": 1,
-   "Recovered": 116,
-   "Active": 21
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Bulgaria",
-   "Confirmed": 929,
-   "Deaths": 43,
-   "Recovered": 167,
-   "Active": 719
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Burkina Faso",
-   "Confirmed": 581,
-   "Deaths": 38,
-   "Recovered": 357,
-   "Active": 186
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Burma",
-   "Confirmed": 119,
-   "Deaths": 5,
-   "Recovered": 7,
-   "Active": 107
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Burundi",
-   "Confirmed": 5,
-   "Deaths": 1,
-   "Recovered": 4,
-   "Active": 0
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Cabo Verde",
-   "Confirmed": 67,
-   "Deaths": 1,
-   "Recovered": 1,
-   "Active": 65
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Cambodia",
-   "Confirmed": 122,
-   "Deaths": 0,
-   "Recovered": 107,
-   "Active": 15
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Cameroon",
-   "Confirmed": 1163,
-   "Deaths": 42,
-   "Recovered": 305,
-   "Active": 816
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Central African Republic",
-   "Confirmed": 12,
-   "Deaths": 0,
-   "Recovered": 4,
-   "Active": 8
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Chad",
-   "Confirmed": 33,
-   "Deaths": 0,
-   "Recovered": 8,
-   "Active": 25
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Chile",
-   "Confirmed": 10507,
-   "Deaths": 139,
-   "Recovered": 4676,
-   "Active": 5692
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Colombia",
-   "Confirmed": 3977,
-   "Deaths": 189,
-   "Recovered": 804,
-   "Active": 2984
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Congo (Brazzaville)",
-   "Confirmed": 160,
-   "Deaths": 6,
-   "Recovered": 16,
-   "Active": 138
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Congo (Kinshasa)",
-   "Confirmed": 332,
-   "Deaths": 25,
-   "Recovered": 27,
-   "Active": 280
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Costa Rica",
-   "Confirmed": 662,
-   "Deaths": 6,
-   "Recovered": 124,
-   "Active": 532
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Cote d'Ivoire",
-   "Confirmed": 847,
-   "Deaths": 9,
-   "Recovered": 260,
-   "Active": 578
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Croatia",
-   "Confirmed": 1881,
-   "Deaths": 47,
-   "Recovered": 771,
-   "Active": 1063
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Cuba",
-   "Confirmed": 1087,
-   "Deaths": 36,
-   "Recovered": 285,
-   "Active": 766
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Cyprus",
-   "Confirmed": 772,
-   "Deaths": 12,
-   "Recovered": 81,
-   "Active": 679
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Czechia",
-   "Confirmed": 6900,
-   "Deaths": 194,
-   "Recovered": 1559,
-   "Active": 5147
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Denmark",
-   "Confirmed": 7515,
-   "Deaths": 364,
-   "Recovered": 4312,
-   "Active": 2839
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Djibouti",
-   "Confirmed": 846,
-   "Deaths": 2,
-   "Recovered": 102,
-   "Active": 742
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Dominica",
-   "Confirmed": 16,
-   "Deaths": 0,
-   "Recovered": 8,
-   "Active": 8
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Dominican Republic",
-   "Confirmed": 4964,
-   "Deaths": 235,
-   "Recovered": 416,
-   "Active": 4313
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Ecuador",
-   "Confirmed": 10128,
-   "Deaths": 507,
-   "Recovered": 1150,
-   "Active": 8471
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Egypt",
-   "Confirmed": 3333,
-   "Deaths": 250,
-   "Recovered": 821,
-   "Active": 2262
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "El Salvador",
-   "Confirmed": 218,
-   "Deaths": 7,
-   "Recovered": 46,
-   "Active": 165
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Equatorial Guinea",
-   "Confirmed": 79,
-   "Deaths": 0,
-   "Recovered": 7,
-   "Active": 72
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Eritrea",
-   "Confirmed": 39,
-   "Deaths": 0,
-   "Recovered": 3,
-   "Active": 36
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Estonia",
-   "Confirmed": 1535,
-   "Deaths": 40,
-   "Recovered": 165,
-   "Active": 1330
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Eswatini",
-   "Confirmed": 24,
-   "Deaths": 1,
-   "Recovered": 8,
-   "Active": 15
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Ethiopia",
-   "Confirmed": 111,
-   "Deaths": 3,
-   "Recovered": 16,
-   "Active": 92
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Fiji",
-   "Confirmed": 18,
-   "Deaths": 0,
-   "Recovered": 3,
-   "Active": 15
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Finland",
-   "Confirmed": 3868,
-   "Deaths": 98,
-   "Recovered": 2000,
-   "Active": 1770
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "France",
-   "Confirmed": 155275,
-   "Deaths": 20265,
-   "Recovered": 37409,
-   "Active": 97601
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Gabon",
-   "Confirmed": 120,
-   "Deaths": 1,
-   "Recovered": 7,
-   "Active": 112
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Gambia",
-   "Confirmed": 10,
-   "Deaths": 1,
-   "Recovered": 2,
-   "Active": 7
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Georgia",
-   "Confirmed": 402,
-   "Deaths": 4,
-   "Recovered": 95,
-   "Active": 303
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Germany",
-   "Confirmed": 147065,
-   "Deaths": 4862,
-   "Recovered": 91500,
-   "Active": 50703
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Ghana",
-   "Confirmed": 1042,
-   "Deaths": 9,
-   "Recovered": 99,
-   "Active": 934
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Greece",
-   "Confirmed": 2245,
-   "Deaths": 116,
-   "Recovered": 269,
-   "Active": 1860
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Grenada",
-   "Confirmed": 14,
-   "Deaths": 0,
-   "Recovered": 6,
-   "Active": 8
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Guatemala",
-   "Confirmed": 289,
-   "Deaths": 7,
-   "Recovered": 21,
-   "Active": 261
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Guinea",
-   "Confirmed": 622,
-   "Deaths": 5,
-   "Recovered": 122,
-   "Active": 495
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Guinea-Bissau",
-   "Confirmed": 50,
-   "Deaths": 0,
-   "Recovered": 3,
-   "Active": 47
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Guyana",
-   "Confirmed": 65,
-   "Deaths": 7,
-   "Recovered": 9,
-   "Active": 49
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Haiti",
-   "Confirmed": 57,
-   "Deaths": 3,
-   "Recovered": 0,
-   "Active": 54
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Holy See",
-   "Confirmed": 9,
-   "Deaths": 0,
-   "Recovered": 2,
-   "Active": 7
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Honduras",
-   "Confirmed": 477,
-   "Deaths": 46,
-   "Recovered": 25,
-   "Active": 406
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Hungary",
-   "Confirmed": 1984,
-   "Deaths": 199,
-   "Recovered": 267,
-   "Active": 1518
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Iceland",
-   "Confirmed": 1773,
-   "Deaths": 10,
-   "Recovered": 1362,
-   "Active": 401
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "India",
-   "Confirmed": 18539,
-   "Deaths": 592,
-   "Recovered": 3273,
-   "Active": 14674
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Indonesia",
-   "Confirmed": 6760,
-   "Deaths": 590,
-   "Recovered": 747,
-   "Active": 5423
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Iran",
-   "Confirmed": 83505,
-   "Deaths": 5209,
-   "Recovered": 59273,
-   "Active": 19023
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Iraq",
-   "Confirmed": 1574,
-   "Deaths": 82,
-   "Recovered": 1043,
-   "Active": 449
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Ireland",
-   "Confirmed": 15652,
-   "Deaths": 687,
-   "Recovered": 77,
-   "Active": 14888
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Israel",
-   "Confirmed": 13713,
-   "Deaths": 177,
-   "Recovered": 4049,
-   "Active": 9487
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Italy",
-   "Confirmed": 181228,
-   "Deaths": 24114,
-   "Recovered": 48877,
-   "Active": 108237
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Jamaica",
-   "Confirmed": 223,
-   "Deaths": 5,
-   "Recovered": 27,
-   "Active": 191
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Japan",
-   "Confirmed": 10797,
-   "Deaths": 236,
-   "Recovered": 1159,
-   "Active": 9402
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Jordan",
-   "Confirmed": 425,
-   "Deaths": 7,
-   "Recovered": 282,
-   "Active": 136
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Kazakhstan",
-   "Confirmed": 1852,
-   "Deaths": 19,
-   "Recovered": 447,
-   "Active": 1386
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Kenya",
-   "Confirmed": 281,
-   "Deaths": 14,
-   "Recovered": 69,
-   "Active": 198
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Korea, South",
-   "Confirmed": 10674,
-   "Deaths": 236,
-   "Recovered": 8114,
-   "Active": 2324
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Kosovo",
-   "Confirmed": 510,
-   "Deaths": 12,
-   "Recovered": 93,
-   "Active": 405
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Kuwait",
-   "Confirmed": 1995,
-   "Deaths": 9,
-   "Recovered": 367,
-   "Active": 1619
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Kyrgyzstan",
-   "Confirmed": 568,
-   "Deaths": 7,
-   "Recovered": 201,
-   "Active": 360
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Laos",
-   "Confirmed": 19,
-   "Deaths": 0,
-   "Recovered": 2,
-   "Active": 17
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Latvia",
-   "Confirmed": 739,
-   "Deaths": 5,
-   "Recovered": 88,
-   "Active": 646
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Lebanon",
-   "Confirmed": 677,
-   "Deaths": 21,
-   "Recovered": 103,
-   "Active": 553
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Liberia",
-   "Confirmed": 99,
-   "Deaths": 8,
-   "Recovered": 7,
-   "Active": 84
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Libya",
-   "Confirmed": 51,
-   "Deaths": 1,
-   "Recovered": 15,
-   "Active": 35
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Liechtenstein",
-   "Confirmed": 81,
-   "Deaths": 1,
-   "Recovered": 55,
-   "Active": 25
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Lithuania",
-   "Confirmed": 1326,
-   "Deaths": 37,
-   "Recovered": 242,
-   "Active": 1047
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Luxembourg",
-   "Confirmed": 3558,
-   "Deaths": 75,
-   "Recovered": 637,
-   "Active": 2846
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Madagascar",
-   "Confirmed": 121,
-   "Deaths": 0,
-   "Recovered": 41,
-   "Active": 80
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Malawi",
-   "Confirmed": 17,
-   "Deaths": 2,
-   "Recovered": 3,
-   "Active": 12
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Malaysia",
-   "Confirmed": 5425,
-   "Deaths": 89,
-   "Recovered": 3295,
-   "Active": 2041
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Maldives",
-   "Confirmed": 69,
-   "Deaths": 0,
-   "Recovered": 16,
-   "Active": 53
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Mali",
-   "Confirmed": 246,
-   "Deaths": 14,
-   "Recovered": 56,
-   "Active": 176
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Malta",
-   "Confirmed": 431,
-   "Deaths": 3,
-   "Recovered": 126,
-   "Active": 302
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Mauritania",
-   "Confirmed": 7,
-   "Deaths": 1,
-   "Recovered": 6,
-   "Active": 0
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Mauritius",
-   "Confirmed": 328,
-   "Deaths": 9,
-   "Recovered": 224,
-   "Active": 95
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Mexico",
-   "Confirmed": 8261,
-   "Deaths": 686,
-   "Recovered": 2627,
-   "Active": 4948
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Moldova",
-   "Confirmed": 2548,
-   "Deaths": 70,
-   "Recovered": 457,
-   "Active": 2021
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Monaco",
-   "Confirmed": 94,
-   "Deaths": 3,
-   "Recovered": 23,
-   "Active": 68
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Mongolia",
-   "Confirmed": 33,
-   "Deaths": 0,
-   "Recovered": 7,
-   "Active": 26
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Montenegro",
-   "Confirmed": 312,
-   "Deaths": 5,
-   "Recovered": 88,
-   "Active": 219
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Morocco",
-   "Confirmed": 3046,
-   "Deaths": 143,
-   "Recovered": 350,
-   "Active": 2553
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Mozambique",
-   "Confirmed": 39,
-   "Deaths": 0,
-   "Recovered": 8,
-   "Active": 31
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Namibia",
-   "Confirmed": 16,
-   "Deaths": 0,
-   "Recovered": 6,
-   "Active": 10
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Nepal",
-   "Confirmed": 31,
-   "Deaths": 0,
-   "Recovered": 4,
-   "Active": 27
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Netherlands",
-   "Confirmed": 33405,
-   "Deaths": 3751,
-   "Recovered": 250,
-   "Active": 29404
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "New Zealand",
-   "Confirmed": 1440,
-   "Deaths": 12,
-   "Recovered": 974,
-   "Active": 454
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Nicaragua",
-   "Confirmed": 10,
-   "Deaths": 2,
-   "Recovered": 6,
-   "Active": 2
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Niger",
-   "Confirmed": 648,
-   "Deaths": 20,
-   "Recovered": 117,
-   "Active": 511
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Nigeria",
-   "Confirmed": 665,
-   "Deaths": 22,
-   "Recovered": 188,
-   "Active": 455
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "North Macedonia",
-   "Confirmed": 1225,
-   "Deaths": 54,
-   "Recovered": 200,
-   "Active": 971
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Norway",
-   "Confirmed": 7156,
-   "Deaths": 181,
-   "Recovered": 32,
-   "Active": 6943
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Oman",
-   "Confirmed": 1410,
-   "Deaths": 7,
-   "Recovered": 238,
-   "Active": 1165
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Pakistan",
-   "Confirmed": 8418,
-   "Deaths": 176,
-   "Recovered": 1970,
-   "Active": 6272
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Panama",
-   "Confirmed": 4467,
-   "Deaths": 126,
-   "Recovered": 165,
-   "Active": 4176
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Papua New Guinea",
-   "Confirmed": 7,
-   "Deaths": 0,
-   "Recovered": 0,
-   "Active": 7
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Paraguay",
-   "Confirmed": 208,
-   "Deaths": 8,
-   "Recovered": 46,
-   "Active": 154
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Peru",
-   "Confirmed": 16325,
-   "Deaths": 445,
-   "Recovered": 6968,
-   "Active": 8912
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Philippines",
-   "Confirmed": 6459,
-   "Deaths": 428,
-   "Recovered": 613,
-   "Active": 5418
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Poland",
-   "Confirmed": 9593,
-   "Deaths": 380,
-   "Recovered": 1133,
-   "Active": 8080
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Portugal",
-   "Confirmed": 20863,
-   "Deaths": 735,
-   "Recovered": 610,
-   "Active": 19518
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Qatar",
-   "Confirmed": 6015,
-   "Deaths": 9,
-   "Recovered": 555,
-   "Active": 5451
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Romania",
-   "Confirmed": 8936,
-   "Deaths": 478,
-   "Recovered": 2017,
-   "Active": 6441
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Russia",
-   "Confirmed": 47121,
-   "Deaths": 405,
-   "Recovered": 3446,
-   "Active": 43270
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Rwanda",
-   "Confirmed": 147,
-   "Deaths": 0,
-   "Recovered": 76,
-   "Active": 71
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Saint Kitts and Nevis",
-   "Confirmed": 15,
-   "Deaths": 0,
-   "Recovered": 0,
-   "Active": 15
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Saint Lucia",
-   "Confirmed": 15,
-   "Deaths": 0,
-   "Recovered": 13,
-   "Active": 2
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Saint Vincent and the Grenadines",
-   "Confirmed": 12,
-   "Deaths": 0,
-   "Recovered": 1,
-   "Active": 11
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "San Marino",
-   "Confirmed": 462,
-   "Deaths": 39,
-   "Recovered": 61,
-   "Active": 362
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Sao Tome and Principe",
-   "Confirmed": 4,
-   "Deaths": 0,
-   "Recovered": 0,
-   "Active": 4
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Saudi Arabia",
-   "Confirmed": 10484,
-   "Deaths": 103,
-   "Recovered": 1490,
-   "Active": 8891
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Senegal",
-   "Confirmed": 377,
-   "Deaths": 5,
-   "Recovered": 235,
-   "Active": 137
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Serbia",
-   "Confirmed": 6630,
-   "Deaths": 125,
-   "Recovered": 870,
-   "Active": 5635
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Seychelles",
-   "Confirmed": 11,
-   "Deaths": 0,
-   "Recovered": 5,
-   "Active": 6
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Sierra Leone",
-   "Confirmed": 43,
-   "Deaths": 0,
-   "Recovered": 6,
-   "Active": 37
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Singapore",
-   "Confirmed": 8014,
-   "Deaths": 11,
-   "Recovered": 801,
-   "Active": 7202
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Slovakia",
-   "Confirmed": 1173,
-   "Deaths": 13,
-   "Recovered": 251,
-   "Active": 909
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Slovenia",
-   "Confirmed": 1335,
-   "Deaths": 77,
-   "Recovered": 193,
-   "Active": 1065
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Somalia",
-   "Confirmed": 237,
-   "Deaths": 8,
-   "Recovered": 4,
-   "Active": 225
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "South Africa",
-   "Confirmed": 3300,
-   "Deaths": 58,
-   "Recovered": 1055,
-   "Active": 2187
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "South Sudan",
-   "Confirmed": 4,
-   "Deaths": 0,
-   "Recovered": 0,
-   "Active": 4
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Spain",
-   "Confirmed": 200210,
-   "Deaths": 20852,
-   "Recovered": 80587,
-   "Active": 98771
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Sri Lanka",
-   "Confirmed": 304,
-   "Deaths": 7,
-   "Recovered": 98,
-   "Active": 199
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Sudan",
-   "Confirmed": 107,
-   "Deaths": 12,
-   "Recovered": 8,
-   "Active": 87
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Suriname",
-   "Confirmed": 10,
-   "Deaths": 1,
-   "Recovered": 6,
-   "Active": 3
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Sweden",
-   "Confirmed": 14777,
-   "Deaths": 1580,
-   "Recovered": 550,
-   "Active": 12647
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Switzerland",
-   "Confirmed": 27944,
-   "Deaths": 1429,
-   "Recovered": 18600,
-   "Active": 7915
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Syria",
-   "Confirmed": 39,
-   "Deaths": 3,
-   "Recovered": 5,
-   "Active": 31
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Taiwan*",
-   "Confirmed": 422,
-   "Deaths": 6,
-   "Recovered": 203,
-   "Active": 213
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Tanzania",
-   "Confirmed": 254,
-   "Deaths": 10,
-   "Recovered": 11,
-   "Active": 233
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Thailand",
-   "Confirmed": 2792,
-   "Deaths": 47,
-   "Recovered": 1999,
-   "Active": 746
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Timor-Leste",
-   "Confirmed": 22,
-   "Deaths": 0,
-   "Recovered": 1,
-   "Active": 21
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Togo",
-   "Confirmed": 84,
-   "Deaths": 6,
-   "Recovered": 53,
-   "Active": 25
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Trinidad and Tobago",
-   "Confirmed": 114,
-   "Deaths": 8,
-   "Recovered": 22,
-   "Active": 84
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Tunisia",
-   "Confirmed": 884,
-   "Deaths": 38,
-   "Recovered": 148,
-   "Active": 698
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Turkey",
-   "Confirmed": 90980,
-   "Deaths": 2140,
-   "Recovered": 13430,
-   "Active": 75410
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Uganda",
-   "Confirmed": 56,
-   "Deaths": 0,
-   "Recovered": 38,
-   "Active": 18
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Ukraine",
-   "Confirmed": 5710,
-   "Deaths": 151,
-   "Recovered": 359,
-   "Active": 5200
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "United Arab Emirates",
-   "Confirmed": 7265,
-   "Deaths": 43,
-   "Recovered": 1360,
-   "Active": 5862
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "United Kingdom",
-   "Confirmed": 124743,
-   "Deaths": 16509,
-   "Recovered": 0,
-   "Active": 108234
- },
- {
-   "Admin2": "",
-   "Province_State": "",
-   "Country_Region": "Uruguay",
-   "Confirmed": 535,
-   "Deaths": 10,
-   "Recovered": 313,
-   "Active": 212
+   "Active": 736851
  },
  {
    "Admin2": "",
