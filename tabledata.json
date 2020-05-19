@@ -464,7 +464,7 @@
    "Country_Region": "Canada",
    "Confirmed": 37645,
    "Deaths": 1726,
-   "Recovered": 0,
+   "Recovered": 13188,
    "Active": 35919
  },
  {
@@ -27131,7 +27131,7 @@
    "Country_Region": "US",
    "Confirmed": 778394,
    "Deaths": 41543,
-   "Recovered": 0,
+   "Recovered": 75204,
    "Active": 736851
  },
  {
