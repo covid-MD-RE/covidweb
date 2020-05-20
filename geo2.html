@@ -22,7 +22,7 @@
         
         // add circles - Italy and Hubei are here as an example 
         
-      L.geoJson(states, {style: style, onEachFeature: function (feature, layer) {
+      L.geoJson(provs, {style: style, onEachFeature: function (feature, layer) {
         layer.bindPopup('<h3>Deaths</h3><h1>'+feature.properties.deaths+'</h1>');
         }}).addTo(map);
         
