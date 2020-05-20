@@ -28,11 +28,11 @@
         
           // GEOJSON COLOR RAMP
         function getColor(d) {
-           if (d > 9) {
+           if (d > 100) {
               return '#800026'; 
-           } else if (d == 5) {
+           } else if (d > 50 && d < 101) {
               return '#FC4E2A';
-           } else if (d > 0 && d < 5) {
+           } else if (d > 0 && d < 50) {
               return '#FED976';
            } else {
               return '#FFEDA0' 
