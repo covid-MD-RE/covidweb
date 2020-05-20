@@ -1,10 +1,3 @@
-# convert.py - file io application to read in latest covid19 data and spit out Leaflet.js circles using string concatenation
-# March 24, 2020: mhoel - original coding 
-# added geojson - https://github.com/datasets/geo-countries/tree/master/data
-
-# Access data from: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports
-# Korea, South - Bahamas, The - Gambia, The : Must be manually fixed in the data (South Korea, Bahamas, Gambia) 
-
 # Read file in
 fi = open("04-21-2020.csv","r")
 fi.readline() # skip over first title line
@@ -25,12 +18,19 @@ for line in datarows:
     lon = templist[6]
 
     if (country == "us"):
-        provs.append(prov)
-        numdeaths.append(deaths)
-
-
+        if (provs.count(prov) == 0):
+            provs.append(prov)
+            numdeaths.append(deaths)
+        else:
+            try:
+                i = provs.index(prov)
+                existing = int(numdeaths[i])
+                numdeaths[i] = existing + int(deaths)
+            except:
+                print("can not find " + prov)
+            
 print(provs)
-print(deaths)
+print(numdeaths)
 
 import json
 
@@ -44,7 +44,7 @@ for prov in data["features"]:
     try:
         i = provs.index(name)
         prov["properties"]["deaths"] = numdeaths[i]
-        print(prov["properties"])
+        #print(prov["properties"])
     except:
         print(name + " not found")
         prov["properties"]["deaths"] =0
