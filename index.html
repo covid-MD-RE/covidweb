@@ -2,7 +2,7 @@
 <html>
 
     <head>
-	    <title>Coronavirus (COVID-19)</title>
+	<title>Coronavirus (COVID-19)</title>
         <link rel='stylesheet' href='https://unpkg.com/leaflet@1.4.0/dist/leaflet.css'/>
         <script src='https://unpkg.com/leaflet@1.4.0/dist/leaflet.js'></script>
         <link rel="stylesheet" href="mystyles.css">
@@ -126,13 +126,11 @@
     
     function getFilteredData() {
         if (searchCountryInput.value.trim().length > 0){
-           //alert("searchCountryInput = " + searchCountryInput.value)
            filterData = data.filter(function(d) {
                return d.Country_Region.toUpperCase() === searchCountryInput.value.toUpperCase();
            })
            return filterData;    
         } else {
-            //alert("Not filtering for empty searchCountryInput = " + searchCountryInput.value)
             return data;
         }
     }
@@ -149,16 +147,11 @@
     
     
     function showData() {
-        
-        //alert("data sz=" + data.length);
+        //setting variables
         var filterData = getFilteredData()
-        //alert("filterData sz=" + filterData.length);
-        
         var sortType= sort.value
         var sortBy  = sort1.value
         var searchCountry = searchCountryInput.value
-        //alert("sortType=" + sortType)
-        //alert("sortBy=" + sortBy)
         filterData.sort(sortByProperty(sortType,sortBy))
         var col = [];
         for (var i = 0; i < filterData.length; i++) {
@@ -172,16 +165,16 @@
         // Create a table.
         var table = document.createElement("table");
 
-        // Create table header row using the extracted headers above.
-        var tr = table.insertRow(-1);                   // table row.
+        // Create table header row using the extracted headers 
+        var tr = table.insertRow(-1);                   
 
         for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // table header.
+            var th = document.createElement("th");      
             th.innerHTML = col[i];
             tr.appendChild(th);
         }
 
-        // add json data to the table as rows.
+        // Add json data to the table as rows
         for (var i = 0; i < filterData.length; i++) {
 
             tr = table.insertRow(-1);
@@ -192,7 +185,7 @@
             }
         }
 
-        // Now, add the newly created table with json data, to a container.
+        // Add the created table with json data to a container.
         var divShowData = document.getElementById('showData');
         divShowData.innerHTML = "";
         divShowData.appendChild(table);
