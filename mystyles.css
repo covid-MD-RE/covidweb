@@ -149,7 +149,7 @@ ul{
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
+/* Style the front side */
 .flip-card-front {
   background-image:url(crdimg1.jpg);
   background-size: contain;
