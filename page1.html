@@ -3,13 +3,12 @@
     <head>	
         <link href="mystyles.css" rel="stylesheet">
         <link rel="stylesheet" href="website.css">
-	    <title>Details</title>
 	</head>
 
 	<body>
 	 <div style="padding:30px;margin-top:0px;"></div>
  
-	<h1>COVID-19 - April 21st, 2020</h1>
+	<h1>COVID-19 (April 21, 2020)</h1>
 		
 		
 	<div class="nav1">
@@ -33,14 +32,14 @@
 		<h4>Stay at home unless you have to go to work.</h4>
 		<h4>Talk to your employer about working at home if possible.</h4>
 		<h4>Avoid all non-essential trips in your community.</h4>
-		<h4>Do not gather in large groups.</h4>	
+		<h4>Do not gather in groups.</h4>	
 		<h4>Limit contact with people at higher risk, such as older adults and those in poor health.</h4>
 		<h4>Go outside to exercise but stay close to home.</h4>
 		<h4>If you leave your home, always keep a distance of at least 2 arms lengths (approximately 2 metres) from others.</h4>
 		<h4>Household contacts (people you live with) do not need to distance from each other unless they are sick or have travelled in the last 14 days.</h4>
 		
 		<h2>
-		STAY HOME. SAVE LIVES.
+		STAY HOME.SAVE LIVES.
 			</h2>
 		<img src="img/download.jpg" alt="Stop the Spread" class="center" width="650" height="450">
 		<br>
@@ -55,33 +54,29 @@
 		<h4> SICK? Call ahead</h4>
 		
 		 <div id = "main">
-           	 <h2>Chloropleth Maps</h2>
-            	<a href="https://covidash.github.io/covidweb/geo.html"target="_blank">Canada</a>
-		<p>VS</p>
-		<a href="https://covidash.github.io/covidweb/geo2.html"target="_blank">US</a> 
+            <h2>Chloropleth Maps</h2>
+            <a href="https://covidash.github.io/covidweb/geo.html"target="_blank">Canada</a><p>VS</p><a href="https://covidash.github.io/covidweb/geo2.html"target="_blank">US</a>    
          <!-- Second main division -->  
         <div id = "content">
             
             <!-- Subtitle -->
             <h2>Highest Number of Cases Globally vs In Canada</h2>
             
-            <!-- Text that explains the buttons -->
+            <!-- Text that explains the button -->
             <p>Click to view the percentages by year.</p>
-		<p>The data is from April 21st, 2020</p>
             
             <!-- When you click on the button data is displayed -->
            <button onclick="Canada()">Canada</button><button onclick="World()">World</button>
             
             <!-- Sets the size of the canvas -->
             <canvas id="myCanvas" width="800" height="600"></canvas>
-			
-			
+	
 
             <!--- Sets the context of the canvas--->
             <script>
                 var c = document.getElementById("myCanvas");
                 var ctx = c.getContext("2d");
-                // Calling the function
+                // Calling the function World
                 World();
                 
                 //Draws the graph with statistics of average rate of World poverty
@@ -97,7 +92,7 @@
                     ctx.fillStyle = "blue";
                     ctx.fillRect(0,0,len1,50);
                     ctx.fillStyle = "white";
-                     ctx.fillText("USA: 778,394 ",01,36); 
+                    ctx.fillText("USA: 1.03M ",01,36); 
                     
                     //Sets the size and colour of the bar and text with data
                     len2 = (800/100) * 20.7;
@@ -105,7 +100,7 @@
                     ctx.fillStyle = "blue";
                     ctx.fillRect(0,60,len2,50);
                     ctx.fillStyle = "white";
-                    ctx.fillText("Spain: 200,210",01,95); 
+                    ctx.fillText("Spain: 210,773",01,95); 
                     
                     //Sets the size and colour of the bar and text with data
                     len3 = (800/100) * 19.2;
@@ -113,7 +108,7 @@
                     ctx.fillStyle = "blue";
                     ctx.fillRect(0,120,len3,50);
                     ctx.fillStyle = "white";
-                     ctx.fillText("Italy: 181,228",01,155);
+                    ctx.fillText("Italy: 201,505",01,155);
                     
                     //Sets the size and colour of the bar and text with data
                     len4 = (800/100) * 17.3;
@@ -121,7 +116,7 @@
                     ctx.fillStyle = "blue";
                     ctx.fillRect(0,180,len4,50);
                     ctx.fillStyle = "white";
-                    ctx.fillText("France: 155,275",01,215);
+                    ctx.fillText("United Kingdom: 161,145",01,215);
                     
                     //Sets the size and colour of the bar and text with data
                     len4 = (800/100) * 16.7;
@@ -129,7 +124,7 @@
                     ctx.fillStyle = "blue";
                     ctx.fillRect(0,240,len4,50);
                     ctx.fillStyle = "white";
-                   ctx.fillText("Germany: 147,065",01,275);
+                    ctx.fillText("Germany: 159,912",01,275);
                     
                     //Sets the size and colour of the bar and text with data
                     len5 = (800/100) * 13.8;
@@ -137,7 +132,7 @@
                     ctx.fillStyle = "blue";
                     ctx.fillRect(0,300,len5,50);
                     ctx.fillStyle = "white";
-                    ctx.fillText("UK: 124,743",01,335);
+                    ctx.fillText("France: 129,859",01,335);
                     
                     //Sets the size and colour of the bar and text with data
                     len6 = (800/100) * 11.2;
@@ -145,11 +140,11 @@
                     ctx.fillStyle = "blue";
                     ctx.fillRect(0,360,len6,50);
                     ctx.fillStyle = "white";
-                     ctx.fillText("Turkey: 90,980",01,395);
+                    ctx.fillText("Turkey: 114,653",01,395);
                     
                    
 
-                    //document.getElementById("mydata").innerHTML = "<p>hard coded code</p>";
+                    document.getElementById("mydata").innerHTML = "<p>hard coded code</p>";
                     
                     
                 }
@@ -166,7 +161,7 @@
                     ctx.fillStyle = "red";
                     ctx.fillRect(0,0,len1,50);
                     ctx.fillStyle = "white";
-                    ctx.fillText("Quebec: 19,319",09,36); 
+                    ctx.fillText("Quebec: 33,400",09,36); 
                     
                     //Sets the size and colour of the bar and text with data
                     len2 = (800/100) * 43.9;
@@ -174,7 +169,7 @@
                     ctx.fillStyle = "red";
                     ctx.fillRect(0,60,len2,50);
                     ctx.fillStyle = "white";
-                    ctx.fillText("Ontario: 12,063",09,95); 
+                    ctx.fillText("Ontario: 18,700",09,95); 
                     
                    //Sets the size and colour of the bar and text with data
                     len3 = (800/100) * 27.3;
@@ -182,7 +177,7 @@
                     ctx.fillStyle = "red";
                     ctx.fillRect(0,120,len3,50);
                     ctx.fillStyle = "white";
-                    ctx.fillText("Alberta: 2,908",09,155);
+                    ctx.fillText("Alberta: 5,900",09,155);
                     
                     //Sets the size and colour of the bar and text with data
                     len4 = (800/100) * 22.8;
@@ -190,7 +185,7 @@
                     ctx.fillStyle = "red";
                     ctx.fillRect(0,180,len4,50);
                     ctx.fillStyle = "white";
-                    ctx.fillText("BC: 1,647",09,215);
+                    ctx.fillText("BC: 2,200",09,215);
                     
                    //Sets the size and colour of the bar and text with data
                     len5 = (800/100) * 16.3;
@@ -198,7 +193,7 @@
                     ctx.fillStyle = "red";
                     ctx.fillRect(0,240,len5,50);
                     ctx.fillStyle = "white";
-                    ctx.fillText("Nova Scotia: 721",09,275);
+                    ctx.fillText("Nova Scotia: 1,000",09,275);
                     
                     //Sets the size and colour of the bar and text with data
                     len6 = (800/100) * 12.2;
@@ -206,7 +201,7 @@
                     ctx.fillStyle = "red";
                     ctx.fillRect(0,300,len6,50);
                     ctx.fillStyle = "white";
-                    ctx.fillText("Saskatchewan: 316",09,335);
+                    ctx.fillText("Saskatchewan: 487",09,335);
                     
                    //Sets the size and colour of the bar and text with data
                     len7 = (800/100) * 8.8;
@@ -214,20 +209,22 @@
                     ctx.fillStyle = "red";
                     ctx.fillRect(0,360,len7,50);
                     ctx.fillStyle = "white";
-                    ctx.fillText("Manitoba: 254",09,395);
+                    ctx.fillText("Manitoba: 282",09,395);
                     
                    
 
                      
+                    document.getElementById("mydata").innerHTML = "<p>hard coded code</p>";                  
                      
                 }
 
-                //Reload window after button is clicked
+                //Reloads window after button is clicked
                 window.location.reload(false);
                  
             </script>
 			 </div>
 		</div>
+        
 		
 		
 	</body>
