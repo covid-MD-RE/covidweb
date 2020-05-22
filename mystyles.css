@@ -125,7 +125,7 @@ ul{
 
 }
 
-/* This container is needed to position the front and back side */
+/* This container positions the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -174,7 +174,6 @@ ul{
   
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner1 {
   position: relative;
   width: 100%;
@@ -184,12 +183,10 @@ ul{
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card1:hover .flip-card-inner1 {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front1, .flip-card-back1 {
   position: absolute;
   width: 100%;
@@ -198,7 +195,6 @@ ul{
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front1 {
   background-image:url(crdimg1.jpg);
   background-size: contain;
@@ -217,10 +213,9 @@ ul{
   background-color: transparent;
   width: 300px;
   height: 300px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; 
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner2 {
   position: relative;
   width: 100%;
@@ -230,27 +225,23 @@ ul{
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card2:hover .flip-card-inner2 {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front2, .flip-card-back2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front2 {
   background-color: #bbb;
   color: black;
 }
 
-/* Style the back side */
 .flip-card-back2 {
   background-color:azure;
   color:cornflowerblue;
