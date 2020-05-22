@@ -25,8 +25,11 @@ button {
    
 
     }
+h4  {
+    font-family: sans-serif;
+}
 table {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-family: "Times", sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
