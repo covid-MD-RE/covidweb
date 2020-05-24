@@ -13,11 +13,11 @@
         <script src="https://cdn.jsdelivr.net/npm/htmlson.js@1.0.4/src/htmlson.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/af-2.3.4/b-1.6.1/r-2.2.3/sc-2.0.1/datatables.min.js"></script>
 
-        
+
 
 
     </head>
-    
+
     <body onload="drawRecoveries1() ">
 
         <div style="padding:30px;margin-top:0px;"></div>
@@ -43,19 +43,19 @@
                   <p style="color: #444a4a">180,561</p>
                   <br>
 		  </b>
-               
-                  
+
+
                 </div>
               </div>
             </div>
         </center>
-  
-        
-        
+
+
+
         <h3 style="margin-top: 40px;">Graphs of COVID-19 Cases Worldwide(April 21, 2020)</h3>
         <p>Default is Recoveries when Page is loaded</p>
         <div id='map' style=' width:100%; height:500px;'></div>
-        
+
         <button onclick="drawRecoveries()">Recoveries</button>
         <button onclick="drawInfections()">Infections</button>
         <button onclick="drawDeaths()">Deaths</button>
@@ -64,7 +64,7 @@
         <div class="searchContainer">
             <input type="text" placeholder="Search Country..." name="search" title="Type in a name" id="searchCountryInput">
             <button type="submit"onclick="showData()"><i class="fa fa-search" ></i></button>
-		
+
         <select id="sort1"onchange="showData()">
           <option value="-1">Descending</option>
           <option value="1">Ascending</option>
@@ -75,23 +75,23 @@
           <option value="Recovered">Recovered</option>
           <option value="Country_Region">Country</option>
         </select>
-               
+
         </div>
 
         <br>
         <br>
         <br>
 
-  
+
     <p id='showData'></p>
-    
+
     <p id='msg'></p>       
 
 
 <script>
 
     var data = new Array();
-    
+
     function loadJSON(path, callback) {
         console.log("path: " + path); 
         var xobj = new XMLHttpRequest();
@@ -116,13 +116,13 @@
                data[i] = jsonData.data[i];
             }
             console.log("data sz: " + data.length); 
-            
+
             showData()
         });
     }
-   
+
     loadTableData()
-    
+
     function getFilteredData() {
         if (searchCountryInput.value.trim().length > 0){
            filterData = data.filter(function(d) {
@@ -133,7 +133,7 @@
             return data;
         }
     }
-    
+
     function sortByProperty(property,sortOrder) {
         return function(a,b) {
             if (a[property]>b[property])
@@ -143,8 +143,8 @@
             return 0;
         }
     }
-    
-    
+
+
     function showData() {
         //setting variables
         var filterData = getFilteredData()
@@ -188,18 +188,18 @@
         var divShowData = document.getElementById('showData');
         divShowData.innerHTML = "";
         divShowData.appendChild(table);
-            
-    }
-    
-        </script>
-       
 
-       
-   
+    }
+
+        </script>
+
+
+
+
     <script>
         var mapnums = 0
-        
-    
+
+
         function drawRecoveries1() {
             // Set up the world map
             map1 = new L.Map('map');
@@ -208,8 +208,8 @@
             carto = new L.TileLayer(cartocdn);
             map1.setView([51.5, 0.12],2); // centered on London lat, long
             map1.addLayer(carto);
- 
-                    
+
+
 L.circle([-51.7963,-59.5236],{color:'green',fillColor:'#25e010',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Falkland Islands (Malvinas),United Kingdom : 3')
 L.circle([-42.8821,147.3272],{color:'green',fillColor:'#25e010',fillOpacity:0.5,radius:670}).addTo(map1).bindPopup('Tasmania,Australia : 67')
 L.circle([-40.9006,174.886],{color:'green',fillColor:'#25e010',fillOpacity:0.5,radius:10060}).addTo(map1).bindPopup('New Zealand : 1006')
@@ -448,7 +448,7 @@ L.circle([34,-100],{color:'green',fillColor:'#25e010',fillOpacity:0.5,radius:752
 
 
         }
-        
+
         function drawRecoveries() {
             // Set up the world map
             map1.remove();
@@ -458,8 +458,8 @@ L.circle([34,-100],{color:'green',fillColor:'#25e010',fillOpacity:0.5,radius:752
             carto = new L.TileLayer(cartocdn);
             map1.setView([51.5, 0.12],2); // centered on London lat, long
             map1.addLayer(carto);
-           
-                    
+
+
 L.circle([-51.7963,-59.5236],{color:'green',fillColor:'#25e010',fillOpacity:0.5,radius:30}).addTo(map1).bindPopup('Falkland Islands (Malvinas),United Kingdom : 3')
 L.circle([-42.8821,147.3272],{color:'green',fillColor:'#25e010',fillOpacity:0.5,radius:670}).addTo(map1).bindPopup('Tasmania,Australia : 67')
 L.circle([-40.9006,174.886],{color:'green',fillColor:'#25e010',fillOpacity:0.5,radius:10060}).addTo(map1).bindPopup('New Zealand : 1006')
@@ -696,16 +696,16 @@ L.circle([71.7069,-42.6043],{color:'green',fillColor:'#25e010',fillOpacity:0.5,r
 L.circle([43,-79],{color:'green',fillColor:'#25e010',fillOpacity:0.5,radius:131880}).addTo(map1).bindPopup('Canada : 13188')
 L.circle([34,-100],{color:'green',fillColor:'#25e010',fillOpacity:0.5,radius:752040}).addTo(map1).bindPopup('US : 75204')
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
 
         }
         function drawInfections() {
@@ -716,13 +716,13 @@ L.circle([34,-100],{color:'green',fillColor:'#25e010',fillOpacity:0.5,radius:752
             carto = new L.TileLayer(cartocdn);
             map1.setView([51.5, 0.12],2); // centered on London lat, long
             map1.addLayer(carto);
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
 L.circle([-51.7963,-59.5236],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:66}).addTo(map1).bindPopup('Falkland Islands (Malvinas),United Kingdom : 11')
 L.circle([-42.8821,147.3272],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1080}).addTo(map1).bindPopup('Tasmania,Australia : 180')
 L.circle([-40.9006,174.886],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:8670}).addTo(map1).bindPopup('New Zealand : 1445')
@@ -3736,10 +3736,10 @@ L.circle([71.7069,-42.6043],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius
             carto = new L.TileLayer(cartocdn);
             map1.setView([51.5, 0.12],2); // centered on London lat, long
             map1.addLayer(carto);
-                
 
 
-            
+
+
   L.circle([-42.8821,147.3272],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Tasmania,Australia : 7')
 L.circle([-40.9006,174.886],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('New Zealand : 13')
 L.circle([-38.4161,-63.6167],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:7350}).addTo(map1).bindPopup('Argentina : 147')
@@ -4547,4 +4547,666 @@ L.circle([38.45576156,-96.15275715],{color:'grey',fillColor:'#6b5f5f',fillOpacit
 L.circle([38.46996033,-89.93063427],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:900}).addTo(map1).bindPopup('Illinois,US : 18')
 L.circle([38.48015445,-85.70510334],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:550}).addTo(map1).bindPopup('Indiana,US : 11')
 L.circle([38.50455671,-92.27860244],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Missouri,US : 1')
-L.circle([38.50735751,-122.332839],{color:'grey',fillColor:'#6b5
+L.circle([38.50735751,-122.332839],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('California,US : 2')
+L.circle([38.51092331,-76.98580666],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1150}).addTo(map1).bindPopup('Maryland,US : 23')
+L.circle([38.52746429,-122.8862506],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('California,US : 2')
+L.circle([38.53961642,-76.56820632],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Maryland,US : 4')
+L.circle([38.5411892,-86.49523093],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Indiana,US : 4')
+L.circle([38.63555736,-90.24349225],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2000}).addTo(map1).bindPopup('Missouri,US : 40')
+L.circle([38.6377004,-90.4458375],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4550}).addTo(map1).bindPopup('Missouri,US : 91')
+L.circle([38.64789422,-94.353399],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Missouri,US : 6')
+L.circle([38.64962758,-84.62415957],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Kentucky,US : 2')
+L.circle([38.66143781,-75.39031349],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1600}).addTo(map1).bindPopup('Delaware,US : 32')
+L.circle([38.66611652,-107.0320729],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Colorado,US : 3')
+L.circle([38.68278902,-121.9018288],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('California,US : 10')
+L.circle([38.68672078,-85.74627859],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Indiana,US : 2')
+L.circle([38.70186039,-87.07185406],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Indiana,US : 5')
+L.circle([38.70916224,-77.48713689],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Virginia,US : 1')
+L.circle([38.74745778,-106.1926573],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Colorado,US : 4')
+L.circle([38.76618159,-76.10882561],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Maryland,US : 1')
+L.circle([38.77875681,-90.66662425],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1150}).addTo(map1).bindPopup('Missouri,US : 23')
+L.circle([38.78369175,-97.65185177],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Kansas,US : 2')
+L.circle([38.814003,-77.08183073],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Virginia,US : 8')
+L.circle([38.82708533,-82.31647569],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([38.83042506,-89.90422563],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Illinois,US : 10')
+L.circle([38.83070039,-76.8496441],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:5900}).addTo(map1).bindPopup('Maryland,US : 118')
+L.circle([38.83240149,-104.5251411],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2650}).addTo(map1).bindPopup('Colorado,US : 53')
+L.circle([38.83674754,-91.92186505],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Missouri,US : 1')
+L.circle([38.83677558,-77.27565836],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1850}).addTo(map1).bindPopup('Virginia,US : 37')
+L.circle([38.84112637,-86.48361629],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Indiana,US : 9')
+L.circle([38.84263974,-81.68148753],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('West Virginia,US : 1')
+L.circle([38.86246243,-107.8631342],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Colorado,US : 1')
+L.circle([38.8767675,-77.10139853],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1100}).addTo(map1).bindPopup('Virginia,US : 22')
+L.circle([38.88133511,-105.1614893],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Colorado,US : 2')
+L.circle([38.88548175,-94.82250877],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1750}).addTo(map1).bindPopup('Kansas,US : 35')
+L.circle([38.88829622,-89.43534887],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Illinois,US : 1')
+L.circle([38.90417773,-77.01655992],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:5600}).addTo(map1).bindPopup('District of Columbia,US : 112')
+L.circle([38.93416837,-83.86788395],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([38.93950319,-84.53241199],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Kentucky,US : 13')
+L.circle([38.94384345,-84.37875208],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Kentucky,US : 6')
+L.circle([38.9637,35.2433],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:112950}).addTo(map1).bindPopup('Turkey : 2259')
+L.circle([38.97065142,-84.72615357],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Kentucky,US : 2')
+L.circle([38.99186229,-92.30723575],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Missouri,US : 1')
+L.circle([38.99588883,-85.62710784],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([39.00072038,-89.02452658],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Illinois,US : 1')
+L.circle([39.00670238,-76.60329337],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2600}).addTo(map1).bindPopup('Maryland,US : 52')
+L.circle([39.01002188,-94.34724536],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:550}).addTo(map1).bindPopup('Missouri,US : 11')
+L.circle([39.01054275,-88.15437049],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Illinois,US : 2')
+L.circle([39.03417539,-121.6945899],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('California,US : 2')
+L.circle([39.03630547,-86.96223202],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Indiana,US : 4')
+L.circle([39.04100763,-95.7557264],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Kansas,US : 5')
+L.circle([39.04847534,-84.15375786],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Ohio,US : 3')
+L.circle([39.05345619,-90.95588181],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Missouri,US : 1')
+L.circle([39.05935711,-88.58969584],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Illinois,US : 1')
+L.circle([39.06167234,-120.7240569],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('California,US : 8')
+L.circle([39.06198912,-76.03530977],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Maryland,US : 2')
+L.circle([39.06986886,-93.78076396],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Missouri,US : 1')
+L.circle([39.0742,21.8243],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:6050}).addTo(map1).bindPopup('Greece : 121')
+L.circle([39.08646628,-75.56884914],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:700}).addTo(map1).bindPopup('Delaware,US : 14')
+L.circle([39.08990083,-77.63481877],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Virginia,US : 8')
+L.circle([39.0997,-94.5786],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Missouri,US : 13')
+L.circle([39.10235626,-85.26212744],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Indiana,US : 3')
+L.circle([39.11727348,-94.76378225],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2250}).addTo(map1).bindPopup('Kansas,US : 45')
+L.circle([39.13676329,-77.20358245],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:5800}).addTo(map1).bindPopup('Maryland,US : 116')
+L.circle([39.14647946,-84.97333539],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Indiana,US : 5')
+L.circle([39.15008829,-74.80170244],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:750}).addTo(map1).bindPopup('New Jersey,US : 15')
+L.circle([39.16130004,-86.52414358],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Indiana,US : 5')
+L.circle([39.19605589,-86.22868909],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([39.19673558,-84.54502924],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1950}).addTo(map1).bindPopup('Ohio,US : 39')
+L.circle([39.20183497,-95.03620809],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Kansas,US : 3')
+L.circle([39.20744865,-85.89558181],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Indiana,US : 7')
+L.circle([39.21720112,-106.9310027],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Colorado,US : 2')
+L.circle([39.23198845,-89.47809254],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Illinois,US : 1')
+L.circle([39.24976208,-76.04741541],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Maryland,US : 1')
+L.circle([39.25305293,-76.93126208],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Maryland,US : 13')
+L.circle([39.26255932,-121.3535644],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('California,US : 1')
+L.circle([39.2853852,-80.37919577],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('West Virginia,US : 1')
+L.circle([39.28656773,-104.1358721],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Colorado,US : 1')
+L.circle([39.30211911,-76.61151012],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2950}).addTo(map1).bindPopup('Maryland,US : 59')
+L.circle([39.30394768,-120.7627281],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('California,US : 1')
+L.circle([39.30497777,-102.6022199],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Colorado,US : 1')
+L.circle([39.3054,117.323],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Tianjin,China : 3')
+L.circle([39.30712658,-85.50087166],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1000}).addTo(map1).bindPopup('Indiana,US : 20')
+L.circle([39.31132056,-94.41850862],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Missouri,US : 1')
+L.circle([39.31145587,-86.83900724],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([39.33133796,-104.930001],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:850}).addTo(map1).bindPopup('Colorado,US : 17')
+L.circle([39.33425634,-82.04278644],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([39.37199394,-75.10712559],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('New Jersey,US : 4')
+L.circle([39.3999,-8.2245],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:38100}).addTo(map1).bindPopup('Portugal : 762')
+L.circle([39.4142482,-85.06062647],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Indiana,US : 7')
+L.circle([39.42581994,-84.16557457],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Ohio,US : 10')
+L.circle([39.42944561,-87.39169027],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Indiana,US : 5')
+L.circle([39.44012838,-84.57388716],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Ohio,US : 2')
+L.circle([39.45690571,-81.49121382],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Ohio,US : 6')
+L.circle([39.45784712,-76.62911955],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2900}).addTo(map1).bindPopup('Maryland,US : 58')
+L.circle([39.46704621,-78.02414609],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('West Virginia,US : 1')
+L.circle([39.47296601,-77.39999394],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1650}).addTo(map1).bindPopup('Maryland,US : 33')
+L.circle([39.47538693,-74.65848483],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:950}).addTo(map1).bindPopup('New Jersey,US : 19')
+L.circle([39.47899078,-86.44573375],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Indiana,US : 3')
+L.circle([39.48994426,-86.10149107],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1950}).addTo(map1).bindPopup('Indiana,US : 39')
+L.circle([39.50984542,-80.24244659],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('West Virginia,US : 1')
+L.circle([39.52305623,-85.7915857],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Indiana,US : 6')
+L.circle([39.54581621,-89.27780482],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Illinois,US : 4')
+L.circle([39.549,116.1306],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Hebei,China : 6')
+L.circle([39.55010644,-76.3077594],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Maryland,US : 7')
+L.circle([39.56453592,-77.02373735],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1550}).addTo(map1).bindPopup('Maryland,US : 31')
+L.circle([39.56647682,-75.94627411],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Maryland,US : 3')
+L.circle([39.57992638,-75.64054974],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1800}).addTo(map1).bindPopup('Delaware,US : 36')
+L.circle([39.58105744,-118.3394607],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Nevada,US : 1')
+L.circle([39.58635604,-105.2517692],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2000}).addTo(map1).bindPopup('Colorado,US : 40')
+L.circle([39.58719656,-75.3469663],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('New Jersey,US : 4')
+L.circle([39.59921777,-107.902708],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Colorado,US : 2')
+L.circle([39.60835778,-77.82002295],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Maryland,US : 3')
+L.circle([39.62002287,-85.4655599],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([39.62357628,-78.69280486],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Maryland,US : 2')
+L.circle([39.62754308,-106.6933637],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Colorado,US : 7')
+L.circle([39.63218457,-80.04766838],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('West Virginia,US : 2')
+L.circle([39.63684962,-85.17797541],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Indiana,US : 4')
+L.circle([39.63803232,-106.1150762],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Colorado,US : 1')
+L.circle([39.64170392,-83.0243386],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Ohio,US : 5')
+L.circle([39.64977461,-104.3353617],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4000}).addTo(map1).bindPopup('Colorado,US : 80')
+L.circle([39.65816401,-94.80138942],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Missouri,US : 1')
+L.circle([39.66437981,-86.84517605],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Indiana,US : 4')
+L.circle([39.69116283,-83.89032084],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Ohio,US : 3')
+L.circle([39.71581067,-75.13995546],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1250}).addTo(map1).bindPopup('New Jersey,US : 25')
+L.circle([39.71654544,-90.20255104],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Illinois,US : 1')
+L.circle([39.7420247,-84.64787018],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([39.75107189,-82.63088163],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Ohio,US : 2')
+L.circle([39.75394919,-84.29050975],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Ohio,US : 8')
+L.circle([39.75836914,-89.65872023],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Illinois,US : 4')
+L.circle([39.76018276,-104.8725695],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4550}).addTo(map1).bindPopup('Colorado,US : 91')
+L.circle([39.76719009,-86.51037283],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:900}).addTo(map1).bindPopup('Indiana,US : 18')
+L.circle([39.78163624,-86.13826325],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:10300}).addTo(map1).bindPopup('Indiana,US : 206')
+L.circle([39.80343818,-74.96388753],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4050}).addTo(map1).bindPopup('New Jersey,US : 81')
+L.circle([39.82304555,-85.77566351],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Indiana,US : 7')
+L.circle([39.86064913,-88.96342505],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Illinois,US : 9')
+L.circle([39.8633444,-85.01044989],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Indiana,US : 2')
+L.circle([39.87001769,-93.10704106],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Missouri,US : 1')
+L.circle([39.87140411,-77.21610347],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Pennsylvania,US : 2')
+L.circle([39.87432092,-104.3362578],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2300}).addTo(map1).bindPopup('Colorado,US : 46')
+L.circle([39.87681124,-74.66927768],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:3050}).addTo(map1).bindPopup('New Jersey,US : 61')
+L.circle([39.8895449,-74.28089251],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:11100}).addTo(map1).bindPopup('New Jersey,US : 222')
+L.circle([39.89381073,-83.40178317],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Ohio,US : 3')
+L.circle([39.91680171,-75.40243663],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:5900}).addTo(map1).bindPopup('Pennsylvania,US : 118')
+L.circle([39.92041012,-79.64291195],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Pennsylvania,US : 3')
+L.circle([39.9210089,-76.73040131],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Pennsylvania,US : 13')
+L.circle([39.92956518,-77.72157791],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Pennsylvania,US : 10')
+L.circle([39.93029017,-85.39625719],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([39.95998787,-105.0566324],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Colorado,US : 2')
+L.circle([39.96995815,-83.01115755],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1850}).addTo(map1).bindPopup('Ohio,US : 37')
+L.circle([39.97291773,-75.74768357],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:3250}).addTo(map1).bindPopup('Pennsylvania,US : 65')
+L.circle([40.00338507,-75.1379271],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:19700}).addTo(map1).bindPopup('Pennsylvania,US : 394')
+L.circle([40.00522157,-78.48998442],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Pennsylvania,US : 1')
+L.circle([40.01625942,-80.9924051],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Ohio,US : 6')
+L.circle([40.03904563,-76.24770128],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:5350}).addTo(map1).bindPopup('Pennsylvania,US : 107')
+L.circle([40.0509304,-86.46841646],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:850}).addTo(map1).bindPopup('Indiana,US : 17')
+L.circle([40.0543329,-84.22871271],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1100}).addTo(map1).bindPopup('Ohio,US : 22')
+L.circle([40.0691,45.0382],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1200}).addTo(map1).bindPopup('Armenia : 24')
+L.circle([40.07306535,-86.05244729],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1950}).addTo(map1).bindPopup('Indiana,US : 39')
+L.circle([40.09136236,-82.48185785],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Ohio,US : 4')
+L.circle([40.09313619,-105.3546767],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:900}).addTo(map1).bindPopup('Colorado,US : 18')
+L.circle([40.1166722,-111.6657662],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Utah,US : 5')
+L.circle([40.12361933,-87.24217689],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Indiana,US : 2')
+L.circle([40.12570935,-122.2370171],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('California,US : 1')
+L.circle([40.13412966,-84.6194517],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:550}).addTo(map1).bindPopup('Ohio,US : 11')
+L.circle([40.13919438,-88.20046615],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Illinois,US : 4')
+L.circle([40.13923427,-83.76875242],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([40.1431,47.5769],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1000}).addTo(map1).bindPopup('Azerbaijan : 20')
+L.circle([40.15734772,-85.01139319],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Indiana,US : 2')
+L.circle([40.16143691,-85.71964711],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1700}).addTo(map1).bindPopup('Indiana,US : 34')
+L.circle([40.1625372,-77.26130755],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Pennsylvania,US : 6')
+L.circle([40.1824,116.4142],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Beijing,China : 8')
+L.circle([40.19208869,-80.24582867],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Pennsylvania,US : 2')
+L.circle([40.21053671,-75.36652296],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:11150}).addTo(map1).bindPopup('Pennsylvania,US : 223')
+L.circle([40.22787247,-85.39732772],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Indiana,US : 9')
+L.circle([40.26186809,-96.68946704],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Nebraska,US : 1')
+L.circle([40.2627981,-103.8093302],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Colorado,US : 4')
+L.circle([40.26549699,-74.22240686],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:11500}).addTo(map1).bindPopup('New Jersey,US : 230')
+L.circle([40.27942393,-83.00457058],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Ohio,US : 3')
+L.circle([40.28047017,-74.70479631],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:6100}).addTo(map1).bindPopup('New Jersey,US : 122')
+L.circle([40.30319754,-86.47277257],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([40.31123252,-86.05234925],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([40.3137798,-79.46615476],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1000}).addTo(map1).bindPopup('Pennsylvania,US : 20')
+L.circle([40.33110236,-111.1691419],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Utah,US : 1')
+L.circle([40.33682119,-75.10836643],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:5800}).addTo(map1).bindPopup('Pennsylvania,US : 116')
+L.circle([40.34728141,-87.35602659],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([40.36680311,-76.45651841],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Pennsylvania,US : 8')
+L.circle([40.38872739,-86.89413959],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Indiana,US : 2')
+L.circle([40.39830217,-82.42027563],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([40.40206612,-77.26297447],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Pennsylvania,US : 1')
+L.circle([40.41377078,-76.77993242],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:550}).addTo(map1).bindPopup('Pennsylvania,US : 11')
+L.circle([40.41570541,-75.92457766],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4100}).addTo(map1).bindPopup('Pennsylvania,US : 82')
+L.circle([40.43629879,-74.41426991],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:17250}).addTo(map1).bindPopup('New Jersey,US : 345')
+L.circle([40.463667,-3.74922],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1064100}).addTo(map1).bindPopup('Spain : 21282')
+L.circle([40.46809875,-79.98167747],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:3350}).addTo(map1).bindPopup('Pennsylvania,US : 67')
+L.circle([40.47388153,-85.32499702],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([40.48527731,-86.11351892],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Indiana,US : 4')
+L.circle([40.48596505,-106.9905548],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Colorado,US : 2')
+L.circle([40.48996987,-88.84621113],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Illinois,US : 3')
+L.circle([40.49527404,-78.71377428],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Pennsylvania,US : 2')
+L.circle([40.50716185,-89.51404662],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Illinois,US : 3')
+L.circle([40.51587228,-85.65468702],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Indiana,US : 4')
+L.circle([40.54043046,-84.62912742],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([40.55499405,-104.3929621],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:3450}).addTo(map1).bindPopup('Colorado,US : 69')
+L.circle([40.55998859,-84.2242143],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Ohio,US : 3')
+L.circle([40.56163713,-81.92635677],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([40.56335249,-74.91284156],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:900}).addTo(map1).bindPopup('New Jersey,US : 18')
+L.circle([40.56465737,-74.61683016],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:8500}).addTo(map1).bindPopup('New Jersey,US : 170')
+L.circle([40.5807832,-86.56198812],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([40.58610662,-83.15736305],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([40.59706922,-88.22350769],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Illinois,US : 1')
+L.circle([40.6154815,-75.59435245],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2450}).addTo(map1).bindPopup('Pennsylvania,US : 49')
+L.circle([40.65241041,-79.08963285],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Pennsylvania,US : 4')
+L.circle([40.65835409,-74.30680092],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:19350}).addTo(map1).bindPopup('New Jersey,US : 387')
+L.circle([40.66562265,-119.6631594],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:900}).addTo(map1).bindPopup('Nevada,US : 18')
+L.circle([40.66616532,-111.9216011],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:900}).addTo(map1).bindPopup('Utah,US : 18')
+L.circle([40.66671597,-105.4625784],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Colorado,US : 13')
+L.circle([40.6825484,-80.34921611],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2150}).addTo(map1).bindPopup('Pennsylvania,US : 43')
+L.circle([40.70497338,-76.2150785],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Pennsylvania,US : 7')
+L.circle([40.7249637,-103.110817],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Colorado,US : 1')
+L.circle([40.73766234,-74.07515667],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:31800}).addTo(map1).bindPopup('New Jersey,US : 636')
+L.circle([40.74066522,-73.58941873],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:69500}).addTo(map1).bindPopup('New York,US : 1390')
+L.circle([40.74324454,-92.86865906],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Iowa,US : 2')
+L.circle([40.7457653,-84.93671406],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([40.75182733,-75.30471829],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2150}).addTo(map1).bindPopup('Pennsylvania,US : 43')
+L.circle([40.76135835,-86.34830753],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([40.76391419,-122.0396884],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('California,US : 3')
+L.circle([40.7672726,-73.97152637],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:744350}).addTo(map1).bindPopup('New York,US : 14887')
+L.circle([40.76932373,-80.78094576],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Ohio,US : 16')
+L.circle([40.77129231,-77.06840691],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Pennsylvania,US : 1')
+L.circle([40.77180308,-82.5379961],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([40.77285242,-84.10802343],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:600}).addTo(map1).bindPopup('Ohio,US : 12')
+L.circle([40.78416049,-96.68777155],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Nebraska,US : 1')
+L.circle([40.78579374,-89.20973757],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Illinois,US : 1')
+L.circle([40.78681335,-74.24657979],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:37550}).addTo(map1).bindPopup('New Jersey,US : 751')
+L.circle([40.78702156,-89.76078901],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Illinois,US : 2')
+L.circle([40.81482476,-81.36437305],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1400}).addTo(map1).bindPopup('Ohio,US : 28')
+L.circle([40.81665618,-79.46290811],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Pennsylvania,US : 2')
+L.circle([40.82907273,-85.48822092],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([40.82925852,-81.88844833],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Ohio,US : 16')
+L.circle([40.84339621,-83.30734173],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Ohio,US : 2')
+L.circle([40.85486962,-99.07500296],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Nebraska,US : 1')
+L.circle([40.85951833,-74.99556527],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2350}).addTo(map1).bindPopup('New Jersey,US : 47')
+L.circle([40.86095313,-74.5455371],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:13450}).addTo(map1).bindPopup('New Jersey,US : 269')
+L.circle([40.87257079,-98.50218293],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Nebraska,US : 4')
+L.circle([40.88320119,-72.8012172],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:44400}).addTo(map1).bindPopup('New York,US : 888')
+L.circle([40.89188292,-88.55784752],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Illinois,US : 1')
+L.circle([40.91152759,-79.91351055],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Pennsylvania,US : 6')
+L.circle([40.91545395,-75.7068525],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:550}).addTo(map1).bindPopup('Pennsylvania,US : 11')
+L.circle([40.92058903,-77.82200624],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Pennsylvania,US : 2')
+L.circle([40.95610449,-87.39635768],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Indiana,US : 4')
+L.circle([40.96010917,-74.07164325],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:39350}).addTo(map1).bindPopup('New Jersey,US : 787')
+L.circle([40.98767962,-91.54436349],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Iowa,US : 1')
+L.circle([40.99001837,-112.1139997],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Utah,US : 2')
+L.circle([40.99206278,-80.33393706],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Pennsylvania,US : 6')
+L.circle([41.00250487,-83.66838948],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([41.01631101,-80.77287029],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2700}).addTo(map1).bindPopup('Ohio,US : 54')
+L.circle([41.02078733,-87.11553319],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([41.03238628,-74.29954144],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:13150}).addTo(map1).bindPopup('New Jersey,US : 263')
+L.circle([41.04658298,-100.7475374],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Nebraska,US : 1')
+L.circle([41.04821986,-76.40565017],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Pennsylvania,US : 8')
+L.circle([41.05934058,-75.34031025],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2300}).addTo(map1).bindPopup('Pennsylvania,US : 46')
+L.circle([41.09194313,-85.06800636],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1350}).addTo(map1).bindPopup('Indiana,US : 27')
+L.circle([41.1129,85.2401],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Xinjiang,China : 3')
+L.circle([41.11770589,-81.8998621],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:550}).addTo(map1).bindPopup('Ohio,US : 11')
+L.circle([41.12351311,-83.12783209],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([41.12464734,-81.53123079],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1400}).addTo(map1).bindPopup('Ohio,US : 28')
+L.circle([41.13746989,-87.86205334],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Illinois,US : 13')
+L.circle([41.13863784,-85.50791236],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([41.13891592,-74.69118243],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:3200}).addTo(map1).bindPopup('New Jersey,US : 64')
+L.circle([41.14531606,-115.3577619],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Nevada,US : 1')
+L.circle([41.14651175,-82.59867951],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([41.15027894,-74.02560498],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:20050}).addTo(map1).bindPopup('New York,US : 401')
+L.circle([41.1533,20.1683],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1300}).addTo(map1).bindPopup('Albania : 26')
+L.circle([41.16278376,-73.75741653],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:40450}).addTo(map1).bindPopup('New York,US : 809')
+L.circle([41.16793482,-81.19735782],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1500}).addTo(map1).bindPopup('Ohio,US : 30')
+L.circle([41.17823008,-75.98447579],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2500}).addTo(map1).bindPopup('Pennsylvania,US : 50')
+L.circle([41.19265812,-79.42413524],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Pennsylvania,US : 1')
+L.circle([41.20438,74.766098],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Kyrgyzstan : 7')
+L.circle([41.21842119,-91.26102611],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Iowa,US : 2')
+L.circle([41.24521668,-85.86312322],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([41.26809896,-73.3881171],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:27200}).addTo(map1).bindPopup('Connecticut,US : 544')
+L.circle([41.27116049,-111.9145117],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Utah,US : 2')
+L.circle([41.27890281,-86.64686895],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([41.29518299,-96.15085305],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Nebraska,US : 8')
+L.circle([41.29553751,-82.15083537],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:950}).addTo(map1).bindPopup('Ohio,US : 19')
+L.circle([41.2956,122.6085],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Liaoning,China : 2')
+L.circle([41.30248872,-80.25816981],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Pennsylvania,US : 1')
+L.circle([41.31735028,-80.76109643],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1050}).addTo(map1).bindPopup('Ohio,US : 21')
+L.circle([41.33081904,-94.01554631],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Iowa,US : 1')
+L.circle([41.33155042,-75.03208106],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:600}).addTo(map1).bindPopup('Pennsylvania,US : 12')
+L.circle([41.33521503,-92.64083907],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Iowa,US : 1')
+L.circle([41.33577126,-91.71725711],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Iowa,US : 5')
+L.circle([41.33640314,-95.53907776],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Iowa,US : 1')
+L.circle([41.34310539,-77.06629984],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Pennsylvania,US : 2')
+L.circle([41.3442613,-88.88633881],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Illinois,US : 1')
+L.circle([41.35624126,-83.137872],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Ohio,US : 2')
+L.circle([41.36224827,-83.62285108],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Ohio,US : 13')
+L.circle([41.36796058,-82.62904521],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Ohio,US : 3')
+L.circle([41.377491,64.585262],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Uzbekistan : 6')
+L.circle([41.39672484,-85.41966713],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Indiana,US : 4')
+L.circle([41.39804622,-84.99906934],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([41.40337468,-74.30240757],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:11550}).addTo(map1).bindPopup('New York,US : 231')
+L.circle([41.40674725,-70.68763497],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Massachusetts,US : 1')
+L.circle([41.40692186,-118.1109427],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Nevada,US : 2')
+L.circle([41.4080325,-72.93620426],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:16100}).addTo(map1).bindPopup('Connecticut,US : 322')
+L.circle([41.41874274,-87.38277575],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2700}).addTo(map1).bindPopup('Indiana,US : 54')
+L.circle([41.424119,-81.65918339],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:3200}).addTo(map1).bindPopup('Ohio,US : 64')
+L.circle([41.42630093,-73.74965532],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('New York,US : 7')
+L.circle([41.43564672,-75.60379201],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2650}).addTo(map1).bindPopup('Pennsylvania,US : 53')
+L.circle([41.44619267,-87.97862712],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:5250}).addTo(map1).bindPopup('Illinois,US : 105')
+L.circle([41.45949668,-72.53714864],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2350}).addTo(map1).bindPopup('Connecticut,US : 47')
+L.circle([41.45986947,-87.06848888],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Indiana,US : 5')
+L.circle([41.46613806,-90.57042164],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Illinois,US : 5')
+L.circle([41.48370744,-91.1121697],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Iowa,US : 4')
+L.circle([41.48896435,-72.10430976],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Connecticut,US : 13')
+L.circle([41.49952319,-81.17935342],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Ohio,US : 9')
+L.circle([41.51955538,-76.01074915],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Pennsylvania,US : 1')
+L.circle([41.52106798,-113.0832816],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Utah,US : 1')
+L.circle([41.54366008,-86.74072188],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Indiana,US : 5')
+L.circle([41.56052014,-84.58429552],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Ohio,US : 1')
+L.circle([41.59081014,-88.42869583],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Illinois,US : 3')
+L.circle([41.59761169,-85.85875695],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Indiana,US : 3')
+L.circle([41.6086,21.7453],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2750}).addTo(map1).bindPopup('North Macedonia : 55')
+L.circle([41.61756781,-86.29040834],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Indiana,US : 9')
+L.circle([41.62101218,-83.65468618],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1800}).addTo(map1).bindPopup('Ohio,US : 36')
+L.circle([41.63935978,-90.61959493],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Iowa,US : 3')
+L.circle([41.64232188,-85.42674232],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([41.64423868,-85.00101094],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Indiana,US : 1')
+L.circle([41.64938475,-75.29956506],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Pennsylvania,US : 3')
+L.circle([41.67169354,-91.58754744],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Iowa,US : 3')
+L.circle([41.68625425,-92.53155731],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Iowa,US : 1')
+L.circle([41.68679484,-93.57767461],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Iowa,US : 16')
+L.circle([41.69710807,-81.23676539],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Ohio,US : 6')
+L.circle([41.70860332,-80.74830218],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Ohio,US : 6')
+L.circle([41.71579493,-74.76394559],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:700}).addTo(map1).bindPopup('New York,US : 14')
+L.circle([41.72980578,-70.28854339],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1100}).addTo(map1).bindPopup('Massachusetts,US : 22')
+L.circle([41.75509713,-89.91556058],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Illinois,US : 3')
+L.circle([41.7648606,-73.74356679],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1400}).addTo(map1).bindPopup('New York,US : 28')
+L.circle([41.77255149,-77.25433032],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Pennsylvania,US : 2')
+L.circle([41.78869215,-76.51570822],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Pennsylvania,US : 5')
+L.circle([41.79228404,-71.10872211],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4800}).addTo(map1).bindPopup('Massachusetts,US : 96')
+L.circle([41.7937534,-73.2451475],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2950}).addTo(map1).bindPopup('Connecticut,US : 59')
+L.circle([41.80283011,-72.73103891],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:20100}).addTo(map1).bindPopup('Connecticut,US : 402')
+L.circle([41.81304978,-79.26969577],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Pennsylvania,US : 1')
+L.circle([41.82147784,-75.80071959],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Pennsylvania,US : 4')
+L.circle([41.82972709,-71.98182316],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Connecticut,US : 2')
+L.circle([41.84144849,-87.81658794],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50100}).addTo(map1).bindPopup('Illinois,US : 1002')
+L.circle([41.85116968,-88.08642662],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4900}).addTo(map1).bindPopup('Illinois,US : 98')
+L.circle([41.85853803,-72.3308481],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1500}).addTo(map1).bindPopup('Connecticut,US : 30')
+L.circle([41.87064746,-71.57753536],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Rhode Island,US : 3')
+L.circle([41.87194,12.56738],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1232400}).addTo(map1).bindPopup('Italy : 24648')
+L.circle([41.88753639,-84.59312019],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:550}).addTo(map1).bindPopup('Michigan,US : 11')
+L.circle([41.89027881,-74.26252104],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:850}).addTo(map1).bindPopup('New York,US : 17')
+L.circle([41.89373302,-88.76958483],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Illinois,US : 1')
+L.circle([41.91441767,-85.52797979],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([41.91522292,-85.99405727],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([41.91600556,-85.05929476],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Michigan,US : 2')
+L.circle([41.91676024,-97.6005481],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Nebraska,US : 2')
+L.circle([41.92734151,-83.53749864],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Michigan,US : 10')
+L.circle([41.93842729,-88.42861412],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1650}).addTo(map1).bindPopup('Illinois,US : 33')
+L.circle([41.94070556,-70.80802823],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:7050}).addTo(map1).bindPopup('Massachusetts,US : 141')
+L.circle([41.95447397,-86.4131308],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Michigan,US : 10')
+L.circle([42.03718237,-95.3819718],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Iowa,US : 1')
+L.circle([42.04165196,-89.32184679],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Illinois,US : 1')
+L.circle([42.06823429,-89.93395545],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Illinois,US : 2')
+L.circle([42.07923082,-91.59809485],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1400}).addTo(map1).bindPopup('Iowa,US : 28')
+L.circle([42.07991767,-92.53266945],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Iowa,US : 6')
+L.circle([42.08011739,-92.06463573],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Iowa,US : 1')
+L.circle([42.13440424,-72.63235561],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:12200}).addTo(map1).bindPopup('Massachusetts,US : 244')
+L.circle([42.13891056,-76.7638805],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('New York,US : 1')
+L.circle([42.15903158,-75.81326086],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:550}).addTo(map1).bindPopup('New York,US : 11')
+L.circle([42.16073095,-71.20530408],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:14500}).addTo(map1).bindPopup('Massachusetts,US : 290')
+L.circle([42.19837623,-74.96709306],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('New York,US : 4')
+L.circle([42.2276921,-79.36691763],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('New York,US : 3')
+L.circle([42.24542231,-85.53038622],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Michigan,US : 10')
+L.circle([42.24633834,-85.00493569],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Michigan,US : 5')
+L.circle([42.24807035,-84.42258681],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:600}).addTo(map1).bindPopup('Michigan,US : 12')
+L.circle([42.24819348,-73.63089095],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:600}).addTo(map1).bindPopup('New York,US : 12')
+L.circle([42.25190229,-86.01939087],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Michigan,US : 2')
+L.circle([42.253105,-83.83853204],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1900}).addTo(map1).bindPopup('Michigan,US : 38')
+L.circle([42.25748406,-78.02750466],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('New York,US : 2')
+L.circle([42.2689144,-77.3829924],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1350}).addTo(map1).bindPopup('New York,US : 27')
+L.circle([42.28098405,-83.281255],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:57400}).addTo(map1).bindPopup('Michigan,US : 1148')
+L.circle([42.28347888,-113.6012409],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Idaho,US : 1')
+L.circle([42.3154,43.3569],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Georgia : 4')
+L.circle([42.3224907,-88.00367925],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4350}).addTo(map1).bindPopup('Illinois,US : 87')
+L.circle([42.32359279,-88.82345779],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Illinois,US : 6')
+L.circle([42.32451172,-88.45248227],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1000}).addTo(map1).bindPopup('Illinois,US : 20')
+L.circle([42.3279514,-71.07850442],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:14250}).addTo(map1).bindPopup('Massachusetts,US : 285')
+L.circle([42.33641854,-89.16085327],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Illinois,US : 5')
+L.circle([42.33997957,-72.65898478],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Massachusetts,US : 10')
+L.circle([42.35026951,-71.90493363],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:6650}).addTo(map1).bindPopup('Massachusetts,US : 133')
+L.circle([42.35440512,-114.6685381],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Idaho,US : 10')
+L.circle([42.3665549,-123.5561938],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Oregon,US : 1')
+L.circle([42.37428441,-73.20524838],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1450}).addTo(map1).bindPopup('Massachusetts,US : 29')
+L.circle([42.46815349,-90.88181925],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Iowa,US : 1')
+L.circle([42.4704581,-92.30524729],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Iowa,US : 2')
+L.circle([42.48607732,-71.39049229],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:21400}).addTo(map1).bindPopup('Massachusetts,US : 428')
+L.circle([42.5063,1.5218],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1850}).addTo(map1).bindPopup('Andorra : 37')
+L.circle([42.57639354,-88.04051686],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Wisconsin,US : 6')
+L.circle([42.58119713,-72.58602547],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1450}).addTo(map1).bindPopup('Massachusetts,US : 29')
+L.circle([42.59513984,-85.30834519],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([42.59599185,-84.83740035],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Michigan,US : 5')
+L.circle([42.59716886,-84.37472069],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Michigan,US : 6')
+L.circle([42.60060306,-73.97723916],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1150}).addTo(map1).bindPopup('New York,US : 23')
+L.circle([42.602636,20.902977],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:600}).addTo(map1).bindPopup('Kosovo : 12')
+L.circle([42.60302282,-83.91297209],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:550}).addTo(map1).bindPopup('Michigan,US : 11')
+L.circle([42.63492579,-75.03151402],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('New York,US : 4')
+L.circle([42.66090111,-83.38595416],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:25300}).addTo(map1).bindPopup('Michigan,US : 506')
+L.circle([42.66858202,-88.54163073],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Wisconsin,US : 7')
+L.circle([42.6687626,-70.94687179],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:12250}).addTo(map1).bindPopup('Massachusetts,US : 245')
+L.circle([42.67151616,-89.071479],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Wisconsin,US : 4')
+L.circle([42.68891267,-114.2655033],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Idaho,US : 2')
+L.circle([42.69158356,-82.92752801],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:22250}).addTo(map1).bindPopup('Michigan,US : 445')
+L.circle([42.70145109,-78.22199579],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('New York,US : 3')
+L.circle([42.708678,19.37439],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Montenegro : 5')
+L.circle([42.71348136,-73.51089874],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('New York,US : 6')
+L.circle([42.72596275,-77.77966158],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('New York,US : 4')
+L.circle([42.7339,25.4858],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2250}).addTo(map1).bindPopup('Bulgaria : 45')
+L.circle([42.74753117,-88.05941254],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Wisconsin,US : 10')
+L.circle([42.76249024,-78.73063652],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:8100}).addTo(map1).bindPopup('New York,US : 162')
+L.circle([42.81668777,-74.05278291],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:700}).addTo(map1).bindPopup('New York,US : 14')
+L.circle([42.84443388,-91.34133693],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Iowa,US : 1')
+L.circle([42.8671731,-90.7063218],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Wisconsin,US : 3')
+L.circle([42.90123494,-74.44011632],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('New York,US : 1')
+L.circle([42.91261714,-76.55731592],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('New York,US : 1')
+L.circle([42.91537785,-71.7200253],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('New Hampshire,US : 2')
+L.circle([42.91653905,-75.67266639],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('New York,US : 5')
+L.circle([42.92655373,-82.67937954],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:750}).addTo(map1).bindPopup('Michigan,US : 15')
+L.circle([42.94400871,-84.60145248],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Michigan,US : 7')
+L.circle([42.94502238,-85.07413319],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Michigan,US : 2')
+L.circle([42.953928,-84.14585902],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Michigan,US : 3')
+L.circle([42.95996803,-85.9969107],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Michigan,US : 7')
+L.circle([42.98499744,-71.12883377],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('New Hampshire,US : 1')
+L.circle([42.986982,-72.71268875],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Vermont,US : 2')
+L.circle([43.0022601,-78.19135193],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('New York,US : 2')
+L.circle([43.00486062,-87.96733172],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:6950}).addTo(map1).bindPopup('Wisconsin,US : 139')
+L.circle([43.00491923,-76.19971155],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1050}).addTo(map1).bindPopup('New York,US : 21')
+L.circle([43.01833055,-88.30431188],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Wisconsin,US : 13')
+L.circle([43.02244215,-83.70589709],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:6550}).addTo(map1).bindPopup('Michigan,US : 131')
+L.circle([43.03197711,-85.54934642],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1250}).addTo(map1).bindPopup('Michigan,US : 25')
+L.circle([43.03519828,-73.09048868],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Vermont,US : 1')
+L.circle([43.06601594,-89.41733797],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1000}).addTo(map1).bindPopup('Wisconsin,US : 20')
+L.circle([43.09052506,-83.22153148],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1100}).addTo(map1).bindPopup('Michigan,US : 22')
+L.circle([43.10904162,-73.86653895],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('New York,US : 7')
+L.circle([43.14638895,-77.69322942],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4050}).addTo(map1).bindPopup('New York,US : 81')
+L.circle([43.19898042,-78.74777412],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('New York,US : 16')
+L.circle([43.24375382,-75.43710392],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('New York,US : 8')
+L.circle([43.2516977,-78.2320066],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('New York,US : 1')
+L.circle([43.28383218,-91.37860922],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Iowa,US : 3')
+L.circle([43.29123859,-86.15176712],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Michigan,US : 10')
+L.circle([43.29265605,-84.60505416],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([43.31082541,-85.15252824],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([43.31153794,-73.43043448],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('New York,US : 2')
+L.circle([43.33433923,-84.0513121],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1600}).addTo(map1).bindPopup('Michigan,US : 32')
+L.circle([43.3507101,-115.4701578],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Idaho,US : 1')
+L.circle([43.36863664,-88.22974712],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Wisconsin,US : 3')
+L.circle([43.3762778,-90.43012729],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([43.38352225,-87.94625009],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Wisconsin,US : 9')
+L.circle([43.4085812,-113.9752658],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Idaho,US : 5')
+L.circle([43.41576662,-88.70928178],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([43.42034246,-74.96145307],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('New York,US : 3')
+L.circle([43.42406072,-82.82055898],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Michigan,US : 3')
+L.circle([43.42574087,-89.94966132],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Wisconsin,US : 3')
+L.circle([43.42778894,-76.14635194],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('New York,US : 2')
+L.circle([43.4526575,-116.2415516],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:600}).addTo(map1).bindPopup('Idaho,US : 12')
+L.circle([43.46492199,-89.33589004],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([43.46606813,-83.41897025],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:600}).addTo(map1).bindPopup('Michigan,US : 12')
+L.circle([43.47808377,-70.71052375],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Maine,US : 6')
+L.circle([43.57723578,-73.03741676],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Vermont,US : 1')
+L.circle([43.58010937,-72.58595157],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Vermont,US : 2')
+L.circle([43.61970148,-116.7095499],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Idaho,US : 5')
+L.circle([43.64060976,-84.84664923],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:350}).addTo(map1).bindPopup('Michigan,US : 7')
+L.circle([43.64064262,-85.32463223],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([43.64124435,-86.26726673],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([43.64330771,-84.38804374],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Michigan,US : 3')
+L.circle([43.6661,126.1923],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Jilin,China : 1')
+L.circle([43.6742571,-97.36863144],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('South Dakota,US : 1')
+L.circle([43.67429718,-94.55099908],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Minnesota,US : 4')
+L.circle([43.67441641,-96.7910885],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('South Dakota,US : 4')
+L.circle([43.70639106,-83.98731479],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Michigan,US : 2')
+L.circle([43.72099677,-87.94579284],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Wisconsin,US : 2')
+L.circle([43.7333,7.4167],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Monaco : 3')
+L.circle([43.75354908,-88.48885325],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Wisconsin,US : 3')
+L.circle([43.81911946,-89.40073763],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([43.83353985,-83.04078453],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([43.8370751,-70.37226999],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:850}).addTo(map1).bindPopup('Maine,US : 17')
+L.circle([43.9159,17.6791],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2550}).addTo(map1).bindPopup('Bosnia and Herzegovina : 51')
+L.circle([43.92456975,-90.11120239],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([43.93727035,-122.847753],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Oregon,US : 1')
+L.circle([43.9424,12.4578],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2000}).addTo(map1).bindPopup('San Marino : 40')
+L.circle([43.94641218,-90.618819],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([43.96974651,-89.76782777],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([43.98772283,-91.78081305],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Minnesota,US : 10')
+L.circle([43.98794227,-84.8481986],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([43.98901072,-84.38774817],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([44.0025835,-102.8240777],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('South Dakota,US : 1')
+L.circle([44.00374114,-92.40209944],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Minnesota,US : 4')
+L.circle([44.00545243,-116.7647695],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Idaho,US : 1')
+L.circle([44.0165,21.0059],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:6250}).addTo(map1).bindPopup('Serbia : 125')
+L.circle([44.03217337,-73.14130877],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Vermont,US : 2')
+L.circle([44.04057166,-106.5845174],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wyoming,US : 1')
+L.circle([44.0636262,-83.89277559],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([44.06886922,-88.64477096],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([44.0935,113.9448],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Inner Mongolia,China : 1')
+L.circle([44.1664747,-70.20380627],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Maine,US : 1')
+L.circle([44.24205652,-94.72562874],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Minnesota,US : 1')
+L.circle([44.27343241,-72.61604978],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Vermont,US : 1')
+L.circle([44.31864893,-90.80566792],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([44.33772443,-85.09256478],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([44.33853602,-85.57712739],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([44.35291112,-94.24710352],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Minnesota,US : 2')
+L.circle([44.3543376,-93.29658715],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Minnesota,US : 1')
+L.circle([44.35486835,-83.63484895],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Michigan,US : 2')
+L.circle([44.37835084,-91.75332578],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([44.40759555,-69.76738544],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Maine,US : 4')
+L.circle([44.41464384,-98.27858469],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('South Dakota,US : 2')
+L.circle([44.41578887,-88.46565023],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Wisconsin,US : 2')
+L.circle([44.4526553,-88.00411844],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Wisconsin,US : 2')
+L.circle([44.46322849,-73.08359212],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1250}).addTo(map1).bindPopup('Vermont,US : 25')
+L.circle([44.47068056,-88.96534501],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([44.4858305,-69.12061935],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Maine,US : 8')
+L.circle([44.48899494,-122.5373154],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Oregon,US : 6')
+L.circle([44.49167306,-123.4316987],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Oregon,US : 5')
+L.circle([44.51727459,-87.61468386],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([44.60353043,-72.64356694],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Vermont,US : 2')
+L.circle([44.6490231,-93.53340251],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Minnesota,US : 1')
+L.circle([44.67172617,-93.06299363],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Minnesota,US : 6')
+L.circle([44.68192279,-84.12939244],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([44.682,-63.7443],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Nova Scotia,Canada : 10')
+L.circle([44.68255561,-84.61006219],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Michigan,US : 2')
+L.circle([44.68512729,-85.09085699],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Michigan,US : 2')
+L.circle([44.69565625,-85.55585247],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Michigan,US : 5')
+L.circle([44.73483377,-90.61207486],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([44.74530905,-73.67875352],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('New York,US : 3')
+L.circle([44.85627605,-72.91249563],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Vermont,US : 4')
+L.circle([44.89792533,-89.75863384],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([44.90287942,-122.5815117],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:700}).addTo(map1).bindPopup('Oregon,US : 14')
+L.circle([44.90322804,-123.4128888],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Oregon,US : 1')
+L.circle([44.95856458,-87.30002707],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([45.00761521,-93.47694895],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4750}).addTo(map1).bindPopup('Minnesota,US : 95')
+L.circle([45.01625271,-93.09872295],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:550}).addTo(map1).bindPopup('Minnesota,US : 11')
+L.circle([45.02085831,-84.59898295],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Michigan,US : 6')
+L.circle([45.03477666,-83.62212411],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([45.03864533,-92.88429635],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Minnesota,US : 5')
+L.circle([45.1,15.2],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2400}).addTo(map1).bindPopup('Croatia : 48')
+L.circle([45.17297924,-93.96234781],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Minnesota,US : 1')
+L.circle([45.18787398,-122.2179634],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Oregon,US : 5')
+L.circle([45.23330449,-123.3086963],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Oregon,US : 6')
+L.circle([45.27476015,-93.24604565],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Minnesota,US : 2')
+L.circle([45.30080065,-111.9173017],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Montana,US : 1')
+L.circle([45.37790017,-85.19614053],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([45.38553432,-88.033246],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([45.44787015,-84.50122149],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([45.5021011,-92.90861945],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Minnesota,US : 1')
+L.circle([45.52625509,-84.89083249],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Michigan,US : 2')
+L.circle([45.54747959,-122.4169351],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1450}).addTo(map1).bindPopup('Oregon,US : 29')
+L.circle([45.55972701,-123.0955257],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Oregon,US : 10')
+L.circle([45.77568046,-122.4829204],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:800}).addTo(map1).bindPopup('Washington,US : 16')
+L.circle([45.87325839,-120.7913598],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Washington,US : 3')
+L.circle([45.9048491,-86.9080745],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Michigan,US : 2')
+L.circle([45.93705297,-93.63236823],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Minnesota,US : 1')
+L.circle([45.93955949,-108.2691486],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Montana,US : 1')
+L.circle([45.9432,24.9668],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:24900}).addTo(map1).bindPopup('Romania : 498')
+L.circle([46.00999672,-87.86961634],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Michigan,US : 2')
+L.circle([46.1512,14.9955],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:3850}).addTo(map1).bindPopup('Slovenia : 77')
+L.circle([46.2276,2.2137],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1039800}).addTo(map1).bindPopup('France : 20796')
+L.circle([46.23946995,-119.5120834],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1700}).addTo(map1).bindPopup('Washington,US : 34')
+L.circle([46.26302338,-90.24295041],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([46.28398398,-100.2389766],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('North Dakota,US : 1')
+L.circle([46.32638236,-116.7500975],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:550}).addTo(map1).bindPopup('Idaho,US : 11')
+L.circle([46.35721532,-96.4684375],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Minnesota,US : 2')
+L.circle([46.40862701,-89.69377193],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Michigan,US : 1')
+L.circle([46.4338914,-87.64043701],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Michigan,US : 6')
+L.circle([46.45738486,-120.7380126],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1900}).addTo(map1).bindPopup('Washington,US : 38')
+L.circle([46.52868768,-91.19716729],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Wisconsin,US : 1')
+L.circle([46.53351425,-118.9018212],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Washington,US : 4')
+L.circle([46.57756476,-122.3925769],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Washington,US : 2')
+L.circle([46.71681782,-101.2822377],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('North Dakota,US : 2')
+L.circle([46.80851182,-102.6576326],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('North Dakota,US : 2')
+L.circle([46.8182,8.2275],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:73900}).addTo(map1).bindPopup('Switzerland : 1478')
+L.circle([46.89289518,-96.48761922],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Minnesota,US : 3')
+L.circle([46.9291895,-122.8290656],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Washington,US : 1')
+L.circle([46.93201724,-97.2444719],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('North Dakota,US : 6')
+L.circle([47.03728583,-113.9213508],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Montana,US : 1')
+L.circle([47.03892768,-122.1405958],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1800}).addTo(map1).bindPopup('Washington,US : 36')
+L.circle([47.14,9.55],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Liechtenstein : 1')
+L.circle([47.1625,19.5033],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:10650}).addTo(map1).bindPopup('Hungary : 213')
+L.circle([47.20753737,-119.4500749],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Washington,US : 2')
+L.circle([47.30797024,-111.3467922],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:100}).addTo(map1).bindPopup('Montana,US : 2')
+L.circle([47.4116,28.3699],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:3600}).addTo(map1).bindPopup('Moldova : 72')
+L.circle([47.49137892,-121.8346131],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:18000}).addTo(map1).bindPopup('Washington,US : 360')
+L.circle([47.5162,14.5501],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:24550}).addTo(map1).bindPopup('Austria : 491')
+L.circle([47.6048407,-92.46879855],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Minnesota,US : 10')
+L.circle([47.62113146,-117.4046494],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:950}).addTo(map1).bindPopup('Washington,US : 19')
+L.circle([47.63479026,-122.6436061],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Washington,US : 1')
+L.circle([47.7361335,-119.692937],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Washington,US : 1')
+L.circle([47.862,127.7615],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:650}).addTo(map1).bindPopup('Heilongjiang,China : 13')
+L.circle([47.87046092,-120.6173956],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Washington,US : 5')
+L.circle([48.0196,66.9237],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:950}).addTo(map1).bindPopup('Kazakhstan : 19')
+L.circle([48.04615983,-121.7170703],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4900}).addTo(map1).bindPopup('Washington,US : 98')
+L.circle([48.14713305,-122.5216407],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Washington,US : 8')
+L.circle([48.22390169,-101.5436763],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('North Dakota,US : 1')
+L.circle([48.23104458,-100.6324822],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('North Dakota,US : 1')
+L.circle([48.29575866,-114.0520569],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Montana,US : 1')
+L.circle([48.3794,31.1656],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:8050}).addTo(map1).bindPopup('Ukraine : 161')
+L.circle([48.40035475,-117.8542701],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Washington,US : 1')
+L.circle([48.48171488,-121.766131],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:400}).addTo(map1).bindPopup('Washington,US : 8')
+L.circle([48.54265777,-115.4046155],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Montana,US : 1')
+L.circle([48.65577551,-111.6942414],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:250}).addTo(map1).bindPopup('Montana,US : 5')
+L.circle([48.669,19.699],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:700}).addTo(map1).bindPopup('Slovakia : 14')
+L.circle([48.82227976,-121.7490018],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1350}).addTo(map1).bindPopup('Washington,US : 27')
+L.circle([49.3723,-2.3644],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1200}).addTo(map1).bindPopup('Channel Islands,United Kingdom : 24')
+L.circle([49.8153,6.1296],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:3900}).addTo(map1).bindPopup('Luxembourg : 78')
+L.circle([49.8175,15.473],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:10050}).addTo(map1).bindPopup('Czechia : 201')
+L.circle([50.8333,4.469936],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:299900}).addTo(map1).bindPopup('Belgium : 5998')
+L.circle([51.165691,10.451526],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:251650}).addTo(map1).bindPopup('Germany : 5033')
+L.circle([51.2538,-85.3232],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:34700}).addTo(map1).bindPopup('Ontario,Canada : 694')
+L.circle([51.9194,19.1451],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:20050}).addTo(map1).bindPopup('Poland : 401')
+L.circle([52.1326,5.2913],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:195800}).addTo(map1).bindPopup('Netherlands : 3916')
+L.circle([52.9399,-73.5491],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:52200}).addTo(map1).bindPopup('Quebec,Canada : 1044')
+L.circle([52.9399,-106.4509],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Saskatchewan,Canada : 4')
+L.circle([53.1355,-57.6604],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:150}).addTo(map1).bindPopup('Newfoundland and Labrador,Canada : 3')
+L.circle([53.1424,-7.6921],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:36500}).addTo(map1).bindPopup('Ireland : 730')
+L.circle([53.7098,27.9534],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2750}).addTo(map1).bindPopup('Belarus : 55')
+L.circle([53.7267,-127.6476],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:4350}).addTo(map1).bindPopup('British Columbia,Canada : 87')
+L.circle([53.7609,-98.8139],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:300}).addTo(map1).bindPopup('Manitoba,Canada : 6')
+L.circle([53.9333,-116.5765],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:3050}).addTo(map1).bindPopup('Alberta,Canada : 61')
+L.circle([54.2361,-4.5481],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Isle of Man,United Kingdom : 9')
+L.circle([55.1694,23.8813],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:1900}).addTo(map1).bindPopup('Lithuania : 38')
+L.circle([55.3781,-3.436],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:866850}).addTo(map1).bindPopup('United Kingdom : 17337')
+L.circle([56.2639,9.5018],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:18500}).addTo(map1).bindPopup('Denmark : 370')
+L.circle([56.8796,24.6032],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:450}).addTo(map1).bindPopup('Latvia : 9')
+L.circle([58.5953,25.0136],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:2150}).addTo(map1).bindPopup('Estonia : 43')
+L.circle([60.128161,18.643501],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:88250}).addTo(map1).bindPopup('Sweden : 1765')
+L.circle([60.472,8.4689],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:9100}).addTo(map1).bindPopup('Norway : 182')
+L.circle([61.14998174,-149.1426986],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:200}).addTo(map1).bindPopup('Alaska,US : 4')
+L.circle([61.52401,105.318756],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:22800}).addTo(map1).bindPopup('Russia : 456')
+L.circle([61.92411,25.748151],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:7050}).addTo(map1).bindPopup('Finland : 141')
+L.circle([64.80726247,-146.5692662],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:50}).addTo(map1).bindPopup('Alaska,US : 1')
+L.circle([64.9631,-19.0208],{color:'grey',fillColor:'#6b5f5f',fillOpacity:0.5,radius:500}).addTo(map1).bindPopup('Iceland : 10')
+
+        }
+
+    </script>   
+
+    <nav id="nav1">
+	   <ul>
+	       <li><a class="active" href="index.html">Home</a></li>
+	       <li><a href="page1.html">Details</a></li>
+	       <li><a href="page2.html">About</a></li>
+
+
+	   </ul>
+	</nav>
+
+
+    </body>
+
+
+
+
+
+
+</html>
